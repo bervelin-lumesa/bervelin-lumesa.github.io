@@ -1,0 +1,235 @@
+# For a description of these parameters, please visit the theme wiki.
+# https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml
+baseurl                 = "https://bervelin-lumesa.netlify.app/"
+DefaultContentLanguage  = "en"
+title                   = "Bervelin Lumesa"
+theme                   = "hugo-future-imperfect-slim"
+paginate                = 3
+disqusShortname         = ""
+googleAnalytics         = "G-38ZNMSEW51"
+pluralizeListTitles     = false
+disableLanguages        = []
+
+[markup.goldmark.renderer]
+  unsafe                = true
+
+[module]
+  [module.hugoVersion]
+  extended              = true
+  min                   = "0.62.0"
+
+[outputs]
+  home                  = ["html", "json", "rss"]
+
+[params]
+  enableCDN             = false
+  cssFiles              = ["default"]
+  jsFiles               = ["default"]
+  highlightjs           = true
+  highlightjsTheme      = ""
+  highlightjsLang       = []
+  viewMorePostsLink     = "blog"
+  readingTime           = true
+  imageStretch          = ""
+  removeBlur            = false
+  socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
+  hideEmptyStats        = false
+  toc                   = true
+  tocWords              = 400
+
+  [params.meta]
+    description         = "Bervelin Lumesa, Statistician - Data scientist from Kinshasa, DRC."
+    author              = "Bervelin Lumesa"
+    favicon             = false
+    svg                 = true
+    faviconVersion      = "1"
+    msColor             = "#ffffff"
+    iOSColor            = "#ffffff"
+
+  [params.header]
+    navbarTitle         = "Bervelin Lumesa"
+    dynamicTitles       = true
+    searchMenu          = true
+    shareMenu           = true
+    languageMenu        = true
+
+  [params.intro]
+    header                = "Bervelin Lumesa"
+    paragraph             = "Statisticien - Data scientist"
+#    rssIntro              = true
+    socialIntro           = true
+    hideWhenSingleColumn  = false
+    alwaysOnHomepage      = false
+
+    [params.intro.pic]
+      src                 = "img/main/logo.png"
+      shape               = "circle"
+      width               = ""
+      alt                 = "Bervelin Lumesa"
+
+  [params.sidebar]
+    about               = "I'm a consultant Statistician and Data scientist"
+    postAmount          = 5
+    categories          = true
+    categoriesByCount   = true
+
+  [params.footer]
+    rssFooter           = true
+    socialFooter        = true
+
+  [params.utterances]
+    enabled             = false
+    repo                = ""
+    issueTerm           = "pathname"
+    issueNumber         = ""
+    label               = ""
+    theme               = "github-light"
+# comment activer les commentaires
+  [params.staticman]
+    enabled             = false
+    api                 = ""  # No Trailing Slash
+    gitProvider         = ""
+    username            = ""
+    repo                = ""
+    branch              = ""
+
+    [params.staticman.recaptcha]
+      siteKey           = ""
+      encryptedKey      = ""
+
+[menu]
+
+  [[menu.main]]
+    name              = "Home"
+    identifier        = "home"
+    url               = ""
+    pre               = "<i class='fa fa-home'></i>"
+    weight            = 1
+
+  [[menu.main]]
+    name              = "About"
+    identifier        = "about"
+    url               = "about"
+    pre               = "<i class='far fa-id-card'></i>"
+    weight            = 2
+
+  [[menu.main]]
+    name              = "Blog/projects"
+    identifier        = "blog"
+    url               = "blog"
+    pre               = "<i class='far fa-newspaper'></i>"
+    weight            = 3
+
+  [[menu.main]]
+    name              = "Categories"
+    identifier        = "categories"
+    url               = "categories"
+    pre               = "<i class='fas fa-sitemap'></i>"
+    weight            = 4
+
+  [[menu.main]]
+    name              = "Contact"
+    identifier        = "contact"
+    url               = "contact"
+    pre               = "<i class='far fa-envelope'></i>"
+    weight            = 5
+
+[Languages]
+
+  [Languages.en]
+    LanguageCode        = "en"
+    LanguageName        = "English"
+    weight              = 1
+
+  [Languages.fr]
+    LanguageCode        = "fr"
+    LanguageName        = "Français"
+    title               = ""
+    description         = ""
+    weight              = 2
+
+    [[Languages.fr.menu.main]]
+      name              = "Accueil"
+      identifier        = "home"
+      url               = ""
+      pre               = "<i class='fas fa-home'></i>"
+      weight            = 1
+
+    [[Languages.fr.menu.main]]
+      name              = "A Propos"
+      identifier        = "about"
+      url               = "about"
+      pre               = "<i class='far fa-id-card'></i>"
+      weight            = 2
+
+    [[Languages.fr.menu.main]]
+      name              = "Blog/projets"
+      identifier        = "blog"
+      url               = "blog"
+      pre               = "<i class='far fa-newspaper'></i>"
+      weight            = 3
+
+    [[Languages.fr.menu.main]]
+      name              = "Catégories"
+      identifier        = "categories"
+      url               = "categories"
+      pre               = "<i class='fas fa-sitemap'></i>"
+      weight            = 4
+
+    [[Languages.fr.menu.main]]
+      name              = "Contact"
+      identifier        = "contact"
+      url               = "contact"
+      pre               = "<i class='far fa-envelope'></i>"
+      weight            = 5
+
+
+[social]
+  # Coding Communities
+  github                = "bervelin-lumesa"
+  #gitlab                = ""
+  #stackoverflow         = "" # User Number
+  #bitbucket             = ""
+  #jsfiddle              = ""
+  #codepen               = ""
+  # Visual Art Communities
+  #deviantart            = ""
+  #flickr                = "example"
+  #behance               = ""
+  #dribbble              = ""
+  # Publishing Communities
+  #wordpress             = ""
+  #medium                = ""
+  # Professional/Business Oriented Communities
+  linkedin              = "bervelin-lumesa"
+  #linkedin_company      = "examplebusiness"
+  #foursquare            = ""
+  #xing                  = ""
+  #slideshare            = ""
+  # Social Networks
+  facebook              = "bervelinlumesaofficiel"
+  #googleplus            = ""
+  #reddit                = "example"
+  #quora                 = ""
+  youtube               = ""
+  #vimeo                 = ""
+  whatsapp              = "+243893119109" 
+    # WeChat and QQ need testing.
+    #wechat              = ""
+    #qq                  = "" # User ID Number
+  #instagram             = "example"
+  #tumblr                = ""
+  twitter               = "Bervelinl"
+  #strava                = ""
+  skype                 = "lumesabervelin@outlook.fr"
+  #snapchat              = ""
+  #pinterest             = "example"
+  #telegram              = "example"
+  #vine                  = ""
+  #googlescholar         = ""
+  #orcid                 = ""
+  #researchgate          = "example"
+  #keybase               = "example"
+  #mastodon              = "example.com/@example"
+  # Email
+  email                 = "lumesabervelin@gmail.com"

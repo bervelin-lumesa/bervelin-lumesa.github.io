@@ -1,0 +1,201 @@
+baseurl: https://bervelin-lumesa.netlify.app/
+DefaultContentLanguage: en
+title: Bervelin Lumesa
+theme: hugo-future-imperfect-slim
+paginate: 3
+disqusShortname: ''
+googleAnalytics: ''
+pluralizeListTitles: no
+disableLanguages: []
+markup:
+  goldmark:
+    renderer:
+      unsafe: yes
+module:
+  hugoVersion:
+    extended: yes
+    min: 0.62.0
+outputs:
+  home:
+    - html
+    - json
+    - rss
+params:
+  cssFiles: default
+  enableCDN: no
+  footer:
+    rssFooter: yes
+    socialFooter: yes
+  header:
+    dynamicTitles: yes
+    languageMenu: yes
+    navbarTitle: Bervelin Lumesa
+    searchMenu: yes
+    shareMenu: yes
+  hideEmptyStats: no
+  highlightjs: yes
+  highlightjsLang: []
+  highlightjsTheme: ''
+  imageStretch: ''
+  intro:
+    alwaysOnHomepage: no
+    header: Bervelin Lumesa
+    hideWhenSingleColumn: no
+    paragraph:
+    pic:
+      alt: Bervelin Lumesa
+      shape: circle
+      src: img/main/logo.jpg
+      width: ''
+    rssIntro: yes
+    socialIntro: yes
+  jsFiles: default
+  meta:
+    author: 
+    description: 
+    favicon: no
+    faviconVersion: '1'
+    iOSColor: '#ffffff'
+    msColor: '#ffffff'
+    svg: yes
+  readingTime: yes
+  removeBlur: no
+  sidebar:
+    about: This theme was developed for Hugo static site generator.
+    categories: yes
+    categoriesByCount: yes
+    postAmount: 5
+  socialShare:
+#    - twitter
+    - facebook
+    - reddit
+    - linkedin
+    - pinterest
+#    - email
+  staticman:
+    api: ''
+    branch: ''
+    enabled: yes
+    gitProvider: ''
+    recaptcha:
+      encryptedKey: ''
+      siteKey: ''
+    repo: ''
+    username: ''
+  toc: yes
+  tocWords: 400
+  utterances:
+    enabled: no
+    issueNumber: ''
+    issueTerm: pathname
+    label: ''
+    repo: ''
+    theme: github-light
+  viewMorePostsLink: blog
+menu:
+  main:
+    - identifier: home
+      name: Home
+      pre: <i class='fa fa-home'></i>
+      url: ''
+      weight: 1
+    - identifier: about
+      name: About
+      pre: <i class='far fa-id-card'></i>
+      url: about
+      weight: 2
+    - identifier: blog
+      name: Blog
+      pre: <i class='far fa-newspaper'></i>
+      url: blog
+      weight: 3
+    - identifier: categories
+      name: Categories
+      pre: <i class='fas fa-sitemap'></i>
+      url: categories
+      weight: 5
+    - identifier: contact
+      name: Contact
+      pre: <i class='far fa-envelope'></i>
+      url: contact
+      weight: 6
+Languages:
+  en:
+    LanguageCode: en
+    LanguageName: English
+    weight: 1
+  fr:
+    LanguageCode: fr
+    LanguageName: Français
+    description: 
+    menu:
+      main:
+        - identifier: home
+          name: Accueil
+          pre: <i class='fas fa-home'></i>
+          url: ''
+          weight: 1
+        - identifier: about
+          name: A Propos
+          pre: <i class='far fa-id-card'></i>
+          url: about
+          weight: 2
+        - identifier: blog
+          name: Blog
+          pre: <i class='far fa-newspaper'></i>
+          url: blog
+          weight: 3
+        - identifier: categories
+          name: Catégories
+          pre: <i class='fas fa-sitemap'></i>
+          url: categories
+          weight: 5
+        - identifier: contact
+          name: Contact
+          pre: <i class='far fa-envelope'></i>
+          url: contact
+          weight: 6
+    title: Hugo Future Imperfect Slim en français
+    weight: 2
+social:
+  behance: ''
+  bitbucket: ''
+  codepen: ''
+  deviantart: ''
+  dribbble: ''
+  email: example
+  facebook: example
+  flickr: example
+  foursquare: ''
+  github: ''
+  gitlab: ''
+  googleplus: ''
+  googlescholar: ''
+  instagram: example
+  jsfiddle: ''
+  keybase: example
+  linkedin: example
+  linkedin_company: examplebusiness
+  mastodon: example.com/@example
+  medium: ''
+  orcid: ''
+  pinterest: example
+  qq: ''
+  quora: ''
+  reddit: example
+  researchgate: example
+  skype: ''
+  slideshare: ''
+  snapchat: ''
+  stackoverflow: ''
+  strava: ''
+  telegram: example
+  tumblr: ''
+  twitter: example
+  vimeo: ''
+  vine: ''
+  wechat: ''
+  whatsapp: ''
+  wordpress: ''
+  xing: ''
+  youtube: ''

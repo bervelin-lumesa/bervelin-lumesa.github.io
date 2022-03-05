@@ -1,0 +1,268 @@
+---
+title: "Introduction to Exploratory Data Analysis (EDA) with R"
+author: "Bervelin"
+date: '2022-02-18T21:13:14-05:00'
+categories:
+- Articles
+- R
+tags:
+- EDA
+- R
+- Data analysis
+---
+
+<script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
+
+
+<p>In this article, we describe what Exploratory Data Analysis is and see how to perform it with R.</p>
+<div id="introduction-to-r-and-rstudio" class="section level1">
+<h1>Introduction to R and Rstudio</h1>
+<p><a href = 'https://r-project.org' target = '_blank'>R</a> is an open-source software environment for statistical computing and graphics. R compiles and runs on Windows, Mac OS X, and numerous UNIX platforms (such as Linux).
+The R software project was first started by Robert Gentleman and Ross Ihaka. As of 2022, there were more than 3,000 such packages hosted on <a href = 'https://r-project.org' target = '_blank'>CRAN</a>.
+R can be installed from the <a href = 'https://r-project.org' target = '_blank'>CRAN</a> website</p>
+<p><a href = 'https://www.rstudio.org' target = '_blank'>RStudio</a> is an integrated development environment (IDE) that adds modern features like syntax highlighting to R. The
+strength of RStudio is that it brings all the features that you need together in one place.</p>
+</div>
+<div id="introduction-to-eda" class="section level1">
+<h1>Introduction to EDA</h1>
+<p>Exploratory data analysis is the process of exploring your data, and it typically includes examining the structure and components of your dataset, the distributions of individual variables, and the relationships between two or more variables. Visualization is the most heavily relied upon tool for exploratory data analysis to get a deep understanding of your data.</p>
+<p>Exploratory analysis helps us ask better questions, but it does not answer questions. More specifically, we explore data in order to:</p>
+<ul>
+<li>Understand data properties such as nonlinear relationships, the existence of missing
+values, the existence of outliers, etc.</li>
+<li>Find patterns in data such as associations, group differences, confounders, etc.</li>
+<li>Suggest modeling strategies such as linear vs. nonlinear models, transformation</li>
+</ul>
+<p>In the <a href = 'https://leanpub.com/tidyverseskillsdatascience' target = '_blank'>Tidyverse Skills for Data Science in R</a>, authors summarized the general principales of EDA as follows :</p>
+<ul>
+<li>Look for missing values</li>
+<li>Look for outlier values</li>
+<li>Use plots to explore relationships</li>
+<li>Use tables to explore relationships</li>
+<li>If necessary, transform variables</li>
+</ul>
+<blockquote>
+<p>A detective investigating a crime needs both tools and understanding. If he has no fingerprint powder, he will fail to find fingerprints on most surfaces. If he does not understand where the criminal is likely to have put his fingers, he will not look in the right places. Equally, the analyst of data needs both tools and understanding. - <em>John W. Tukey</em></p>
+</blockquote>
+<p>As stated in the quote above, doing Exploratory Data analysis requires to have tools and understanding. In our case, the R language with all its useful functions can be considered as our tool and the domain knowledge as our understanding.</p>
+</div>
+<div id="practice" class="section level1">
+<h1>Practice</h1>
+<div id="data" class="section level2">
+<h2>Data</h2>
+<p>Data used in this post are from the <code>questionr</code> package. hdv2003 is a sample from 2000 people and 20 variables taken from the <em>Histoire de Vie survey</em>, produced in France in 2003 by INSEE. <code>questionr</code> package can be installed as other packages by typing : <code>install.packages("questionr")</code> and load to your RStudio session with the following command : <code>library(questionr)</code>. Finally, <code>data(hdv2003)</code> allows to access data.</p>
+<p>Apart from the <code>questionr</code> package where our data come from, we will also use some functions from the <code>tidyverse</code> package for data minipulation and graphics and the <code>naniar</code> package for missing data visualization. So you need to do the same work as with <code>questionr</code> package, except the last command.</p>
+</div>
+<div id="eda-with-r" class="section level2">
+<h2>EDA with R</h2>
+<p>First of all, we need to load packages we’ll work with and our data.
+Note that our <code>data.frame</code> is transformed to a <code>tibble</code> with <code>as_tibble()</code> for convenient display of our data.</p>
+<pre class="r"><code># libraries
+library(tidyverse)
+library(questionr)
+library(naniar)
+
+# data
+data(hdv2003) 
+
+hdv2003 &lt;- as_tibble(hdv2003)</code></pre>
+<p>The following command allows us to know the dimension of our dataset.</p>
+<pre class="r"><code>dim(hdv2003) 
+[1] 2000   20</code></pre>
+<p>Our dataset contains 2000 observations and 20 variables.</p>
+<p><code>names()</code> or <code>colnames()</code> returns the variable names of the dataset.</p>
+<pre class="r"><code>names(hdv2003) 
+ [1] &quot;id&quot;            &quot;age&quot;           &quot;sexe&quot;          &quot;nivetud&quot;      
+ [5] &quot;poids&quot;         &quot;occup&quot;         &quot;qualif&quot;        &quot;freres.soeurs&quot;
+ [9] &quot;clso&quot;          &quot;relig&quot;         &quot;trav.imp&quot;      &quot;trav.satisf&quot;  
+[13] &quot;hard.rock&quot;     &quot;lecture.bd&quot;    &quot;peche.chasse&quot;  &quot;cuisine&quot;      
+[17] &quot;bricol&quot;        &quot;cinema&quot;        &quot;sport&quot;         &quot;heures.tv&quot;    </code></pre>
+<p>Now, we would like to see the structure of our dataset. The <code>str()</code> gives the data type of variables and a look at some rows.</p>
+<pre class="r"><code>str(hdv2003) 
+tibble [2,000 x 20] (S3: tbl_df/tbl/data.frame)
+ $ id           : int [1:2000] 1 2 3 4 5 6 7 8 9 10 ...
+ $ age          : int [1:2000] 28 23 59 34 71 35 60 47 20 28 ...
+ $ sexe         : Factor w/ 2 levels &quot;Homme&quot;,&quot;Femme&quot;: 2 2 1 1 2 2 2 1 2 1 ...
+ $ nivetud      : Factor w/ 8 levels &quot;N&#39;a jamais fait d&#39;etudes&quot;,..: 8 NA 3 8 3 6 3 6 NA 7 ...
+ $ poids        : num [1:2000] 2634 9738 3994 5732 4329 ...
+ $ occup        : Factor w/ 7 levels &quot;Exerce une profession&quot;,..: 1 3 1 1 4 1 6 1 3 1 ...
+ $ qualif       : Factor w/ 7 levels &quot;Ouvrier specialise&quot;,..: 6 NA 3 3 6 6 2 2 NA 7 ...
+ $ freres.soeurs: int [1:2000] 8 2 2 1 0 5 1 5 4 2 ...
+ $ clso         : Factor w/ 3 levels &quot;Oui&quot;,&quot;Non&quot;,&quot;Ne sait pas&quot;: 1 1 2 2 1 2 1 2 1 2 ...
+ $ relig        : Factor w/ 6 levels &quot;Pratiquant regulier&quot;,..: 4 4 4 3 1 4 3 4 3 2 ...
+ $ trav.imp     : Factor w/ 4 levels &quot;Le plus important&quot;,..: 4 NA 2 3 NA 1 NA 4 NA 3 ...
+ $ trav.satisf  : Factor w/ 3 levels &quot;Satisfaction&quot;,..: 2 NA 3 1 NA 3 NA 2 NA 1 ...
+ $ hard.rock    : Factor w/ 2 levels &quot;Non&quot;,&quot;Oui&quot;: 1 1 1 1 1 1 1 1 1 1 ...
+ $ lecture.bd   : Factor w/ 2 levels &quot;Non&quot;,&quot;Oui&quot;: 1 1 1 1 1 1 1 1 1 1 ...
+ $ peche.chasse : Factor w/ 2 levels &quot;Non&quot;,&quot;Oui&quot;: 1 1 1 1 1 1 2 2 1 1 ...
+ $ cuisine      : Factor w/ 2 levels &quot;Non&quot;,&quot;Oui&quot;: 2 1 1 2 1 1 2 2 1 1 ...
+ $ bricol       : Factor w/ 2 levels &quot;Non&quot;,&quot;Oui&quot;: 1 1 1 2 1 1 1 2 1 1 ...
+ $ cinema       : Factor w/ 2 levels &quot;Non&quot;,&quot;Oui&quot;: 1 2 1 2 1 2 1 1 2 2 ...
+ $ sport        : Factor w/ 2 levels &quot;Non&quot;,&quot;Oui&quot;: 1 2 2 2 1 2 1 1 1 2 ...
+ $ heures.tv    : num [1:2000] 0 1 0 2 3 2 2.9 1 2 2 ...</code></pre>
+<p>We can see that some variables are numeric, integer, while others are factors (lables with numeric values associated). If you think that a certain variable has the wrong type, functions like <code>as.numeric()</code>, <code>as.factor()</code>, <code>as.Date()</code> can be used to fix.</p>
+<p>The following output uses <code>head()</code> and <code>tail()</code> to print the first and the last six rows of our dataset.</p>
+<pre class="r"><code>head(hdv2003) 
+# A tibble: 6 x 20
+     id   age sexe  nivetud         poids occup qualif freres.soeurs clso  relig
+  &lt;int&gt; &lt;int&gt; &lt;fct&gt; &lt;fct&gt;           &lt;dbl&gt; &lt;fct&gt; &lt;fct&gt;          &lt;int&gt; &lt;fct&gt; &lt;fct&gt;
+1     1    28 Femme Enseignement s~ 2634. Exer~ Emplo~             8 Oui   Ni c~
+2     2    23 Femme &lt;NA&gt;            9738. Etud~ &lt;NA&gt;               2 Oui   Ni c~
+3     3    59 Homme Derniere annee~ 3994. Exer~ Techn~             2 Non   Ni c~
+4     4    34 Homme Enseignement s~ 5732. Exer~ Techn~             1 Non   Appa~
+5     5    71 Femme Derniere annee~ 4329. Retr~ Emplo~             0 Oui   Prat~
+6     6    35 Femme Enseignement t~ 8675. Exer~ Emplo~             5 Non   Ni c~
+# ... with 10 more variables: trav.imp &lt;fct&gt;, trav.satisf &lt;fct&gt;,
+#   hard.rock &lt;fct&gt;, lecture.bd &lt;fct&gt;, peche.chasse &lt;fct&gt;, cuisine &lt;fct&gt;,
+#   bricol &lt;fct&gt;, cinema &lt;fct&gt;, sport &lt;fct&gt;, heures.tv &lt;dbl&gt;
+
+tail(hdv2003) 
+# A tibble: 6 x 20
+     id   age sexe  nivetud         poids occup qualif freres.soeurs clso  relig
+  &lt;int&gt; &lt;int&gt; &lt;fct&gt; &lt;fct&gt;           &lt;dbl&gt; &lt;fct&gt; &lt;fct&gt;          &lt;int&gt; &lt;fct&gt; &lt;fct&gt;
+1  1995    46 Femme Enseignement ~  8408. Au f~ Autre              0 Non   Appa~
+2  1996    45 Homme Enseignement ~  8092. Exer~ Techn~             3 Non   Ni c~
+3  1997    46 Homme Enseignement ~   956. Exer~ Ouvri~             4 Oui   Prat~
+4  1998    24 Homme Enseignement ~  5320. Exer~ Techn~             1 Oui   Rejet
+5  1999    24 Femme Enseignement ~ 13741. Exer~ Emplo~             2 Non   Appa~
+6  2000    66 Femme Enseignement ~  7710. Au f~ Emplo~             3 Non   Appa~
+# ... with 10 more variables: trav.imp &lt;fct&gt;, trav.satisf &lt;fct&gt;,
+#   hard.rock &lt;fct&gt;, lecture.bd &lt;fct&gt;, peche.chasse &lt;fct&gt;, cuisine &lt;fct&gt;,
+#   bricol &lt;fct&gt;, cinema &lt;fct&gt;, sport &lt;fct&gt;, heures.tv &lt;dbl&gt;</code></pre>
+<p>To get a statistical summary of our data, we use the <code>summary()</code> function which gives the minimum, first and third quantiles, mean, median and the maximum values of all numeric variables. For categorical variables (factor), it counts the number of observations within each category.</p>
+<pre class="r"><code>summary(hdv2003)
+       id              age           sexe     
+ Min.   :   1.0   Min.   :18.00   Homme: 899  
+ 1st Qu.: 500.8   1st Qu.:35.00   Femme:1101  
+ Median :1000.5   Median :48.00               
+ Mean   :1000.5   Mean   :48.16               
+ 3rd Qu.:1500.2   3rd Qu.:60.00               
+ Max.   :2000.0   Max.   :97.00               
+                                              
+                                                 nivetud        poids         
+ Enseignement technique ou professionnel court       :463   Min.   :   78.08  
+ Enseignement superieur y compris technique superieur:441   1st Qu.: 2221.82  
+ Derniere annee d&#39;etudes primaires                   :341   Median : 4631.19  
+ 1er cycle                                           :204   Mean   : 5535.61  
+ 2eme cycle                                          :183   3rd Qu.: 7626.53  
+ (Other)                                             :256   Max.   :31092.14  
+ NA&#39;s                                                :112                     
+                   occup                           qualif    freres.soeurs   
+ Exerce une profession:1049   Employe                 :594   Min.   : 0.000  
+ Chomeur              : 134   Ouvrier qualifie        :292   1st Qu.: 1.000  
+ Etudiant, eleve      :  94   Cadre                   :260   Median : 2.000  
+ Retraite             : 392   Ouvrier specialise      :203   Mean   : 3.283  
+ Retire des affaires  :  77   Profession intermediaire:160   3rd Qu.: 5.000  
+ Au foyer             : 171   (Other)                 :144   Max.   :22.000  
+ Autre inactif        :  83   NA&#39;s                    :347                   
+          clso                              relig    
+ Oui        : 936   Pratiquant regulier        :266  
+ Non        :1037   Pratiquant occasionnel     :442  
+ Ne sait pas:  27   Appartenance sans pratique :760  
+                    Ni croyance ni appartenance:399  
+                    Rejet                      : 93  
+                    NSP ou NVPR                : 40  
+                                                     
+                         trav.imp           trav.satisf  hard.rock  lecture.bd
+ Le plus important           : 29   Satisfaction  :480   Non:1986   Non:1953  
+ Aussi important que le reste:259   Insatisfaction:117   Oui:  14   Oui:  47  
+ Moins important que le reste:708   Equilibre     :451                        
+ Peu important               : 52   NA&#39;s          :952                        
+ NA&#39;s                        :952                                             
+                                                                              
+                                                                              
+ peche.chasse cuisine    bricol     cinema     sport        heures.tv     
+ Non:1776     Non:1119   Non:1147   Non:1174   Non:1277   Min.   : 0.000  
+ Oui: 224     Oui: 881   Oui: 853   Oui: 826   Oui: 723   1st Qu.: 1.000  
+                                                          Median : 2.000  
+                                                          Mean   : 2.247  
+                                                          3rd Qu.: 3.000  
+                                                          Max.   :12.000  
+                                                          NA&#39;s   :5       </code></pre>
+<p>You may also use <code>glimse()</code> function from the <code>skimr()</code> package like this <code>skimr::skim(hdv2003)</code></p>
+<p>We see for instance that the mean age is 48.16, with minimum of 18 and 97 as maximum. Our data contains more women (1101) than men (899).</p>
+<p><code>summary()</code> can also be used to describe a single variable, while <code>table()</code> or <code>freq()</code> (from <code>questionr</code>) is used for a categorical variable.</p>
+<pre class="r"><code>summary(hdv2003$age)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  18.00   35.00   48.00   48.16   60.00   97.00 </code></pre>
+<pre class="r"><code>freq(hdv2003$relig)
+                              n    % val%
+Pratiquant regulier         266 13.3 13.3
+Pratiquant occasionnel      442 22.1 22.1
+Appartenance sans pratique  760 38.0 38.0
+Ni croyance ni appartenance 399 20.0 20.0
+Rejet                        93  4.7  4.7
+NSP ou NVPR                  40  2.0  2.0</code></pre>
+<p>From the output of the first summary function call, we notice that some variables have many missing data. For instance, <em>qualif</em> has 347 missings whereas <em>trav.satisf</em> and <em>trav.imp</em> have 952 missing values.
+We can use the <code>vis_miss()</code> function from the <code>naniar</code> package the visualize those missing values.</p>
+<pre class="r"><code>vis_miss(hdv2003)</code></pre>
+<p><img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>Our dataset contains 9.9% of missings values, and those missings mostly come from <em>trav.imp (47.6%)</em>, <em>trav.satisf (47.6%)</em>, <em>qulif (17.4%)</em> and <em>nivetud (5.6%)</em>.</p>
+<p><code>naniar</code> has other useful functions to handle missing data, such as <code>n_var_miss()</code> which gives you the number of variables containing missing values.</p>
+<p>Sometimes we want to see the statistics broken down by a categorical variable. For that, we can use the powerful functions from <code>dplyr</code> packages, which comes with <code>tidyverse</code>.</p>
+<pre class="r"><code>hdv2003 %&gt;%
+  group_by(trav.satisf) %&gt;%
+  summarise(min    = min(heures.tv, na.rm = T),
+            mean   = mean(heures.tv, na.rm = T),
+            median = median(heures.tv, na.rm = T),
+            max    = max(heures.tv, na.rm = T))
+# A tibble: 4 x 5
+  trav.satisf      min  mean median   max
+  &lt;fct&gt;          &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;
+1 Satisfaction       0  1.62      2     7
+2 Insatisfaction     0  2.05      2     6
+3 Equilibre          0  1.98      2    10
+4 &lt;NA&gt;               0  2.71      3    12</code></pre>
+<p>Histograms can help to identify the shape of the distribution of a variable.</p>
+<pre class="r"><code>ggplot(data = hdv2003) + 
+  geom_histogram(aes(x = hdv2003$age))</code></pre>
+<p><img src="{{< blogdown/postref >}}index.en_files/figure-html/histogram-1.png" width="672" /></p>
+<p>We can see that values are around 50 years and the presence of small queue in the right side.</p>
+<p><code>ggplot2</code> allows to facet a plot with a categorical variable. To facet with <em>religion</em>, we add <code>facet_wrap(~ relig)</code> to the previous plot.</p>
+<pre class="r"><code>ggplot(data = hdv2003) + 
+  geom_histogram(aes(x = hdv2003$age)) + 
+  facet_wrap(~ relig)</code></pre>
+<p><img src="{{< blogdown/postref >}}index.en_files/figure-html/histogram_facet-1.png" width="672" /></p>
+<p>Boxplots can also help to study the distribution, but also for identify outliers (very small or big values).</p>
+<pre class="r"><code>ggplot(data = hdv2003) + 
+  geom_boxplot(aes(x = occup, y = heures.tv, color = occup)) + 
+  theme(legend.position = &quot;none&quot;)</code></pre>
+<p><img src="{{< blogdown/postref >}}index.en_files/figure-html/boxplot-1.png" width="672" /></p>
+<p>We can also check for relationships among numeric variables using scatterplots.</p>
+<pre class="r"><code>ggplot(data = hdv2003) + 
+  geom_point(aes(x = age, y = poids, color = sexe)) </code></pre>
+<p><img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p>Exploratory Data Analysis can also suggest to recode some variables and or make transformations…</p>
+<p>Here we create a new variable <em>minutes.tv</em> which gives the time of watching tv in minutes, using <code>mutate()</code>.</p>
+<pre class="r"><code>hdv2003 %&gt;%
+  mutate(minutes.tv = heures.tv * 60) %&gt;% 
+  select(heures.tv, minutes.tv)
+# A tibble: 2,000 x 2
+   heures.tv minutes.tv
+       &lt;dbl&gt;      &lt;dbl&gt;
+ 1       0            0
+ 2       1           60
+ 3       0            0
+ 4       2          120
+ 5       3          180
+ 6       2          120
+ 7       2.9        174
+ 8       1           60
+ 9       2          120
+10       2          120
+# ... with 1,990 more rows</code></pre>
+</div>
+</div>
+<div id="finishing" class="section level1">
+<h1>Finishing…</h1>
+<p>We have seen how to perform EDA using some functions of the R language. Summaries, tables and graphics were used to describe data. Results from an Exploratory Data Analysis can help to further with Inferential analysis. For instance, we can test if there is a statistical difference in the time of watching TV among different occupation (occup) categories.</p>
+<p>For more reading, check the following links :</p>
+<ul>
+<li><em><a href = 'https://r4ds.had.co.nz/exploratory-data-analysis.html' target = '_blank'>R for Data Science</a></em></li>
+<li><em><a href = 'https://www.pluralsight.com/guides/exploratory-data-analysis-in-r' target = '_blank'>Exploratory Data Analysis in R with Tidyverse</a></em></li>
+<li><em><a href = 'https://bookdown.org/rdpeng/exdata/' target = '_blank'>Exploratory Data Analysis with R</a></em></li>
+</ul>
+<p>All the code of this article and others can be downloaded in <a href = 'https://www.github.com/bervelin-lumesa/r-blog-articles'>Github</a>.</p>
+<p>Was this article helpful ? Don’t forget to share it !</p>
+<p><em>TO KUTANI MBALA YA SIMA :)</em></p>
+</div>
