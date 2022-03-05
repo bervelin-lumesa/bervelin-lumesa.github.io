@@ -1,6 +1,6 @@
 ---
 contactanswertime: 24
-emailservice: formspree.io/example@email.com
+emailservice: https://formspree.io/f/mwkarand
 layout: contact
 netlify: false
 title: Contact
