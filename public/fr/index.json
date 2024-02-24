@@ -1,0 +1,19 @@
+[{
+    "title": "[projet] Construire un tableau de bord avec flexdashboard",
+    "date": "",
+    "description": "Un projet de tableau de bord utilisé pour suivre l'évolution de la collecte de données lors d'une enquête.",
+    "body": "Introduction Un tableau de bord est un outil de pilotage permettant, grâce à son contenu, de suivre l\u0026rsquo;évolution d\u0026rsquo;un processus. Il mesure les performances afin de juger de l\u0026rsquo;état d\u0026rsquo;avancement (le chemin parcouru) et le chemin restant à parcourir pour accéder aux objectifs fixés.\nDans l\u0026rsquo;industrie, il aide par exemple à suivre les indicateurs associés au processus de production. Dans le domaine des enquêtes, un tableau de bord peut être utilisé lors de la collecte de données pour faire le suivi de la collecte grâce à un certain nombre d\u0026rsquo;indicateurs choisis. Il constitue de ce fait un puissant outil d\u0026rsquo;appui à la décision, en permettant de détecter des variations en temps réel (si possible).\nJe partage avec vous le Code du tableau de bord que j\u0026rsquo;ai conçu et utilisé lors de l\u0026rsquo;opération de collecte de données dans le cadre de l\u0026rsquo;Equête Comportementale liée au Paludisme en RDC en 2021 avec Begis Congo.\nConstruction du tableau de bord Ce tableau de bord a été réalisé avec le language R et son IDE Rstudio, avec le package flexdashbord qui est spécialisé pour la création des tableaux de bords. D\u0026rsquo;autres packages ont été utilisés comme : haven et foreign pour l\u0026rsquo;importation de données, leaflet pour la création de la carte, tidyverse pour la manipulation de données, kableExtra et knitr pour les tableaux.\nCe tableau de bord est principalement composé de deux parties : une partie montre quelques indicateurs quels que le nombre de ménages visitée, le nombre de femmes et hommes enquêtés et bien d\u0026rsquo;autres. La seconde donne une répartition spaciale des ménages enquêtés sur une carte intéractive, avec différentes couleurs pour chaque statut de ménage.\nPour plus de ressources, cliquez sur les liens suivants :\n flexdashboard Example projects Geospatial Health Data: Modeling and Visualization with R-INLA and Shiny  Tous les codes de ce post et bien d\u0026rsquo;autres peuvent être téléchargés sur Github.\nCe post vous a-t-il intéressé ? n\u0026rsquo;oubliez pas de le partager !\nTO KUTANI MBALA YA SIMA :)\n",
+    "ref": "/fr/blog/2022-02-15-dashboard-with-flexdashbord/"
+  },{
+    "title": "À propos de",
+    "date": "",
+    "description": "Bervelin Lumesa, Statisticien - Data scientist",
+    "body": "Consultant Data scientist intéréssé par le machine learning, la gestion et analyse de données d\u0026rsquo;enquêtes, la collecte de données mobile, l\u0026rsquo;échantillonnage, la création des tableaux de bords et la programmation. Je dispose d\u0026rsquo;aumoins 4 ans d\u0026rsquo;expériences avérées dans le domaine de data. Regardez mon CV ici\nJe suis actuellement consultant Statistician chez Begis congo, un cabinet de recherche spécialisé dans la production des statistiques dans le domaine dans la santé, l\u0026rsquo;éducation, les conditions de vies des populations et autres.\n",
+    "ref": "/fr/about/"
+  },{
+    "title": "Contact",
+    "date": "",
+    "description": "",
+    "body": "",
+    "ref": "/fr/contact/"
+  }]

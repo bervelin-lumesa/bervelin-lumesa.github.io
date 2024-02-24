@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on </title>
+    <link>https://bervelin-lumesa.netlify.app/fr/blog/</link>
+    <description>Recent content in Blog on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Tue, 15 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bervelin-lumesa.netlify.app/fr/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[projet] Construire un tableau de bord avec flexdashboard</title>
+      <link>https://bervelin-lumesa.netlify.app/fr/blog/2022-02-15-dashboard-with-flexdashbord/</link>
+      <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bervelin-lumesa.netlify.app/fr/blog/2022-02-15-dashboard-with-flexdashbord/</guid>
+      <description>Introduction Un tableau de bord est un outil de pilotage permettant, grâce à son contenu, de suivre l&amp;rsquo;évolution d&amp;rsquo;un processus. Il mesure les performances afin de juger de l&amp;rsquo;état d&amp;rsquo;avancement (le chemin parcouru) et le chemin restant à parcourir pour accéder aux objectifs fixés.
+Dans l&amp;rsquo;industrie, il aide par exemple à suivre les indicateurs associés au processus de production. Dans le domaine des enquêtes, un tableau de bord peut être utilisé lors de la collecte de données pour faire le suivi de la collecte grâce à un certain nombre d&amp;rsquo;indicateurs choisis.</description>
+    </item>
+    
+  </channel>
+</rss>

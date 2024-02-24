@@ -1,0 +1,1 @@
+https://geonode.wfp.org/geoserver/wfs?access_token=None?format_options=charset%3AUTF-8&typename=geonode%3Acod_admbnda_adm2_rgc_20170711&outputFormat=SHAPE-ZIP&version=1.0.0&service=WFS&request=GetFeature

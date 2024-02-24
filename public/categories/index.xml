@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Bervelin Lumesa</title>
+    <link>https://bervelin-lumesa.netlify.app/categories/</link>
+    <description>Recent content in Categories on Bervelin Lumesa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 25 Feb 2022 21:15:14 -0500</lastBuildDate><atom:link href="https://bervelin-lumesa.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Articles</title>
+      <link>https://bervelin-lumesa.netlify.app/categories/articles/</link>
+      <pubDate>Fri, 25 Feb 2022 21:15:14 -0500</pubDate>
+      
+      <guid>https://bervelin-lumesa.netlify.app/categories/articles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://bervelin-lumesa.netlify.app/categories/r/</link>
+      <pubDate>Fri, 25 Feb 2022 21:15:14 -0500</pubDate>
+      
+      <guid>https://bervelin-lumesa.netlify.app/categories/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://bervelin-lumesa.netlify.app/categories/projects/</link>
+      <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bervelin-lumesa.netlify.app/categories/projects/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

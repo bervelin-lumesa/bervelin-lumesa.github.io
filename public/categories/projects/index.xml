@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Bervelin Lumesa</title>
+    <link>https://bervelin-lumesa.netlify.app/categories/projects/</link>
+    <description>Recent content in Projects on Bervelin Lumesa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 15 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bervelin-lumesa.netlify.app/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[project]Build a dashboard with flexdashboard</title>
+      <link>https://bervelin-lumesa.netlify.app/blog/2022-02-15-dashboard-with-flexdashbord/</link>
+      <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bervelin-lumesa.netlify.app/blog/2022-02-15-dashboard-with-flexdashbord/</guid>
+      <description>Introduction A dashboard is a management tool allowing, thanks to its content, to follow the evolution of a process. It measures performance in order to judge the state of progress (the path traveled) and the path remaining to be traveled to reach the objectives set.
+In industry, for example, it helps to monitor indicators associated with the production process. In the area of surveys, a dashboard can be used during data collection to track collection through a number of selected indicators.</description>
+    </item>
+    
+  </channel>
+</rss>

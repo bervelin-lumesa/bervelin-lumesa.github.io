@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Mapping data in R - Bervelin Lumesa</title>
+<meta name="description" content="Bervelin Lumesa, Statistician - Data scientist from Kinshasa, DRC.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta property="og:site_name" content="Bervelin Lumesa">
+<meta property="og:title" content="Mapping data in R">
+<meta property="og:description" content="Bervelin Lumesa, Statistician - Data scientist from Kinshasa, DRC.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://bervelin-lumesa.netlify.app/blog/2022-02-25-r-mapping-data-in-r/">
+  <meta property="og:image" content="https://bervelin-lumesa.netlify.app/img/main/logo.png">
+
+
+
+  <link rel="shortcut icon" href="/favicon.ico?v=1">
+
+
+  <meta name="generator" content="Hugo 0.85.0" />
+  <link rel="stylesheet" href="/css/bundle.min.5233f2a4cd515395301b4154f6c1c621695e8cf53faa0935b76ac52fed7f4585.css" integrity="sha256-UjPypM1RU5UwG0FU9sHGIWlejPU/qgk1t2rFL&#43;1/RYU="><link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/" class="nav">
+        
+          Blog
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+        
+      
+        
+          
+          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+        
+      
+        
+          
+          <a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog/projects</a>
+        
+      
+        
+          
+          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+        
+      
+        
+          
+          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+        
+      
+      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  <menu id="lang-menu" class="flyout-menu menu">
+  <a href="#" lang="en" class="nav link active">English (en)</a>
+  
+    
+      
+    
+      
+        <a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
+      
+    
+  
+</menu>
+
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Mapping%20data%20in%20R&amp;url=https%3a%2f%2fbervelin-lumesa.netlify.app%2fblog%2f2022-02-25-r-mapping-data-in-r%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fbervelin-lumesa.netlify.app%2fblog%2f2022-02-25-r-mapping-data-in-r%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fbervelin-lumesa.netlify.app%2fblog%2f2022-02-25-r-mapping-data-in-r%2f&amp;title=Mapping%20data%20in%20R" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fbervelin-lumesa.netlify.app%2fblog%2f2022-02-25-r-mapping-data-in-r%2f&amp;title=Mapping%20data%20in%20R" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fbervelin-lumesa.netlify.app%2fblog%2f2022-02-25-r-mapping-data-in-r%2f&amp;description=Mapping%20data%20in%20R" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Bervelin&amp;body=https%3a%2f%2fbervelin-lumesa.netlify.app%2fblog%2f2022-02-25-r-mapping-data-in-r%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="/img/main/logo.png" class="circle" width="100" alt="Bervelin Lumesa" /></a>
+  <header>
+    <h1>Bervelin Lumesa</h1>
+  </header>
+  <main>
+    <p>Statisticien - Data scientist</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+        <li><a href="//github.com/bervelin-lumesa" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//www.linkedin.com/in/bervelin-lumesa" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+<li><a href="//facebook.com/bervelinlumesaofficiel" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+<li><a href="//api.whatsapp.com/send?phone=%2b243893119109" target="_blank" rel="noopener" title="WhatsApp" class="fab fa-whatsapp"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/Bervelinl" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+<li><a href="skype:lumesabervelin@outlook.fr?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:lumesabervelin@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+  <article>
+    <div class="post">
+      <header>
+  <div class="title">
+    
+      <h2><a href="/blog/2022-02-25-r-mapping-data-in-r/">Mapping data in R</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2022-02-25 21:15:14 -0500 -0500">February 25, 2022</time>
+    <p>Bervelin</p>
+    <p>6-Minute Read</p>
+  </div>
+</header>
+
+      <div id="socnet-share">
+        
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Mapping%20data%20in%20R&amp;url=https%3a%2f%2fbervelin-lumesa.netlify.app%2fblog%2f2022-02-25-r-mapping-data-in-r%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fbervelin-lumesa.netlify.app%2fblog%2f2022-02-25-r-mapping-data-in-r%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fbervelin-lumesa.netlify.app%2fblog%2f2022-02-25-r-mapping-data-in-r%2f&amp;title=Mapping%20data%20in%20R" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fbervelin-lumesa.netlify.app%2fblog%2f2022-02-25-r-mapping-data-in-r%2f&amp;title=Mapping%20data%20in%20R" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fbervelin-lumesa.netlify.app%2fblog%2f2022-02-25-r-mapping-data-in-r%2f&amp;description=Mapping%20data%20in%20R" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Bervelin&amp;body=https%3a%2f%2fbervelin-lumesa.netlify.app%2fblog%2f2022-02-25-r-mapping-data-in-r%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+      </div>
+      <div class="content">
+        
+        
+          
+        
+        
+<script src="https://bervelin-lumesa.netlify.app/blog/2022-02-25-r-mapping-data-in-r/index.en_files/header-attrs/header-attrs.js"></script>
+
+
+<p>In this tutorial, we are going to see how to plot data on the map using <code>sf</code> and <code>ggplot2</code> packages.</p>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>A [geographical] map is a representation of a geographical space. It highlights the extent of this space, its relative location in relation to neighboring spaces, as well as the location of the elements it contains. Maps are also used to represent geographical phenomena, that is to say phenomena whose spatial configuration produces meaning.</p>
+<pre class="r"><code>library(sf)      # for the map
+library(dplyr)   # for data manipulation (and the pile : %&gt;%)
+library(ggplot2) # for plottingNot run)</code></pre>
+</div>
+<div id="loading-the-shapefile" class="section level1">
+<h1>Loading the shapefile</h1>
+<p>We are going to use the shapefile of the Democratic Republic of Congo, which can be found online in the <a href = 'https://geonode.wfp.org/layers/geonode%3Acod_admbnda_adm2_rgc_20170711' target = '_blank'>WFPGeoNode</a> website.
+In most cases, the files downloaded will be zipped. After unzipping, store all the files in the same folder.</p>
+<p>In our case, our shape files are stored in a folder named <em>shp</em> and contains 6 files. The file we will load ends with <em>.shp</em>.</p>
+<pre class="r"><code>setwd(&quot;shp/&quot;) 
+dir()
+[1] &quot;cod_admbnda_adm2_rgc_20170711.cst&quot; &quot;cod_admbnda_adm2_rgc_20170711.dbf&quot;
+[3] &quot;cod_admbnda_adm2_rgc_20170711.prj&quot; &quot;cod_admbnda_adm2_rgc_20170711.shp&quot;
+[5] &quot;cod_admbnda_adm2_rgc_20170711.shx&quot; &quot;wfsrequest.txt&quot;                   </code></pre>
+<p>The following command reads the shape file and stores it in <em>drc_shape</em> object</p>
+<pre class="r"><code>drc_shape &lt;- st_read(&quot;shp/cod_admbnda_adm2_rgc_20170711.shp&quot;)
+Reading layer `cod_admbnda_adm2_rgc_20170711&#39; from data source 
+  `C:\Users\user\Desktop\bervelin-lumesa.github.io\content\blog\2022-02-25-r-mapping-data-in-r\shp\cod_admbnda_adm2_rgc_20170711.shp&#39; 
+  using driver `ESRI Shapefile&#39;
+Simple feature collection with 240 features and 14 fields
+Geometry type: POLYGON
+Dimension:     XY
+Bounding box:  xmin: 12.20566 ymin: -13.456 xmax: 31.30522 ymax: 5.386098
+Geodetic CRS:  WGS 84</code></pre>
+<p>Let’s explore a bit the content of <em>drc_shape</em> with some basic R functions.</p>
+<pre class="r"><code>class(drc_shape)
+[1] &quot;sf&quot;         &quot;data.frame&quot;</code></pre>
+<p>We can see that the object <em>drc_shape</em> has two classes, <em>sf</em> and <em>data.frame</em>. It means that it can be manipulated like standard dataframes.</p>
+<p><code>str()</code> function indicates that our data.frame contains 240 observations and 15 varibleas. At the end, we have <em>geometry</em> which contains geographical informations.</p>
+<pre class="r"><code>str(drc_shape)
+Classes &#39;sf&#39; and &#39;data.frame&#39;:  240 obs. of  15 variables:
+ $ Shape_Leng: num  2.34 5.53 0.13 7.25 5.23 ...
+ $ Shape_Area: num  0.15237 0.50781 0.00124 1.11504 0.74832 ...
+ $ ADM2_FR   : chr  &quot;Tshilenge&quot; &quot;Popokabaka&quot; &quot;Bulungu&quot; &quot;Isangi&quot; ...
+ $ ADM2_PCODE: chr  &quot;CD8202&quot; &quot;CD3108&quot; &quot;CD3205&quot; &quot;CD5105&quot; ...
+ $ ADM2_REF  : chr  &quot;Tshilenge&quot; &quot;Popokabaka&quot; &quot;Bulungu&quot; &quot;Isangi&quot; ...
+ $ ADM2ALT1FR: chr  &quot;&lt;Null&gt;&quot; &quot;&lt;Null&gt;&quot; NA &quot;&lt;Null&gt;&quot; ...
+ $ ADM2ALT2FR: chr  NA NA NA NA ...
+ $ ADM1_FR   : chr  &quot;Kasaï-Oriental&quot; &quot;Kwango&quot; &quot;Kwilu&quot; &quot;Tshopo&quot; ...
+ $ ADM1_PCODE: chr  &quot;CD82&quot; &quot;CD31&quot; &quot;CD32&quot; &quot;CD51&quot; ...
+ $ ADM0_FR   : chr  &quot;République Démocratique du Congo&quot; &quot;République Démocratique du Congo&quot; &quot;République Démocratique du Congo&quot; &quot;République Démocratique du Congo&quot; ...
+ $ ADM0_PCODE: chr  &quot;CD&quot; &quot;CD&quot; &quot;CD&quot; &quot;CD&quot; ...
+ $ date      : Date, format: &quot;2017-05-29&quot; &quot;2017-05-29&quot; ...
+ $ validOn   : Date, format: &quot;2017-07-10&quot; &quot;2017-07-10&quot; ...
+ $ ValidTo   : Date, format: NA NA ...
+ $ geometry  :sfc_POLYGON of length 240; first list element: List of 2
+  ..$ : num [1:422, 1:2] 23.7 23.7 23.7 23.7 23.7 ...
+  ..$ : num [1:17, 1:2] 23.6 23.6 23.6 23.6 23.6 ...
+  ..- attr(*, &quot;class&quot;)= chr [1:3] &quot;XY&quot; &quot;POLYGON&quot; &quot;sfg&quot;
+ - attr(*, &quot;sf_column&quot;)= chr &quot;geometry&quot;
+ - attr(*, &quot;agr&quot;)= Factor w/ 3 levels &quot;constant&quot;,&quot;aggregate&quot;,..: NA NA NA NA NA NA NA NA NA NA ...
+  ..- attr(*, &quot;names&quot;)= chr [1:14] &quot;Shape_Leng&quot; &quot;Shape_Area&quot; &quot;ADM2_FR&quot; &quot;ADM2_PCODE&quot; ...</code></pre>
+<p><code>unique()</code> with a variable name as an argument gives us names of the 26 provinces of the country (DRC).</p>
+<pre class="r"><code>unique(drc_shape$ADM1_FR)
+ [1] &quot;Kasaï-Oriental&quot; &quot;Kwango&quot;         &quot;Kwilu&quot;          &quot;Tshopo&quot;        
+ [5] &quot;Ituri&quot;          &quot;Kongo-Central&quot;  &quot;Bas-Uele&quot;       &quot;Haut-Uele&quot;     
+ [9] &quot;Maï-Ndombe&quot;     &quot;Equateur&quot;       &quot;Nord-Kivu&quot;      &quot;Maniema&quot;       
+[13] &quot;Lualaba&quot;        &quot;Haut-Lomami&quot;    &quot;Tanganyika&quot;     &quot;Sud-Ubangi&quot;    
+[17] &quot;Nord-Ubangi&quot;    &quot;Mongala&quot;        &quot;Tshuapa&quot;        &quot;Sankuru&quot;       
+[21] &quot;Sud-Kivu&quot;       &quot;Haut-Katanga&quot;   &quot;Lomami&quot;         &quot;Kinshasa&quot;      
+[25] &quot;Kasaï-Central&quot;  &quot;Kasaï&quot;         </code></pre>
+<p>In this article, we are going to work with the Kwango province. So we create a subset of the main dataset and store it in an objet called <em>kwango_shape</em>.</p>
+<pre class="r"><code>kwango_shape &lt;- drc_shape %&gt;%
+  filter(ADM1_FR == &quot;Kwango&quot;)</code></pre>
+</div>
+<div id="the-first-map" class="section level1">
+<h1>The first map</h1>
+<p>Let’s create the first map with <code>ggplot2</code> and <code>geom_sf()</code> from <code>sf</code> package. Note that <em>color</em> argument with “blue” as value is used inside <code>geom_sf()</code> to change the color of border lines and <em>fill</em> for the color of the map.</p>
+<pre class="r"><code>ggplot(data = kwango_shape) + 
+  geom_sf(color = &quot;blue&quot;, fill = &quot;white&quot;) + 
+  ggtitle(label = &quot;Kwango province map&quot;) + 
+  theme_void()</code></pre>
+<p><img src="https://bervelin-lumesa.netlify.app/blog/2022-02-25-r-mapping-data-in-r/index.en_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+</div>
+<div id="mapping-points-with-longitude-and-latitude" class="section level1">
+<h1>Mapping points with longitude and latitude</h1>
+<p>Suppose that we want to plot gps coordinates on the our previous map to see where the survey took place. For that, we need two columns : <em>longitude</em> and <em>latitude</em>. In the following code, we create a sample dataset (survey_df) containing four variables : <em>longitude</em>, <em>latitude</em>, <em>status</em>, <em>ADM1_FR</em> and <em>num</em>.</p>
+<pre class="r"><code># creating a random dataset
+set.seed(14) # to make the dataset reproducible
+survey_df &lt;- data.frame(longitude = rnorm(20, mean = 18, sd = 0.7),
+                        latitude  = rnorm(20, mean = -7, sd = 0.5),
+                        status    = sample(c(&quot;O&quot;, &quot;N&quot;), 20, replace = T),
+                        region    = sample(kwango_shape$ADM2_FR, 20, replace = T),
+                        num       = rnorm(20, mean = 200, sd = 20)
+                     )</code></pre>
+<p>Let’s map now…</p>
+<pre class="r"><code>
+ggplot(data = kwango_shape) + 
+  geom_sf(color = &quot;blue&quot;, fill = &quot;white&quot;) + 
+  geom_point(data= survey_df, aes(x = longitude, y = latitude, color = status), size = 3) + 
+  ggtitle(label = &quot;Kwango province map with points&quot;) + 
+  theme_void()</code></pre>
+<p><img src="https://bervelin-lumesa.netlify.app/blog/2022-02-25-r-mapping-data-in-r/index.en_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+</div>
+<div id="thematic-map" class="section level1">
+<h1>Thematic map</h1>
+<p>The following code allows to join two datasets <em>kwango_shape</em> and <em>survey_sum</em> with the <code>dplyr</code>’s function <code>left_join()</code>. The <em>by</em> argument allows to specify key columns for joining two tables.</p>
+<p>Note that we first calculate the mean value of our numeric variable grouped by region.</p>
+<pre class="r"><code>survey_sum &lt;- survey_df %&gt;%
+  group_by(region) %&gt;%
+  summarise(num = mean(num))
+
+all_df &lt;- kwango_shape %&gt;%
+  left_join(survey_sum, by = c(&quot;ADM2_FR&quot; = &quot;region&quot;))</code></pre>
+<p>To create a thematic map, in the <code>geom_sf()</code> function, inside <code>aes()</code>, we use the <em>fill</em> argument giving it the name of the variable to illustrate.</p>
+<pre class="r"><code>ggplot() + 
+  geom_sf(data =all_df, aes(fill = num), color = &quot;white&quot;) + 
+  ggtitle(label = &quot;Kwango province Thematic map&quot;) + 
+#  scale_fill_gradient2(&quot;Variable to illustrate&quot;, low = &quot;white&quot;, high = &quot;blue&quot;) + 
+  scale_fill_viridis_c(&quot;Variable to illustrate&quot;) + 
+  theme_void()</code></pre>
+<p><img src="https://bervelin-lumesa.netlify.app/blog/2022-02-25-r-mapping-data-in-r/index.en_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>We know that Kwango, Kwilu and Maï-Ndombe were parts of The old Bandundu province before decentralization. Let’s build a map containing all the three provinces.</p>
+<pre class="r"><code>ggplot() + 
+  geom_sf(data = drc_shape %&gt;% filter(ADM1_FR %in% c(&quot;Kwango&quot;, &quot;Kwilu&quot;, &quot;Maï-Ndombe&quot;)), fill = &quot;white&quot;) + 
+  geom_sf(data =all_df, aes(fill = num), color = &quot;white&quot;) + 
+  ggtitle(label = &quot;Old Bandundu province&quot;) + 
+#  scale_fill_gradient2(&quot;Variable to illustrate&quot;, low = &quot;white&quot;, high = &quot;blue&quot;) + 
+  scale_fill_viridis_c(&quot;Variable to illustrate&quot;) + 
+  theme_void()</code></pre>
+<p><img src="https://bervelin-lumesa.netlify.app/blog/2022-02-25-r-mapping-data-in-r/index.en_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+</div>
+<div id="finishing" class="section level1">
+<h1>Finishing…</h1>
+<p>Currently R contains tens of packages to work with geographic data. What was shown here is less than 0.25% of what can be done with geographic data in R. For further reading, check the links below</p>
+<ul>
+<li><em><a href = 'https://geocompr.robinlovelace.net/index.html' target = '_blank'>Geocomputation with R</a></em></li>
+<li><em><a href = 'https://ggplot2-book.org/maps.html' target = '_blank'> ggplot2: Elegant Graphics for Data Analysis</a></em></li>
+<li><em><a href = 'https://ggplot2.tidyverse.org/reference/map_data.html' target = '_blank'>Create a data frame of map data</a></em></li>
+</ul>
+<p>All the code of this article and others can be downloaded in <a href = 'https://www.github.com/bervelin-lumesa/r-blog-articles'>Github</a>.</p>
+<p>Was this article helpful ? Don’t forget to share it !</p>
+<p><em>TO KUTANI MBALA YA SIMA :)</em></p>
+</div>
+
+      </div>
+      <footer>
+        <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/categories/r/">R</a></li>
+        
+          <li><a class="article-terms-link" href="/categories/articles/">Articles</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/tags/r/">R</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/map/">map</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/geographic-data/">geographic data</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+      </footer>
+    </div>
+    
+      
+
+    
+  </article>
+  <div class="pagination">
+    
+    
+      <a href="/blog/2022-02-17-r-introduction-to-exploratory-data-analysis/" class="button right"><span>Introduction to Exploratory Data Analysis (EDA) with R</span></a>
+    
+  </div>
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent Posts</h1>
+      </header>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/blog/2022-02-25-r-mapping-data-in-r/">Mapping data in R</a></h2>
+          <time class="published" datetime="2022-02-25 21:15:14 -0500 -0500">February 25, 2022</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          
+        <header>
+          <h2><a href="/blog/2022-02-17-r-introduction-to-exploratory-data-analysis/">Introduction to Exploratory Data Analysis (EDA) with R</a></h2>
+          <time class="published" datetime="2022-02-18 21:13:14 -0500 -0500">February 18, 2022</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="/blog/2022-02-15-dashboard-with-flexdashbord/" class="image" style="--bg-image: url('/img/2019/03/dashboard.JPG');">
+    <img src="/img/2019/03/dashboard.JPG" alt="dashboard">
+  </a>
+        <header>
+          <h2><a href="/blog/2022-02-15-dashboard-with-flexdashbord/">[project]Build a dashboard with flexdashboard</a></h2>
+          <time class="published" datetime="2022-02-15 00:00:00 &#43;0000 UTC">February 15, 2022</time>
+        </header>
+      </article>
+      
+      
+    </section>
+  
+
+  
+    
+
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+          
+          <li>
+              <a href="/categories/r/">r<span class="count">3</span></a>
+          
+          <li>
+              <a href="/categories/articles/">articles<span class="count">2</span></a>
+          
+          <li>
+              <a href="/categories/projects/">projects<span class="count">1</span></a>
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>I'm a consultant Statistician and Data scientist</p>
+      <footer>
+        <a href="/about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/bervelin-lumesa" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//www.linkedin.com/in/bervelin-lumesa" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+<li><a href="//facebook.com/bervelinlumesaofficiel" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+<li><a href="//api.whatsapp.com/send?phone=%2b243893119109" target="_blank" rel="noopener" title="WhatsApp" class="fab fa-whatsapp"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/Bervelinl" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+<li><a href="skype:lumesabervelin@outlook.fr?userinfo" target="_blank" rel="noopener" title="Skype" class="fab fa-skype"></a></li>
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:lumesabervelin@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    © 2022 Bervelin Lumesa
+      <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.85.0' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.js"></script>
+    
+    <script>hljs.highlightAll();</script><script src="/js/bundle.min.ef6ed6cf9e1373eaefa5f36986e25f37a66376325004942e2304dac0be804b09.js" integrity="sha256-727Wz54Tc&#43;rvpfNphuJfN6ZjdjJQBJQuIwTawL6ASwk="></script>
+    <script src="/js/add-on.js"></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-38ZNMSEW51', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    </div>
+  </body>
+</html>

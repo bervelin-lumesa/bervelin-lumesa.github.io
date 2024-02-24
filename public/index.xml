@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bervelin Lumesa</title>
+    <link>https://bervelin-lumesa.netlify.app/</link>
+    <description>Recent content on Bervelin Lumesa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 25 Feb 2022 21:15:14 -0500</lastBuildDate><atom:link href="https://bervelin-lumesa.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mapping data in R</title>
+      <link>https://bervelin-lumesa.netlify.app/blog/2022-02-25-r-mapping-data-in-r/</link>
+      <pubDate>Fri, 25 Feb 2022 21:15:14 -0500</pubDate>
+      
+      <guid>https://bervelin-lumesa.netlify.app/blog/2022-02-25-r-mapping-data-in-r/</guid>
+      <description>In this tutorial, we are going to see how to plot data on the map using sf and ggplot2 packages.
+IntroductionA [geographical] map is a representation of a geographical space. It highlights the extent of this space, its relative location in relation to neighboring spaces, as well as the location of the elements it contains. Maps are also used to represent geographical phenomena, that is to say phenomena whose spatial configuration produces meaning.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Exploratory Data Analysis (EDA) with R</title>
+      <link>https://bervelin-lumesa.netlify.app/blog/2022-02-17-r-introduction-to-exploratory-data-analysis/</link>
+      <pubDate>Fri, 18 Feb 2022 21:13:14 -0500</pubDate>
+      
+      <guid>https://bervelin-lumesa.netlify.app/blog/2022-02-17-r-introduction-to-exploratory-data-analysis/</guid>
+      <description>In this article, we describe what Exploratory Data Analysis is and see how to perform it with R.
+Introduction to R and RstudioR is an open-source software environment for statistical computing and graphics. R compiles and runs on Windows, Mac OS X, and numerous UNIX platforms (such as Linux).The R software project was first started by Robert Gentleman and Ross Ihaka. As of 2022, there were more than 3,000 such packages hosted on CRAN.</description>
+    </item>
+    
+    <item>
+      <title>[project]Build a dashboard with flexdashboard</title>
+      <link>https://bervelin-lumesa.netlify.app/blog/2022-02-15-dashboard-with-flexdashbord/</link>
+      <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bervelin-lumesa.netlify.app/blog/2022-02-15-dashboard-with-flexdashbord/</guid>
+      <description>Introduction A dashboard is a management tool allowing, thanks to its content, to follow the evolution of a process. It measures performance in order to judge the state of progress (the path traveled) and the path remaining to be traveled to reach the objectives set.
+In industry, for example, it helps to monitor indicators associated with the production process. In the area of surveys, a dashboard can be used during data collection to track collection through a number of selected indicators.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://bervelin-lumesa.netlify.app/about/</link>
+      <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bervelin-lumesa.netlify.app/about/</guid>
+      <description>Data scientist consultant interested in machine learning, survey data management and analysis, mobile data collection, sampling, creation of dashboards and programming. I have at least 4 years of proven experience in the field of data. Check my resume here.
+I am currently working as a consultant Statistician - Data scientist at Begis congo, a research firm specializing in the production of statistics in the fields of health, education, living conditions and others.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://bervelin-lumesa.netlify.app/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bervelin-lumesa.netlify.app/contact/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
