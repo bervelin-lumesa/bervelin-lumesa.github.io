@@ -55,7 +55,7 @@ disableLanguages        = []
 
   [params.intro]
     header                = "Bervelin Lumesa"
-    paragraph             = "Statisticien - Data scientist"
+    paragraph             = "Statistician - Data scientist"
 #    rssIntro              = true
     socialIntro           = true
     hideWhenSingleColumn  = false
