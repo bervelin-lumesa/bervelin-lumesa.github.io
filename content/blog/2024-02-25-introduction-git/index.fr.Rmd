@@ -19,7 +19,7 @@ removeBlur: no
 
 # Introduction
 
-Dans le monde du développement de logiciels, développement web, la science de données ou dans la programmation de façon générale, la gestion des versions est essentielle pour maintenir un code propre et évolutif. 
+Dans le monde du développement de logiciels, du développement web, de la science de données ou dans la programmation de façon générale, la gestion des versions est essentielle pour maintenir un code propre et évolutif. 
 
 Git est un système de contrôle de version largement utilisé qui permet aux développeurs, data scientists et autres scientifiques de collaborer efficacement sur des projets en travaillant sur un code commun. 
 
