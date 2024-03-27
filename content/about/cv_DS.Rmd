@@ -1,4 +1,4 @@
---- 
+---
 title: "Bervelin Lumesa Kiongi"
 author: Bervelin Lumesa Kiongi
 date: "`r Sys.Date()`"
@@ -10,74 +10,91 @@ output:
 knit: pagedown::chrome_print
 ---
 
-Aside
-================================================================================
+# Aside
 
-![Bervelin Lumesa](https://avatars.githubusercontent.com/u/59441821?v=4){width=80%}
+![Bervelin Lumesa](https://avatars.githubusercontent.com/u/59441821?v=4){width="80%"}
 
-Contacts {#contact}
---------------------------------------------------------------------------------
+## Contacts {#contact}
 
-- <i class="fa fa-envelope"></i> lumesabervelin@gmail.com
-- <i class="fa fa-skype"></i> lumesabervelin@outlook.fr
-- <i class="fa fa-linkedin"></i> [bervelin-lumesa](https://linkedin.com/in/bervelin-lumesa)
-- <i class="fa fa-github"></i> [bervelin-lumesa](https://github.com/bervelin-lumesa)
-- <i class="fa fa-phone"></i> +243 821-580-692
-- <i class="fa fa-phone"></i> +243 893-119-109
-- Pour plus d'infos, prière de me contacter par mail.
+-   <i class="fa fa-envelope"></i> [lumesabervelin\@gmail.com](mailto:lumesabervelin@gmail.com){.email}
+-   <i class="fa fa-skype"></i> [lumesabervelin\@outlook.fr](mailto:lumesabervelin@outlook.fr){.email}
+-   <i class="fa fa-linkedin"></i> [bervelin-lumesa](https://linkedin.com/in/bervelin-lumesa)
+-   <i class="fa fa-github"></i> [bervelin-lumesa](https://github.com/bervelin-lumesa)
+-   <i class="fa fa-phone"></i> +243 821-580-692
+-   <i class="fa fa-phone"></i> +243 893-119-109
+-   Pour plus d'infos, prière de me contacter par mail.
 
+## Compétences {#skills}
 
-Compétences {#skills}
---------------------------------------------------------------------------------
+-   Machine Learning
 
-- Machine Learning
+-   Collecte de données mobile avec CSPro, ODK/KOBO et SurveyCTO
 
-- Collecte de données mobile avec CSPro et ODK/KOBO
+-   Gestion et analyse de données
 
-- Gestion et analyse de données
+-   SIG et Tableaux de bords
 
-- SIG et Tableaux de bords
+-   Maîtrise de R (tidyverse, tidymodels, caret, Rmarkdown, shiny), Python (numpy, pandas, matplotlib, seabon, scikit-learn)
 
-- Maîtrise de R (tidyverse, tidymodels, caret, Rmarkdown, shiny), Python (numpy, pandas, matplotlib, seabon, scikit-learn, flask)
+-   Maîtrise SQL, SPSS, STATA, Excel
 
-- Maîtrise SQL, SPSS, Excel
+-   Parle Français (Excellent), Anglais (Intermédiaire), Lingala (Excellent) et Kikongo (Débutant)
 
-- Parle Français (Excellent), Anglais (Intermédiaire), Lingala (Excellent) et Kikongo (Débutant)
+# Main
 
-
-Main
-================================================================================
-
-Bervelin Lumesa Kiongi {#title}
---------------------------------------------------------------------------------
+## Bervelin Lumesa Kiongi {#title}
 
 ### Statistician - [Certified Data scientist](https://www.datacamp.com/certificate/DSA0017435503154)
 
-_Intéressé le Machine Learning, la gestion et analyse de données, la collecte de données mobile, l'échantillonnage et la création des cartes, avec plus de 5 ans dans le domaine de la data science._
+*Intéressé le Machine Learning, la gestion et analyse de données, la collecte de données mobile, l'échantillonnage et la création des tableaux de bords, avec plus de 6 ans dans le domaine de la data science.*
 
-* 32 ans, Homme, Marié
+-   Homme, Marié
 
+## Expérience professionnelle {data-icon="suitcase"}
 
-Expérience professionnelle {data-icon=suitcase}
---------------------------------------------------------------------------------
+### Co-Investigator (Data Management and Analysis Consultant)
 
-### Statiscien - Data scientist
+COMPANDBEN INTERNATIONAL LTD/JHSPH-CCP/BreakThroughAction : Enquête comportementale liée au paludisme (MBS) en Zambie
+
+Zambie
+
+Mars 2024 -- Présent
+
+::: concise
+-	Participer à des réunions virtuelles périodiques avec le Groupe consultatif de l'Enquête comportementale liée au paludisme en Zambie.
+-	Mettre à jour un programme existant basé sur ODK (ou toute autre plateforme de capture de données à décider avec le PI) pour correspondre à la version zambienne du questionnaire standard, puis tester les formulaires de capture de données pour les erreurs,
+-	Finaliser le programme de capture de données suite aux retours du PI et de l'entreprise de recherche,
+-	Former les collecteurs de données et superviser un pré-test du questionnaire,
+-	Examiner la qualité des données en temps réel alors qu'elles arrivent sur le serveur pendant la collecte de données,
+-	Travailler avec le Chercheur Principal et l'Entreprise de Recherche pour résoudre les problèmes de qualité des données et en prévenir de nouveaux,
+-	Servir de défenseur des bonnes pratiques dans la mise en œuvre de MBS, de l'éthique de la recherche sur les sujets humains, de l'utilisation des données, et de MBS lui-même.
+-	Mettre à jour les fichiers Stata ou R pour assurer une analyse des données reproductible et automatisée pendant la collecte de données. Les analyses incluent des analyses descriptives et de régression logistique multiple, le calcul des pondérations et indicateurs de l'enquête, ainsi que des analyses des réponses sur l'échelle de Likert,
+-	Nettoyage des ensembles de données finaux,
+-	Préparation de toutes les tables de données et figures pour le rapport de l'EMS et contribution à la narration du rapport,
+-	Rédiger le rapport d'étude pour examen par l'équipe Breakthrough ACTION et les parties prenantes,
+-	Réviser le rapport suite aux retours,
+-	Préparer les tables et diapositives nécessaires pour un atelier d'interprétation des résultats avec les parties prenantes sur place.
+-	Préparer des diapositives avec des extraits de données pour un événement de diffusion des résultats,
+-	Configurer l'ensemble de données de l'EMS selon le format fourni par l'équipe Breakthrough ACTION pour soumission à la Bibliothèque de Données de Développement de l'USAID et au Tableau de Bord de l'EMS.
+
+:::
+
+### Statisticien - Data scientist
 
 Begis
 
 Kinshasa, RDC
 
-Mars 2018 – Présent
+Mars 2018 -- Présent
 
 ::: concise
-- Formations
-- Méthodologie des études quantitatives (échantillonnage et collecte)
-- Mise à jour et configuration des smartphones
-- Gérer les données
-- Nettoyer les données
-- Analyser les données 
+-   Formations
+-   Méthodologie des études quantitatives (échantillonnage et collecte)
+-   Mise à jour et configuration des smartphones
+-   Gérer les données
+-   Nettoyer les données
+-   Analyser les données
 :::
-
 
 ### Superviseur d'Axe
 
@@ -85,82 +102,79 @@ Ima World Health : Campagne de Distribution de Masse des MILDs dans la province 
 
 Kwilu, RDC
 
-Mars – Août 2022
+Mars -- Août 2022
 
 ::: concise
-- Former les Superviseurs de Zones et Superviseurs Indépendants
-- Superviser les Superviseurs de Zones et Superviseurs Indépendants
-- Configurer les téléphones avec ODK
-- Gérer les données
-- Nettoyer les données
-- Analyser les données de la campagne
+-   Former les Superviseurs de Zones et Superviseurs Indépendants
+-   Superviser les Superviseurs de Zones et Superviseurs Indépendants
+-   Configurer les téléphones avec ODK
+-   Gérer les données
+-   Nettoyer les données
+-   Analyser les données de la campagne
 :::
 
 ### Gestionnaire et Analyste de données
 
-Begis/ISGlobal Barcelone : Evaluation (Endline) de la mise en œuvre du traitement préventif intermittent à base communautaire du paludisme pendant la grossesse (TPlg-C) pour le Projet TIPTOP  en RDC.
+Begis/ISGlobal Barcelone : Evaluation (Endline) de la mise en œuvre du traitement préventif intermittent à base communautaire du paludisme pendant la grossesse (TPlg-C) pour le Projet TIPTOP en RDC.
 
 Kwango, RDC
 
-Juin – Juillet 2021
+Juin -- Juillet 2021
 
 ::: concise
-- Former les enquêteurs et contrôleurs
-- Superviser les travaux de terrain
-- Gérer les données avec RedCap
-- Analyser les données
+-   Former les enquêteurs et contrôleurs
+-   Superviser les travaux de terrain
+-   Gérer les données avec RedCap
+-   Analyser les données
 :::
 
 ### Gestionnaire et Analyste de données
 
-Begis/Sogaz : Enquête sur l’utilisation des bombonnes à gaz à Kinshasa.
-
+Begis/Sogaz : Enquête sur l'utilisation des bombonnes à gaz à Kinshasa.
 
 Kinshasa, RDC
 
 Mai 2021
 
 ::: concise
-- Numériser l’outils de collecte avec KoBo 
-- Former les enquêteurs et chefs d’équipes
-- Gérer les données
-- Analyser les données
+-   Numériser l'outils de collecte avec KoBo
+-   Former les enquêteurs et chefs d'équipes
+-   Gérer les données
+-   Analyser les données
 :::
 
 ### Gestionnaire et Analyste de données
 
 Begis/JHU/CCP/BreakThroughAction : Enquête comportementale liée au paludisme (MBS) en RDC, réalisée dans 15 provinces.
 
-
 Kinshasa, RDC
 
-Fev – Mai 2021
+Fev -- Mai 2021
 
 ::: concise
-- Numériser les outils de collecte avec CSPro
-- Créer les tableaux de bords
-- Créer les scripts de contrôle qualité
-- Former les superviseurs, chefs d’équipes et enquêteurs
-- Gérer les données
-- Nettoyer les données 
-- Calculer les poids
-- Analyser les données
+-   Numériser les outils de collecte avec CSPro
+-   Créer les tableaux de bords
+-   Créer les scripts de contrôle qualité
+-   Former les superviseurs, chefs d'équipes et enquêteurs
+-   Gérer les données
+-   Nettoyer les données
+-   Calculer les poids
+-   Analyser les données
 :::
 
 ### Gestionnaire de données
 
-RHA/AMF (Against Malaria Foundation) : Enquêtes post distribution des MILDS dans les provinces de l’Equateur, Haut-Uele, Haut-Lomami, Maniema, Haut-Katanga, Kwilu et Sud-Kivi.
-
+RHA : Enquêtes post distribution des MILDS dans les provinces de l'Equateur, Haut-Uele, Haut-Lomami, Maniema, Haut-Katanga, Kwilu et Sud-Kivi.
 
 Kinshasa, RDC
 
 Sept 2020 - Août 2022
 
 ::: concise
-- Numériser les outils de collecte avec ODK 
-- Créer une application web 
-- Gérer les données
-- Créer des cartes
+-   Numériser les outils de collecte avec ODK
+-   Créer une application web
+-   Gérer les données
+-   Créer des cartes
 :::
 
 ### Gestionnaire et Analyste de données
@@ -172,113 +186,103 @@ Kwango, RDC
 Oct - Nov 2020
 
 ::: concise
-- Former les enquêteurs et contrôleurs
-- Superviser de travaux de terrain
-- Gérer les données avec RedCap
-- Analyser les données
-
+-   Former les enquêteurs et contrôleurs
+-   Superviser de travaux de terrain
+-   Gérer les données avec RedCap
+-   Analyser les données
 :::
 
 ### Superviseur/Gestionnaire et Analyste de données
 
 Begis/ISGlobal Barcelone : Evaluation (Midline) de la mise en œuvre du traitement préventif intermittent à base communautaire du paludisme pendant la grossesse (TPlg-C) pour le Projet TIPTOP en RDC.
 
-
 Kwango et Kwilu, RDC
 
-Août – Oct 2019
+Août -- Oct 2019
 
 ::: concise
-- Former les enquêteurs et contrôleurs
-- Superviser de travaux de terrain
-- Gérer les données avec RedCap
-
+-   Former les enquêteurs et contrôleurs
+-   Superviser de travaux de terrain
+-   Gérer les données avec RedCap
 :::
 
-### Chef d’Équipe
+### Chef d'Équipe
 
 Institut National de la Statistique : Recensement Général des Entreprises (RGE)
 
 Kinshasa, RDC
 
-Juillet – sept 2019
+Juillet -- sept 2019
 
 ::: concise
-- Animer et coordonner l’ensemble des travaux d’équipe
-- Superviser les travaux de terrain
-- Cartographier la zone de travail
-- Répartir le travail aux agents
+-   Animer et coordonner l'ensemble des travaux d'équipe
+-   Superviser les travaux de terrain
+-   Cartographier la zone de travail
+-   Répartir le travail aux agents
 :::
 
 ### Analyste de données
 
-Enquête qualitative sur l’expérience des sages – femmes sur les cas des accouchements dystociques dans la zone de santé de Kisanga (Lubumbashi) 
-
+Enquête qualitative sur l'expérience des sages -- femmes sur les cas des accouchements dystociques dans la zone de santé de Kisanga (Lubumbashi)
 
 Kinshasa, RDC
 
 Février 2019
 
 ::: concise
-- Corriger les verbatim
-- Codifier
-- Analyser les données avec ATLAS.ti 8
-- Rédiger le rapport
-:::
-
-
-### Gestionnaire et Analyste de données
-
-VSI Afrique – AFD : Enquête auprès des ménages sur les inondations dans les quartiers SALONGO, NDANU et ABBATOIR à Kinshasa.
-
-
-Kinshasa, RDC
-
-Juillet – Août 2018
-
-::: concise
-- Numériser les outils de collecte avec CSPro
-- Gérer les données
-- Contrôler la cohérence et nettoyer
-- Créer les tableaux
+-   Corriger les verbatim
+-   Codifier
+-   Analyser les données avec ATLAS.ti 8
+-   Rédiger le rapport
 :::
 
 ### Gestionnaire et Analyste de données
 
-Begis/VSI Afrique/Seureca veolia : Enquête – ménage sur la desserte en eau potable dans 13 villes/centre secondaires de la REGIDESO pour le Projet Proseceau – MAC III.
-
+VSI Afrique -- AFD : Enquête auprès des ménages sur les inondations dans les quartiers SALONGO, NDANU et ABBATOIR à Kinshasa.
 
 Kinshasa, RDC
 
-Juin – Août 2018
+Juillet -- Août 2018
 
 ::: concise
-- Gérer les données avec CSPro
-- Contrôler la cohérence et nettoyer
-- Créer les tableaux
-- Analyser les données
+-   Numériser les outils de collecte avec CSPro
+-   Gérer les données
+-   Contrôler la cohérence et nettoyer
+-   Créer les tableaux
 :::
 
 ### Gestionnaire et Analyste de données
 
-ISS-Kin : Enquête sur la gestion des déchets ménagers dans la commune de N’djili
-
+Begis/VSI Afrique/Seureca veolia : Enquête -- ménage sur la desserte en eau potable dans 13 villes/centre secondaires de la REGIDESO pour le Projet Proseceau -- MAC III.
 
 Kinshasa, RDC
 
-Mai – juin 2018
+Juin -- Août 2018
 
 ::: concise
-- Concevoir de la méthodologie
-- Tirer l’échantillon
-- Numériser l’outils de collecte avec CSPro
-- Former les superviseurs et enquêteurs
-- Traiter et analyser les données
+-   Gérer les données avec CSPro
+-   Contrôler la cohérence et nettoyer
+-   Créer les tableaux
+-   Analyser les données
 :::
 
+### Gestionnaire et Analyste de données
 
-Projets {data-icon=database}
---------------------------------------------------------------------------------
+ISS-Kin : Enquête sur la gestion des déchets ménagers dans la commune de N'djili
+
+Kinshasa, RDC
+
+Mai -- juin 2018
+
+::: concise
+-   Concevoir de la méthodologie
+-   Tirer l'échantillon
+-   Numériser l'outils de collecte avec CSPro
+-   Former les superviseurs et enquêteurs
+-   Traiter et analyser les données
+:::
+
+## Projets {data-icon="database"}
 
 ### Churn prediction using Machine Learning algorithms
 
@@ -288,10 +292,10 @@ En ligne
 
 Sept. 2023
 
-- Predicting churn using Logistic Regression, Decision Tree et Random Forest in python
-- Best model : Random Forest (AUC : 96% on test set)
+-   Predicting churn using Logistic Regression, Decision Tree et Random Forest in python
+-   Best model : Random Forest (AUC : 96% on test set)
 
-### Hospital Readmission 
+### Hospital Readmission
 
 Datacamp [[voir notebook](https://bit.ly/3QH5K2v)]
 
@@ -299,7 +303,7 @@ En ligne
 
 Avril 2022
 
-- Predicting Hospital Readmission using R
+-   Predicting Hospital Readmission using R
 
 ### Découvrir Kinshasa
 
@@ -309,7 +313,7 @@ En ligne
 
 Décembre 2022
 
-- Analyse descriptive
+-   Analyse descriptive
 
 ### Predicting House price in Mexico : EDA using Python
 
@@ -319,10 +323,10 @@ En ligne
 
 Décembre 2022
 
-- How to organize information using basic Python data structures.
-- How to import data from CSV files and clean it using the pandas library.
-- How to create data visualizations like scatter and box plots.
-- How to examine the relationship between two variables using correlation.
+-   How to organize information using basic Python data structures.
+-   How to import data from CSV files and clean it using the pandas library.
+-   How to create data visualizations like scatter and box plots.
+-   How to examine the relationship between two variables using correlation.
 
 ### Predicting House price in Mexico using Python
 
@@ -332,10 +336,10 @@ En ligne
 
 Janvier 2023
 
-- How to create a linear regression model using the scikit-learn library.
-- How to build a data pipeline for imputing missing values and encoding categorical features.
-- How to improve model performance by reducing overfitting.
-- How to create a dynamic dashboard for interacting with your completed model.
+-   How to create a linear regression model using the scikit-learn library.
+-   How to build a data pipeline for imputing missing values and encoding categorical features.
+-   How to improve model performance by reducing overfitting.
+-   How to create a dynamic dashboard for interacting with your completed model.
 
 ### Predicting air quality in Kenya using Python
 
@@ -345,10 +349,10 @@ En ligne
 
 Janvier 2023
 
-- How to get data by querying a MongoDB database.
-- How to prepare time series data for analysis.
-- How to build an autoregression model.
-- How to improve a model by tuning its hyperparameters.
+-   How to get data by querying a MongoDB database.
+-   How to prepare time series data for analysis.
+-   How to build an autoregression model.
+-   How to improve a model by tuning its hyperparameters.
 
 ### Predicting Earthquake Damage in Nepal using Python
 
@@ -358,10 +362,10 @@ En ligne
 
 Février 2023
 
-- How to get data by querying a SQL database.
-- How to build a logistic regression model for classification.
-- How to build a decision tree model for classification.
-- How to incorporate ethical considerations into your model building.
+-   How to get data by querying a SQL database.
+-   How to build a logistic regression model for classification.
+-   How to build a decision tree model for classification.
+-   How to incorporate ethical considerations into your model building.
 
 ### Predicting Bankruptcy in Poland using Python
 
@@ -371,10 +375,10 @@ En ligne
 
 Février 2023
 
-- Navigate a file system from the Linux command line
-- Load and save files using Python
-- Address imbalanced data using resampling techniques
-- Evaluate a model using classification metrics like precision and recall
+-   Navigate a file system from the Linux command line
+-   Load and save files using Python
+-   Address imbalanced data using resampling techniques
+-   Evaluate a model using classification metrics like precision and recall
 
 ### Customer Segmentation in the US using Python
 
@@ -384,11 +388,11 @@ En ligne
 
 Février 2023
 
-- Compare characteristics across subgroups using a side-by-side bar chart.
-- Build a k-means clustering model.
-- Conduct feature selection for clustering based on variance.
-- Reduce high-dimensional data using principal component analysis (PCA).
-- Design, build and deploy a Dash web application.
+-   Compare characteristics across subgroups using a side-by-side bar chart.
+-   Build a k-means clustering model.
+-   Conduct feature selection for clustering based on variance.
+-   Reduce high-dimensional data using principal component analysis (PCA).
+-   Design, build and deploy a Dash web application.
 
 ### A/B Testing at WorldQuant University using Python
 
@@ -398,10 +402,10 @@ En ligne
 
 Août 2023
 
-- Build a choropleth map to show the distribution of ADSL students around the world.
-- Create a custom Python class to implement ETL processes.
-- Design an experiment and analyze the results using a chi-square test.
-- Build an interactive web application that follows a three-tiered design pattern.
+-   Build a choropleth map to show the distribution of ADSL students around the world.
+-   Create a custom Python class to implement ETL processes.
+-   Design an experiment and analyze the results using a chi-square test.
+-   Build an interactive web application that follows a three-tiered design pattern.
 
 ### Survey Monitor App
 
@@ -419,13 +423,11 @@ Kinshasa, RDC
 
 Avril 2021
 
-
-Expérience en transmission des connaissances {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
+## Expérience en transmission des connaissances {data-icon="chalkboard-teacher"}
 
 ### Formations en ligne sur la plateforme FDTK
 
-[Formations sur la collecte, gestion et analyse de données](https://www.fdtk.org/formation) 
+[Formations sur la collecte, gestion et analyse de données](https://www.fdtk.org/formation)
 
 En ligne
 
@@ -439,7 +441,7 @@ Kinshasa, RDC
 
 Janvier 2023
 
-### Formation sur l’analyse de données avec R et SPSS
+### Formation sur l'analyse de données avec R et SPSS
 
 Manipulation de données, analyse descriptive et inférentielle avec R et SPSS
 
@@ -455,9 +457,7 @@ Kinshasa, RDC
 
 Juillet 2020
 
-
-Education {data-icon=graduation-cap data-concise=true}
---------------------------------------------------------------------------------
+## Education {data-icon="graduation-cap" data-concise="true"}
 
 ### Institut Supérieur de Statistique de Kinshasa (ISS/KIN)
 
@@ -475,17 +475,15 @@ Kinshasa, DRC
 
 2015 - 2016
 
+## Formations continues {data-icon="graduation-cap" data-concise="true"}
 
-Formations continues {data-icon=graduation-cap data-concise=true}
---------------------------------------------------------------------------------
 ### Applied Datascience Lab (8 projects in python)
 
-WorldQuant University [[voir badge](https://)] 
+WorldQuant University [[voir badge](https://)]
 
 En ligne
 
 Mars 2023
-
 
 ### Data Scientist with R (Certification)
 
@@ -495,7 +493,6 @@ En ligne
 
 Novembre 2022
 
-
 ### Data Analyst with R (36H)
 
 Datacamp
@@ -504,7 +501,6 @@ En ligne
 
 Novembre 2022
 
-
 ### Data Visualization with R (12H)
 
 Datacamp
@@ -512,7 +508,6 @@ Datacamp
 En ligne
 
 Novembre 2022
-
 
 ### Machine Learning Scientist with R (57H)
 
@@ -530,7 +525,6 @@ En ligne
 
 Octobre 2022
 
-
 ### Time series with R Track (25H)
 
 Datacamp
@@ -538,7 +532,6 @@ Datacamp
 En ligne
 
 septembre 2022
-
 
 ### Shiny Fundamentals with R Track (16H)
 
@@ -548,15 +541,13 @@ En ligne
 
 juillet 2022
 
-
-### Gestion responsable des données dans les situations d’urgence
+### Gestion responsable des données dans les situations d'urgence
 
 Save the Children [[voir badge](https://bit.ly/3v69aiT)]
 
 En ligne
 
 Avril 2022
-
 
 ### Suivi, évaluation, redevabilité et apprentissage (MEAL) dans les situations d'urgence
 
@@ -565,7 +556,6 @@ Save the Children [[voir badge](https://bit.ly/3Kpi4yb)]
 En ligne
 
 Mars 2022
-
 
 ### Introduction to Coaching and Mentoring
 
@@ -583,50 +573,46 @@ En ligne
 
 Juillet 2021
 
+## Références {data-icon="file"}
 
-Références {data-icon=file}
---------------------------------------------------------------------------------
+### Prof. Manu F. MANUN'EBO, Directeur Général de BEGIS CONGO (Bureau d'Etudes et de Gestion de l'Information Statistique) et professeur d'universités.
 
-### Prof.  Manu F. MANUN’EBO, Directeur Général de BEGIS CONGO (Bureau d’Etudes et de Gestion de l’Information Statistique) et professeur d’universités.
-
-(+243) 824 – 623 – 460. manu@begis-congo.net
+(+243) 824 -- 623 -- 460. [manu\@begis-congo.net](mailto:manu@begis-congo.net){.email}
 
 RDC
 
-### Prof.  Stella BABALOLA, Professeure à l’université Johns Hopkins (USA) et Directrice du centre des programmes de communication de Johns Hopkins (JHU/CCP). 
+### Prof. Stella BABALOLA, Professeure à l'université Johns Hopkins (USA) et Directrice du centre des programmes de communication de Johns Hopkins (JHU/CCP).
 
-(+1) 410-659-6300, 410-659-6266.  stellababalola@jhu.edu
+(+1) 410-659-6300, 410-659-6266. [stellababalola\@jhu.edu](mailto:stellababalola@jhu.edu){.email}
 
 USA
 
-### Mr.  Florence MPATA, Deputy Chief of Party, Recherch, Monitoring, Evaluation & Technical Director au centre des programmes de communication de Johns Hopkins (JHU/CCP). 
+### Mr. Florence MPATA, Deputy Chief of Party, Recherch, Monitoring, Evaluation & Technical Director au centre des programmes de communication de Johns Hopkins (JHU/CCP).
 
-(+243) 822 – 441 – 151. florencem@breakthroughactiondrc.org
-
-RDC
-
-### Mr.  Didier NDOMBE MBOMBO, Office Manager à BEGIS CONGO (Bureau d’Etudes et de Gestion de l’Information Statistique). 
-
-(+243) 853 – 743 – 628, 823 – 152 – 188. didier@begis-congo.net
+(+243) 822 -- 441 -- 151. [florencem\@breakthroughactiondrc.org](mailto:florencem@breakthroughactiondrc.org){.email}
 
 RDC
 
-### Mr.  André KABUYAYA, Chargé de Suivi-Evalution à IMA World Health / Kwilu. 
+### Mr. Didier NDOMBE MBOMBO, Office Manager à BEGIS CONGO (Bureau d'Etudes et de Gestion de l'Information Statistique).
 
-(+243) 812 – 077 – 009. akkabuyaya@gmail.org
-
-RDC
-
-### Mr. Davis MAKASY, ODK officer / Data Manager chez IMA World Health 
-
-(+243) 818-388-893. DMakasy@imaworldhealth.org 
+(+243) 853 -- 743 -- 628, 823 -- 152 -- 188. [didier\@begis-congo.net](mailto:didier@begis-congo.net){.email}
 
 RDC
 
-{#disclaimer}
---------------------------------------------------------------------------------
+### Mr. André KABUYAYA, Chargé de Suivi-Evalution à IMA World Health / Kwilu.
+
+(+243) 812 -- 077 -- 009. [akkabuyaya\@gmail.org](mailto:akkabuyaya@gmail.org){.email}
+
+RDC
+
+### Mr. Davis MAKASY, ODK officer / Data Manager chez IMA World Health
+
+(+243) 818-388-893. [DMakasy\@imaworldhealth.org](mailto:DMakasy@imaworldhealth.org){.email}
+
+RDC
+
+##  {#disclaimer}
 
 Bervelin LUMESA KIONGI
 
 Kinshasa, `r Sys.Date()`.
-
