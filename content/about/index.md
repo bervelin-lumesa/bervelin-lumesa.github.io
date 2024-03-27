@@ -7,6 +7,6 @@ title: About
 ---
 
 
-Data scientist consultant interested in machine learning, survey data management and analysis, mobile data collection, sampling, creation of dashboards and programming. I have at least 6 years of proven experience in the field of data. <a href = 'cv_DS.html' target = "_blank">Check my resume here</a>.
+Statistician and Data scientist consultant interested in machine learning, survey data management and analysis, mobile data collection, sampling, creation of dashboards and programming. I have more than 6 years of proven experience in the field of data. <a href = 'cv_DS.html' target = "_blank">Check my resume here</a>.
 
-I am currently working as a consultant Statistician - Data scientist at [Begis congo](https://www.begis-congo.net), a research firm specializing in the production of statistics in the fields of health, education, living conditions and others.
+I am currently working as the Co-Investigator in the Zambia MBS with COMPANDBEN INTERNATIONAL LTD and JHSPH-CCP.
