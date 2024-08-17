@@ -246,14 +246,6 @@
     </item>
     
     <item>
-      <title>Prédiction du défaut de paiement</title>
-      <link>http://localhost:4321/project/defaut-paiement/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/defaut-paiement/</guid>
-      <description>&lt;p&gt;PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>🧠 Sharpen your thinking with a second brain</title>
       <link>http://localhost:4321/post/second-brain/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
