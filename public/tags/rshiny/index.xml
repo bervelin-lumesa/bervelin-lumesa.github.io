@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RShiny | Bervelin Lumesa</title>
+    <link>http://localhost:4321/tags/rshiny/</link>
+      <atom:link href="http://localhost:4321/tags/rshiny/index.xml" rel="self" type="application/rss+xml" />
+    <description>RShiny</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 26 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:4321/media/icon_hu7729264130191091259.png</url>
+      <title>RShiny</title>
+      <link>http://localhost:4321/tags/rshiny/</link>
+    </image>
+    
+    <item>
+      <title>Analyse de régression App</title>
+      <link>http://localhost:4321/project/regression-logistique/</link>
+      <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/project/regression-logistique/</guid>
+      <description>&lt;p&gt;Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Générateur des QR</title>
+      <link>http://localhost:4321/project/generateur-qrcode/</link>
+      <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/project/generateur-qrcode/</guid>
+      <description>&lt;p&gt;Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Monitoring de la collecte de Données</title>
+      <link>http://localhost:4321/project/monitoring-data-collection/</link>
+      <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/project/monitoring-data-collection/</guid>
+      <description>&lt;p&gt;Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
