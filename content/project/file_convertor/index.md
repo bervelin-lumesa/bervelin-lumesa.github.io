@@ -6,7 +6,7 @@ tags:
   - R
 ---
 
-Cette application conçue avec Shiny te permet de convertir un ficher de données, d'un format à un autre.
+Cette application conçue avec Shiny te permet de convertir un fichier de données, d'un format à un autre.
 
 [Clique sur ce lien](https://bervelin.shinyapps.io/file_convertor/) pour la tester en live
 

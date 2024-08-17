@@ -17,7 +17,7 @@
       <link>http://localhost:4321/project/file_convertor/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/project/file_convertor/</guid>
-      <description>&lt;p&gt;Cette application conçue avec Shiny te permet de convertir un ficher de données, d&amp;rsquo;un format à un autre.&lt;/p&gt;
+      <description>&lt;p&gt;Cette application conçue avec Shiny te permet de convertir un fichier de données, d&amp;rsquo;un format à un autre.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://bervelin.shinyapps.io/file_convertor/&#34;&gt;Clique sur ce lien&lt;/a&gt; pour la tester en live&lt;/p&gt;</description>
     </item>
     
@@ -43,6 +43,20 @@
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/project/pytorch/</guid>
       <description>&lt;p&gt;PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tracking des activités de terrain</title>
+      <link>http://localhost:4321/project/activity_tracking/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/project/activity_tracking/</guid>
+      <description>&lt;p&gt;Dans le cas des ses activités, une entreprise envoie des agents sur terrain pour l&amp;rsquo;implantation des infrastructures et pour effetuer des réparations en cas de panne.&lt;/p&gt;
+&lt;p&gt;Cette application conçue avec Shiny permet de répondre à question :&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Qui a fait quoi, où et quand ?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Elle permet en outre de générer des rapports d&amp;rsquo;activités en format HTML en fonction des inputs de l&amp;rsquo;utilisateur.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;Cliquez sur ce lien &lt;/a&gt; pour la tester en live.&lt;/p&gt;</description>
     </item>
     
   </channel>
