@@ -7,7 +7,7 @@ sections:
   content:
     button:
       text: Télécharger mon CV
-      url: cv_bervelin_lumesa.pdf
+      url: bervelin-lumesa-resume.pdf
     text: ""
     username: admin
   design:
