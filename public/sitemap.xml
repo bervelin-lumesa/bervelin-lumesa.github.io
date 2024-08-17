@@ -10,10 +10,6 @@
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/project/regression-logistique/</loc>
-    <lastmod>2024-08-26T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>http://localhost:4321/project/clissification-image/</loc>
     <lastmod>2024-08-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -72,10 +68,6 @@
   </url><url>
     <loc>http://localhost:4321/tags/markdown/</loc>
     <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:4321/project/defaut-paiement/</loc>
-    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:4321/tags/second-brain/</loc>
