@@ -26,43 +26,23 @@ awards:
   title: Object-Oriented Programming in R
   url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
 education:
-- area: PhD Artificial Intelligence
-  button:
-    text: Read Thesis
-    url: https://example.com
-  date_end: "2020-12-31"
-  date_start: "2016-01-01"
-  institution: Stanford University
+- area: Licence en Statistique (Bac+5) 
+  date_end: "2018-09-01"
+  date_start: "2016-09-01"
+  institution: Institut Supérieur de la Statistique de Kinshasa
   summary: |
-    Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-- area: MEng Artificial Intelligence
-  date_end: "2020-12-31"
-  date_start: "2016-01-01"
-  institution: Massachusetts Institute of Technology
-  summary: |
-    GPA: 3.8/4.0
-
-    Courses included:
-    - lorem ipsum dolor sit amet, consectetur adipiscing elit
-    - lorem ipsum dolor sit amet, consectetur adipiscing elit
-    - lorem ipsum dolor sit amet, consectetur adipiscing elit
-- area: BSc Artificial Intelligence
-  date_end: "2020-12-31"
-  date_start: "2016-01-01"
-  institution: Massachusetts Institute of Technology
-  summary: |
-    GPA: 3.4/4.0
-
-    Courses included:
-    - lorem ipsum dolor sit amet, consectetur adipiscing elit
-    - lorem ipsum dolor sit amet, consectetur adipiscing elit
-    - lorem ipsum dolor sit amet, consectetur adipiscing elit
-first_name: Shiung Wu
+    Travail sur les _déterminants de la non déclaration des naissances à l'Etat-civil. cas des de la ville de Kinshasa._
+- area: Graduat en Statistique (Bac+3)
+  date_end: "2016-09-01"
+  date_start: "2013-09-01"
+  institution: Institut Supérieur de la Statistique de Kinshasa
+first_name: Bervelin
 highlight_name: true
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Recherche quantitative
+- Intelligence artificielle
+- Automatisation
+
 languages:
 - name: Français
   percent: 100
