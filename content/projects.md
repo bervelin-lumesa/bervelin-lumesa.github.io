@@ -11,7 +11,7 @@ sections:
     text: J'aime tester des nouvelles choses, explorer des nouveaux horizons. Voici la liste des quelques projets sélectionnés.
     title: Quelques Projets
   design:
-    columns: 2
+    columns: 3
     fill_image: false
     view: article-grid
 title: Projects
