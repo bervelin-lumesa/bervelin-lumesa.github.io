@@ -1,30 +1,29 @@
 ---
 awards:
-- awarder: Coursera
-  date: "2023-11-25"
-  icon: coursera
+- awarder: freecodecamp
+  certificate_url: https://www.freecodecamp.org/certification/blumski/data-analysis-with-python-v7
+  date: "2024-06-25"
+  icon: 
   summary: |
-    I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  title: Neural Networks and Deep Learning
-  url: https://www.coursera.org/learn/neural-networks-deep-learning
-- awarder: edX
-  date: "2023-07-01"
-  icon: edx
+    Dans la certification d'analyse de données avec Python, j'ai appris les bases de l'analyse de données avec Python, comment lire des données à partir de sources telles que les fichiers CSV et SQL, et comment utiliser des bibliothèques comme Numpy, Pandas, Matplotlib et Seaborn pour traiter et visualiser les données.
+  title: Data Analysis with Python Certification
+  
+- awarder: Datacamp
+  certificate_url: https://www.datacamp.com/certificate/DSA0017435503154
+  date: "2022-12-01"
+  icon: datacamp
   summary: |
-    Learned:
-    - Synthesize your own blockchain solutions
-    - Gain an in-depth understanding of the specific mechanics of Bitcoin
-    - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  title: Blockchain Fundamentals
-  url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
+    Dans ce programme, j'ai appris à manipuler des données avec `dplyr` et `tidyr`, à créer des visualisations avancées avec `ggplot2`, et à appliquer des algorithmes de machine learning en utilisant `caret` et `tidymodels` pour des tâches de classification, régression, et clustering. J'ai également découvert comment interagir avec des bases de données relationnelles via SQL. De plus, j'ai appris à structurer et gérer des projets de Data Science, et à intégrer R avec d'autres outils pour automatiser des workflows analytiques.
+  title: Data Science with R Certification
+  
 - awarder: datacamp
-  certificate_url: https://www.datacamp.com
+  certificate_url: https://www.linkedin.com/in/bervelin-lumesa/overlay/1635509153789/single-media-viewer/?profileId=ACoAACzZPxIBDsL9j_5mZQr8DAG9WMfvIMOhdWs
   date: "2023-01-21"
   icon: datacamp
   summary: |
-    Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
-  title: Object-Oriented Programming in R
-  url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
+    Dans ce programme, j'ai appris à manipuler et nettoyer des données avec des packages comme `dplyr` et `tidyr`, à importer des données depuis diverses sources, et à créer des visualisations efficaces avec `ggplot2`. J'ai acquis des compétences en statistiques descriptives, ainsi qu'en analyse de données catégorielles et continues. De plus, j'ai appris à structurer mes analyses en créant des rapports reproductibles avec RMarkdown, tout en appliquant les meilleures pratiques de gestion de projets analytiques.
+  title: Data Analysis with R
+  
 education:
 - area: Licence en Statistique (Bac+5) 
   date_end: "2018-09-01"
@@ -66,6 +65,7 @@ profiles:
 - icon: brands/linkedin
   url: https://www.linkedin.com/lumesabervelin
 role: Statistician/Data Scientist
+
 skills:
 - items:
   - description: ""
