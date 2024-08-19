@@ -18,7 +18,7 @@ awards:
   
 - awarder: datacamp
   certificate_url: https://www.linkedin.com/in/bervelin-lumesa/overlay/1635509153789/single-media-viewer/?profileId=ACoAACzZPxIBDsL9j_5mZQr8DAG9WMfvIMOhdWs
-  date: "2023-01-21"
+  date: "2022-11-15"
   icon: datacamp
   summary: |
     Dans ce programme, j'ai appris à manipuler et nettoyer des données avec des packages comme `dplyr` et `tidyr`, à importer des données depuis diverses sources, et à créer des visualisations efficaces avec `ggplot2`. J'ai acquis des compétences en statistiques descriptives, ainsi qu'en analyse de données catégorielles et continues. De plus, j'ai appris à structurer mes analyses en créant des rapports reproductibles avec RMarkdown, tout en appliquant les meilleures pratiques de gestion de projets analytiques.
