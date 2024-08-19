@@ -1,7 +1,7 @@
 ---
 date: "2022-10-24"
 design:
-  spacing: 3 irem
+  spacing: "2rem"
 sections:
 - block: resume-biography-3
   content:
@@ -16,7 +16,7 @@ sections:
       image:
         filename: stacked-peaks.svg
         filters:
-          brightness: 1
+          brightness: 0
         parallax: false
         position: center
         size: cover
