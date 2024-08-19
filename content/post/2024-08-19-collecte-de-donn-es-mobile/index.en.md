@@ -10,7 +10,7 @@ tags:
   - data collection
 ---
 
-Mbot e!
+Mbote!
 
 ## Intro...
 
