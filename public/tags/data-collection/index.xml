@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Collection | Bervelin Lumesa</title>
+    <link>http://localhost:4321/tags/data-collection/</link>
+      <atom:link href="http://localhost:4321/tags/data-collection/index.xml" rel="self" type="application/rss+xml" />
+    <description>Data Collection</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 19 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:4321/media/icon_hu7729264130191091259.png</url>
+      <title>Data Collection</title>
+      <link>http://localhost:4321/tags/data-collection/</link>
+    </image>
+    
+    <item>
+      <title>Collecte de données mobile</title>
+      <link>http://localhost:4321/post/collecte-de-donn-es-mobile/</link>
+      <pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/post/collecte-de-donn-es-mobile/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
