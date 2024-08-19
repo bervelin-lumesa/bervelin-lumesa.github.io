@@ -128,5 +128,5 @@ La Data Science est une discipline clé dans de nombreux domaines, et R est l'un
 
 Ces packages sont essentiels pour tout data scientist travaillant en R. Ils couvrent des aspects clés de la Data Science, depuis la manipulation des données jusqu'à la visualisation et au machine learning. Leur maîtrise vous aidera à réaliser des analyses de données efficaces et complètes.
 
-## Avez-vous trouvé cette page utile ? Pensez à le partager 🙌
+## Avez-vous trouvé cet article utile ? Pensez à le partager 🙌
 
