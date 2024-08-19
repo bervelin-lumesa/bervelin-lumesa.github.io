@@ -144,7 +144,7 @@ work:
 
 ## A propos
 
-Bervelin est Statisticien de formation et Data scientist certifié avec plus de 6 ans d'expériences dans la recherche quantitative. Mon domaine de compétence inclut l'implémentation des études statistiques, la mise en place de système de collecte de données mobile, le suivi des opérations en temps réel par des dashboards, le netoyage, l'analyse de données et la création des rapports reproductibles. Je donne des formations sur l'usage des outils comme R, Python, SPSS, Stata, QGIS, CSPro et XLSForm (ODK, KOBO, SurveyCTO).   
+Bervelin est Statisticien de formation et Data scientist certifié avec plus de 6 ans d'expériences dans la recherche quantitative. Mon domaine de compétence inclut l'implémentation des études statistiques, la mise en place de système de collecte de données mobile, le suivi des opérations en temps réel par des dashboards, le netoyage, l'analyse de données, la création des rapports reproductibles et l'intégration de l'inteligence actificielle dans des applications. Je donne des formations sur l'usage des outils comme R, Python, SPSS, Stata, QGIS, CSPro et XLSForm (ODK, KOBO, SurveyCTO).   
 
 Fondateur et Coordonateur de [FDTK (From Data To Knowledge)](https://www.fdtk.org/), une Organisation Non Gouvernementale spécialisée dans la fourniture des services en Data Science et  des formations de qualité.
 
