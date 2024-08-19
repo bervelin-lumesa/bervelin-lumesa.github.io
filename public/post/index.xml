@@ -5,12 +5,116 @@
     <link>http://localhost:4321/post/</link>
       <atom:link href="http://localhost:4321/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Blog</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 17 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 19 Aug 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:4321/media/icon_hu7729264130191091259.png</url>
       <title>Blog</title>
       <link>http://localhost:4321/post/</link>
     </image>
+    
+    <item>
+      <title>10 librairies les plus utilisées en Python pour la data Science</title>
+      <link>http://localhost:4321/post/10-librairies-les-plus-utilis-es-en-python-pour-la-data-science/</link>
+      <pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/post/10-librairies-les-plus-utilis-es-en-python-pour-la-data-science/</guid>
+      <description>&lt;p&gt;Mbote !&lt;/p&gt;
+&lt;h2 id=&#34;intro&#34;&gt;Intro..&lt;/h2&gt;
+&lt;p&gt;Python est l&amp;rsquo;un des langages les plus populaires pour la Data Science, offrant une multitude de bibliothèques puissantes. Voici une liste des 10 librairies les plus utilisées en Python pour la Data Science, avec leurs fonctionnalités principales et les liens vers leurs sites officiels.&lt;/p&gt;
+&lt;h2 id=&#34;1-numpy&#34;&gt;1. &lt;code&gt;NumPy&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;NumPy&lt;/code&gt; est une bibliothèque fondamentale pour la science des données en Python. Elle fournit des structures de données puissantes comme les tableaux multidimensionnels (ndarray) ainsi que des fonctions pour effectuer des opérations mathématiques avancées.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fonctions clés :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;array()&lt;/code&gt;: Crée un tableau multidimensionnel.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;linspace()&lt;/code&gt;: Génère des nombres également espacés.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mean()&lt;/code&gt;: Calcule la moyenne des éléments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Lien :&lt;/strong&gt; &lt;a href=&#34;https://numpy.org/&#34;&gt;NumPy&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-pandas&#34;&gt;2. &lt;code&gt;Pandas&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Pandas&lt;/code&gt; est une bibliothèque essentielle pour la manipulation des données. Elle permet de travailler avec des structures de données comme les DataFrames et les séries, facilitant le nettoyage et la transformation des données.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fonctions clés :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;DataFrame()&lt;/code&gt;: Crée un DataFrame.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;read_csv()&lt;/code&gt;: Lit un fichier CSV dans un DataFrame.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;groupby()&lt;/code&gt;: Regroupe les données selon une clé.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Lien :&lt;/strong&gt; &lt;a href=&#34;https://pandas.pydata.org/&#34;&gt;Pandas&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-matplotlib&#34;&gt;3. &lt;code&gt;Matplotlib&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Matplotlib&lt;/code&gt; est une bibliothèque de visualisation qui permet de créer des graphiques en 2D. Elle est largement utilisée pour créer des graphiques statiques comme des courbes, des barres, des histogrammes, etc.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fonctions clés :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;plot()&lt;/code&gt;: Trace un graphique en ligne.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bar()&lt;/code&gt;: Crée un graphique en barres.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hist()&lt;/code&gt;: Crée un histogramme.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Lien :&lt;/strong&gt; &lt;a href=&#34;https://matplotlib.org/&#34;&gt;Matplotlib&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;4-seaborn&#34;&gt;4. &lt;code&gt;Seaborn&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Seaborn&lt;/code&gt; est une bibliothèque de visualisation basée sur &lt;code&gt;Matplotlib&lt;/code&gt;. Elle permet de créer des graphiques statistiques plus complexes et est particulièrement utile pour l&amp;rsquo;analyse exploratoire des données.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fonctions clés :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;heatmap()&lt;/code&gt;: Crée une carte thermique.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;boxplot()&lt;/code&gt;: Crée un graphique en boîte.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pairplot()&lt;/code&gt;: Crée une grille de paires de graphiques.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Lien :&lt;/strong&gt; &lt;a href=&#34;https://seaborn.pydata.org/&#34;&gt;Seaborn&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;5-scikit-learn&#34;&gt;5. &lt;code&gt;Scikit-learn&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Scikit-learn&lt;/code&gt; est une bibliothèque de machine learning qui offre une large gamme d&amp;rsquo;algorithmes pour la classification, la régression, le clustering, et plus encore. Elle est conçue pour être simple à utiliser et efficace.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fonctions clés :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;train_test_split()&lt;/code&gt;: Divise les données en ensembles d&amp;rsquo;entraînement et de test.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fit()&lt;/code&gt;: Entraîne un modèle de machine learning.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;predict()&lt;/code&gt;: Prédit des valeurs avec un modèle entraîné.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Lien :&lt;/strong&gt; &lt;a href=&#34;https://scikit-learn.org/&#34;&gt;Scikit-learn&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;6-tensorflow&#34;&gt;6. &lt;code&gt;TensorFlow&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;TensorFlow&lt;/code&gt; est une bibliothèque open-source pour la construction et l&amp;rsquo;entraînement de modèles de deep learning. Elle est développée par Google et est largement utilisée pour des tâches comme la reconnaissance d&amp;rsquo;image, le traitement du langage naturel, et plus encore.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fonctions clés :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;tf.keras&lt;/code&gt;: API haut niveau pour créer et entraîner des modèles.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tf.data&lt;/code&gt;: Module pour la gestion des ensembles de données.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tf.function&lt;/code&gt;: Optimise les fonctions Python pour les graphes TensorFlow.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Lien :&lt;/strong&gt; &lt;a href=&#34;https://www.tensorflow.org/&#34;&gt;TensorFlow&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;7-keras&#34;&gt;7. &lt;code&gt;Keras&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Keras&lt;/code&gt; est une API haut niveau pour construire et entraîner des modèles de réseaux de neurones, intégrée dans &lt;code&gt;TensorFlow&lt;/code&gt;. Elle est conçue pour être simple à utiliser et permettre un prototypage rapide.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fonctions clés :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Sequential()&lt;/code&gt;: Crée un modèle séquentiel.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Dense()&lt;/code&gt;: Ajoute une couche dense (fully connected).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;compile()&lt;/code&gt;: Configure le modèle pour l&amp;rsquo;entraînement.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Lien :&lt;/strong&gt; &lt;a href=&#34;https://keras.io/&#34;&gt;Keras&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;8-statsmodels&#34;&gt;8. &lt;code&gt;Statsmodels&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Statsmodels&lt;/code&gt; est une bibliothèque qui permet de faire de l&amp;rsquo;analyse statistique en Python. Elle est particulièrement utilisée pour les régressions, les tests statistiques, et l&amp;rsquo;exploration de données.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fonctions clés :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;OLS()&lt;/code&gt;: Effectue une régression linéaire.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;logit()&lt;/code&gt;: Modélisation logistique.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;anova_lm()&lt;/code&gt;: Analyse de la variance (ANOVA).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Lien :&lt;/strong&gt; &lt;a href=&#34;https://www.statsmodels.org/&#34;&gt;Statsmodels&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;9-nltk&#34;&gt;9. &lt;code&gt;NLTK&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;NLTK&lt;/code&gt; (Natural Language Toolkit) est une bibliothèque pour le traitement du langage naturel (NLP). Elle offre des outils pour l&amp;rsquo;analyse de texte, comme le tokenization, le stemming, et l&amp;rsquo;analyse syntaxique.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fonctions clés :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;word_tokenize()&lt;/code&gt;: Divise un texte en mots.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sent_tokenize()&lt;/code&gt;: Divise un texte en phrases.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pos_tag()&lt;/code&gt;: Tagging des parties du discours (POS tagging).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Lien :&lt;/strong&gt; &lt;a href=&#34;https://www.nltk.org/&#34;&gt;NLTK&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;10-plotly&#34;&gt;10. &lt;code&gt;Plotly&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Plotly&lt;/code&gt; est une bibliothèque pour créer des graphiques interactifs en Python. Elle est idéale pour les tableaux de bord et les visualisations interactives qui peuvent être facilement intégrées dans des applications web.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fonctions clés :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;plot()&lt;/code&gt;: Crée un graphique interactif.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scatter()&lt;/code&gt;: Crée un graphique de dispersion.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bar()&lt;/code&gt;: Crée un graphique en barres.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Lien :&lt;/strong&gt; &lt;a href=&#34;https://plotly.com/python/&#34;&gt;Plotly&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Ces bibliothèques sont essentielles pour toute personne travaillant dans la Data Science avec Python. Elles couvrent des aspects clés tels que la manipulation des données, la visualisation, le machine learning et le deep learning. Maîtriser ces outils vous permettra de réaliser des analyses complètes et robustes.&lt;/p&gt;
+&lt;h2 id=&#34;avez-vous-trouvé-cet-article-utile--pensez-à-le-partager-&#34;&gt;Avez-vous trouvé cet article utile ? Pensez à le partager 🙌&lt;/h2&gt;
+</description>
+    </item>
     
     <item>
       <title>10 Packages les plus utilisés en R pour la Data Science</title>
@@ -234,7 +338,7 @@
 
 
 
-&lt;div id=&#34;chart-579324618&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-278495163&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -252,7 +356,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-579324618&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-278495163&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
