@@ -1,140 +1,61 @@
 ---
-date: "2023-10-24"
+date: "2024-08-18"
 image:
-  caption: Embed rich media such as videos and LaTeX math
+  caption: 
 math: false
-summary: Easily learn JavaScript in 10 minutes!
+summary: Si vous souhaitez acquérir les compétences nécessaires pour manipuler et analyser des données avec ce puissant logiciel, vous êtes au bon endroit !
 tags:
-- JavaScript
-title: Learn JavaScript
+- Data analysis
+title: Analyse de données avec SPSS
 type: docs
 ---
 
-[Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
+Maîtriser SPSS pour la manipulation et l'analyse de données présente plusieurs avantages. Tout d'abord, SPSS est un logiciel largement utilisé dans la recherche scientifique et par de nombreuses entreprises, ce qui signifie que la maîtrise de ce logiciel peut être un atout sur le marché du travail.
 
-**Embed videos, podcasts, code, LaTeX math, and even test students!**
+En utilisant SPSS, vous pouvez facilement importer, nettoyer et manipuler les données, ce qui vous permet d'économiser du temps et des efforts. De plus, SPSS offre une large gamme de fonctions statistiques et d'outils d'analyse, tels que les tests de corrélation, les régressions, les analyses de variance et bien d'autres encore. Cela vous permet d'explorer efficacement vos données, de détecter les tendances et les relations, et de prendre des décisions basées sur des preuves solides.
 
-On this page, you'll find some examples of the types of technical content that can be rendered with Hugo Blox.
+[COMMENCEZ MAINTENANT](https://www.fdtk.org/pp-analyse-de-donnees-spss)
 
-## Video
+## CONTENU DE LA FORMATION
 
-Teach your course by sharing videos with your students. Choose from one of the following approaches:
+### Introduction à la statistique, à l'analyse de données et à SPSS
 
-{{< youtube D2vj0WcvH5c >}}
+- Introduction à la statistique
+- Introduction à l'analyse de données
+- Notions sur les variables
+- Introduction à SPSS
+- Importation de données dans SPSS
 
-**Youtube**:
+### Analyse descriptive
 
-    {{</* youtube w7Ft2ymGmfc */>}}
+- Introduction à l'analyse descriptive
+- Calcul des indicateurs pour la statistique univariée
+- Visualisation pour la statistique univariée
+- Calcul des indicateurs pour la statistique bivariée
+- Visualisation pour la statistique bivariée
+- Corrélation
 
-**Bilibili**:
+### Manipulation de données
 
-    {{</* bilibili id="BV1WV4y1r7DF" */>}}
+- Calcul des variables
+- Récodage des variables
+- Création des classes à partir d'une variable quantitative
+- Calcul de la durée entre deux dates
 
-**Video file**
+### Régression linéaire et logistique
 
-Videos may be added to a page by either placing them in your `assets/media/` media library or in your [page's folder](https://gohugo.io/content-management/page-bundles/), and then embedding them with the _video_ shortcode:
+- Régression linéaire
+- Régression logistique
 
-    {{</* video src="my_video.mp4" controls="yes" */>}}
+### Tests statistiques
 
-## Podcast
+- Comparaison d'une moyenne avec une valeur thérique
+- Comparaison de deux moyennes de deux échantillons indépendants
+- Comparaison de deux moyennes de deux échantillons appariés
+- Comparaison de plusieurs moyennes : Anova
 
-You can add a podcast or music to a page by placing the MP3 file in the page's folder or the media library folder and then embedding the audio on your page with the _audio_ shortcode:
+### Exportation des résultats
 
-    {{</* audio src="ambient-piano.mp3" */>}}
+- Exportation des résultats d'analyse
 
-Try it out:
-
-{{< audio src="ambient-piano.mp3" >}}
-
-## Test students
-
-Provide a simple yet fun self-assessment by revealing the solutions to challenges with the `spoiler` shortcode:
-
-```markdown
-{{</* spoiler text="👉 Click to view the solution" */>}}
-You found me!
-{{</* /spoiler */>}}
-```
-
-renders as
-
-{{< spoiler text="👉 Click to view the solution" >}} You found me 🎉 {{< /spoiler >}}
-
-## Math
-
-Hugo Blox Builder supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the `math` option in your `config/_default/params.yaml` file.
-
-To render _inline_ or _block_ math, wrap your LaTeX math with `{{</* math */>}}$...${{</* /math */>}}` or `{{</* math */>}}$$...$${{</* /math */>}}`, respectively.
-
-{{% callout note %}}
-We wrap the LaTeX math in the Hugo Blox _math_ shortcode to prevent Hugo rendering our math as Markdown.
-{{% /callout %}}
-
-Example **math block**:
-
-```latex
-{{</* math */>}}
-$$
-\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}
-$$
-{{</* /math */>}}
-```
-
-renders as
-
-{{< math >}}
-$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
-{{< /math >}}
-
-Example **inline math** `{{</* math */>}}$\nabla F(\mathbf{x}_{n})${{</* /math */>}}` renders as {{< math >}}$\nabla F(\mathbf{x}_{n})${{< /math >}}.
-
-Example **multi-line math** using the math linebreak (`\\`):
-
-```latex
-{{</* math */>}}
-$$f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
-1-p_{0}^{*} & \text{if }k=0.\end{cases}$$
-{{</* /math */>}}
-```
-
-renders as
-
-{{< math >}}
-
-$$
-f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
-1-p_{0}^{*} & \text{if }k=0.\end{cases}
-$$
-
-{{< /math >}}
-
-## Code
-
-Hugo Blox Builder utilises Hugo's Markdown extension for highlighting code syntax. The code theme can be selected in the `config/_default/params.yaml` file.
-
-
-    ```python
-    import pandas as pd
-    data = pd.read_csv("data.csv")
-    data.head()
-    ```
-
-renders as
-
-```python
-import pandas as pd
-data = pd.read_csv("data.csv")
-data.head()
-```
-
-## Inline Images
-
-```go
-{{</* icon name="python" */>}} Python
-```
-
-renders as
-
-{{< icon name="python" >}} Python
-
-## Did you find this page helpful? Consider sharing it 🙌
+[CLIQUEZ ICI POUR ACCEDER A LA FORMATION](https://www.fdtk.org/pp-analyse-de-donnees-spss)

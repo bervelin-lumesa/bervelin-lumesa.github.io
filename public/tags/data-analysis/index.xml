@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Teaching | Bervelin Lumesa</title>
-    <link>http://localhost:4321/teaching/</link>
-      <atom:link href="http://localhost:4321/teaching/index.xml" rel="self" type="application/rss+xml" />
-    <description>Teaching</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 18 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <title>Data Analysis | Bervelin Lumesa</title>
+    <link>http://localhost:4321/tags/data-analysis/</link>
+      <atom:link href="http://localhost:4321/tags/data-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <description>Data Analysis</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:4321/media/icon_hu7729264130191091259.png</url>
-      <title>Teaching</title>
-      <link>http://localhost:4321/teaching/</link>
+      <title>Data Analysis</title>
+      <link>http://localhost:4321/tags/data-analysis/</link>
     </image>
     
     <item>
       <title>Analyse de données avec SPSS</title>
       <link>http://localhost:4321/teaching/data_analysis_spss/</link>
-      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/teaching/data_analysis_spss/</guid>
       <description>&lt;p&gt;Maîtriser SPSS pour la manipulation et l&amp;rsquo;analyse de données présente plusieurs avantages. Tout d&amp;rsquo;abord, SPSS est un logiciel largement utilisé dans la recherche scientifique et par de nombreuses entreprises, ce qui signifie que la maîtrise de ce logiciel peut être un atout sur le marché du travail.&lt;/p&gt;
 &lt;p&gt;En utilisant SPSS, vous pouvez facilement importer, nettoyer et manipuler les données, ce qui vous permet d&amp;rsquo;économiser du temps et des efforts. De plus, SPSS offre une large gamme de fonctions statistiques et d&amp;rsquo;outils d&amp;rsquo;analyse, tels que les tests de corrélation, les régressions, les analyses de variance et bien d&amp;rsquo;autres encore. Cela vous permet d&amp;rsquo;explorer efficacement vos données, de détecter les tendances et les relations, et de prendre des décisions basées sur des preuves solides.&lt;/p&gt;
@@ -62,47 +62,6 @@
 &lt;li&gt;Exportation des résultats d&amp;rsquo;analyse&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.fdtk.org/pp-analyse-de-donnees-spss&#34;&gt;CLIQUEZ ICI POUR ACCEDER A LA FORMATION&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Collecte de données mobile :Application avec ODK Collect et KOBO Collect</title>
-      <link>http://localhost:4321/teaching/data_collection_kobo/</link>
-      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/teaching/data_collection_kobo/</guid>
-      <description>&lt;h2 id=&#34;créer-des-formulaires-sans-connaissances-en-programmation&#34;&gt;CRÉER DES FORMULAIRES SANS CONNAISSANCES EN PROGRAMMATION&lt;/h2&gt;
-&lt;p&gt;Vous cherchez une solution simple et efficace pour collecter des données sur le terrain tout en ayant accès à des outils d&amp;rsquo;analyse et de visualisation de données en temps réel ? Cette formation est faite pour vous !&lt;/p&gt;
-&lt;p&gt;Cette formation complète sur la collecte de données mobile avec ODK Collect et KOBO Collect vous guidera étape par étape dans l&amp;rsquo;utilisation et la mise en place de cette solution. Vous apprendrez comment créer des formulaires numériques, comment les déployer sur des appareils mobiles, comment collecter des données, les synchroniser avec un serveur et surtout, comment visualiser les données collectées.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.fdtk.org/pp-collecte-de-donnees-mobile&#34;&gt;COMMENCEZ MAINTENANT&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;contenu-de-la-formation&#34;&gt;CONTENU DE LA FORMATION&lt;/h2&gt;
-&lt;h3 id=&#34;collecte-de-données&#34;&gt;Collecte de données&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Introduction à la collecte de données mobile&lt;/li&gt;
-&lt;li&gt;Questionnaires&lt;/li&gt;
-&lt;li&gt;Introduction aux bases de données&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;conception-du-formulaire&#34;&gt;Conception du formulaire&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Présentation des outils&lt;/li&gt;
-&lt;li&gt;Télécchargements&lt;/li&gt;
-&lt;li&gt;Conception du formulaire : théorie&lt;/li&gt;
-&lt;li&gt;Conception du formulaire : pratique&lt;/li&gt;
-&lt;li&gt;Attributs : suite&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;projets-réels&#34;&gt;Projets réels&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Introduction au projet&lt;/li&gt;
-&lt;li&gt;Questionnaire du projet&lt;/li&gt;
-&lt;li&gt;Concetion du formulaire du projet - partie 1&lt;/li&gt;
-&lt;li&gt;Conception du formulaire du projet - partie 2&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;synchronisation&#34;&gt;Synchronisation&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Création du compte et déploiement&lt;/li&gt;
-&lt;li&gt;Paramétrage des téléphones/tablettes et collecte de données&lt;/li&gt;
-&lt;li&gt;Gestion et exportation de données&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.fdtk.org/pp-collecte-de-donnees-mobile&#34;&gt;CLIQUEZ ICI POUR ACCEDER A LA FORMATION&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
