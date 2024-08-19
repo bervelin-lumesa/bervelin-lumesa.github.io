@@ -28,7 +28,7 @@ sections:
     \n\n- Je vous forme pour vous rendre capable de prendre en main vos projet Data et gagner en productivité.
     \n\n- Je fais parler vos données pour vous faire gagner du temps et vous concentrer sur le coeur de votre business.
     \n\n<a href = 'mailto:lumesabervelin@gmail.com'>N'hésitez pas à lancer la conversation</a>. Je réponds généralement rapidement \U0001F603"
-    title: "\U0001F603 Je suis là pour vous..."
+    title: "Je suis là pour vous..."
   design:
     columns: "1"
 - block: collection
