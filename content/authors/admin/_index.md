@@ -103,27 +103,43 @@ superuser: true
 title: Bervelin Lumesa
 work:
 - company_logo: ""
-  company_name: GenCoin
+  company_name: BreakThroughAction - Enquête comportementale liée au paludisme (MBS) en Zambie
   company_url: ""
   date_end: ""
-  date_start: "2021-01-01"
-  position: Director of Cloud Infrastructure
+  date_start: "2024-03-01"
+  position: Co-Investigator (Data Management and Analysis Consultant)
   summary: |-
-    Responsibilities include:
-    - lorem ipsum dolor sit amet, consectetur adipiscing elit
-    - lorem ipsum dolor sit amet, consectetur adipiscing elit
-    - lorem ipsum dolor sit amet, consectetur adipiscing elit
+    Tâches:
+    - Participer à des réunions virtuelles périodiques avec le Groupe consultatif de l’Enquête comportementale liée au paludisme en Zambie.
+    - Mettre à jour un programme existant basé sur ODK (ou toute autre  plateforme de capture de données à décider avec le PI) pour correspondre à la version zambienne du questionnaire standard, puis tester les formulaires de capture de données pour les erreurs,
+    - Finaliser le programme de capture de données suite aux retours du PI    et de l’entreprise de recherche,
+    - Former les collecteurs de données et superviser un pré-test du questionnaire,
+    - Examiner la qualité des données en temps réel alors qu’elles arrivent sur le serveur pendant la collecte de données,
+    - Travailler avec le Chercheur Principal et l’Entreprise de Recherche pour résoudre les problèmes de qualité des données et en prévenir de nouveaux,
+    - Servir de défenseur des bonnes pratiques dans la mise en œuvre de MBS, de l’éthique de la recherche sur les sujets humains, de l’utilisation des données, et de MBS lui-même.
+    - Mettre à jour les fichiers Stata ou R pour assurer une analyse desdonnées reproductible et automatisée pendant la collecte de données. Les analyses incluent des analyses descriptives et de régression logistique multiple, le calcul des pondérations et indicateurs de l’enquête, ainsi que des analyses des réponses sur l’échelle de Likert,
+    - Nettoyage des ensembles de données finaux,
+    - Préparer toutes les tables de données et figures pour le rapport de l’EMS et contribution à la narration du rapport,
+    - Rédiger le rapport d’étude pour examen par l’équipe Breakthrough ACTION et les parties prenantes,
+    - Réviser le rapport suite aux retours,
+    - Préparer les tables et diapositives nécessaires pour un atelier d’interprétation des résultats avec les parties prenantes sur place.
+    - Préparer des diapositives avec des extraits de données pour un événement de diffusion des résultats,
+    - Configurer l’ensemble de données de l’EMS selon le format fourni par l’équipe Breakthrough ACTION pour soumission à la Bibliothèque de Données de Développement de l’USAID et au Tableau de Bord de l’EMS.
+
 - company_logo: ""
-  company_name: X
+  company_name: Begis
   company_url: ""
-  date_end: "2020-12-31"
-  date_start: "2016-01-01"
-  position: Backend Software Engineer
+  date_end: ""
+  date_start: "2018-03-01"
+  position: Statisticien/Data scientist
   summary: |
-    Responsibilities include:
-    - Migrated infrastructure to a new data center
-    - lorem ipsum dolor sit amet, consectetur adipiscing elit
-    - lorem ipsum dolor sit amet, consectetur adipiscing elit
+    Tâches:
+      - Formations
+      - Méthodologie des études quantitatives (échantillonnage et collecte)
+      - Mise à jour et configuration des smartphones
+      - Gérer les données
+      - Nettoyer les données
+      - Analyser les données
 ---
 
 ## A propos
