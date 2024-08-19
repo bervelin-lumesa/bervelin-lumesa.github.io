@@ -10,12 +10,12 @@ sections:
     filters:
       folders:
       - teaching
-    title: Teaching
+    title: Mes formations
   design:
     columns: 2
     view: article-grid
   id: teaching
-summary: My courses
-title: Teaching
+summary: Mes formations
+title: Formations
 type: landing
 ---
