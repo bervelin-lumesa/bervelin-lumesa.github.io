@@ -2,7 +2,7 @@
 awards:
 - awarder: freecodecamp
   certificate_url: https://www.freecodecamp.org/certification/blumski/data-analysis-with-python-v7
-  date: "2024-06-25"
+  date: "2024-07-25"
   icon: 
   summary: |
     Dans la certification d'analyse de données avec Python, j'ai appris les bases de l'analyse de données avec Python, comment lire des données à partir de sources telles que les fichiers CSV et SQL, et comment utiliser des bibliothèques comme Numpy, Pandas, Matplotlib et Seaborn pour traiter et visualiser les données.
