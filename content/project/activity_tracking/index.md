@@ -6,7 +6,7 @@ tags:
   - R
 ---
 
-Dans le cas des ses activités, une entreprise envoie des agents sur terrain pour l'implantation des infrastructures et pour effetuer des réparations en cas de panne.
+Dans le cas des ses activités, une entreprise envoie des agents sur terrain pour l'implantation des infrastructures et pour effectuer des réparations en cas de panne.
 
 Cette application conçue avec Shiny permet de répondre à question : 
 

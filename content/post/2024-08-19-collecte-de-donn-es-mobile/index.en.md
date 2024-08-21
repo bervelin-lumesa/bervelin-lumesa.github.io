@@ -1,5 +1,5 @@
 ---
-title: Introduction à collecte de données mobile
+title: Introduction à la collecte de données mobile
 author: Bervelin
 image:
   caption: 'Image credit: [**SurveyCTO**](https://www.surveycto.com/)'

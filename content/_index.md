@@ -25,7 +25,7 @@ sections:
   content:
     subtitle: ""
     text: "Je vous aide à tirer profit de la richesse que regorgent vos données par l'application des méthodes statistiques éprouvées et celles issues de l'inteligence artificielle.
-    \n\n- Je vous forme pour vous rendre capable de prendre en main vos projet Data et gagner en productivité.
+    \n\n- Je vous forme pour vous rendre capable de prendre en main vos projets Data et gagner en productivité.
     \n\n- Je fais parler vos données pour vous faire gagner du temps et vous concentrer sur le coeur de votre business.
     \n\n<a href = 'mailto:lumesabervelin@gmail.com'>N'hésitez pas à lancer la conversation</a>. Je réponds généralement rapidement \U0001F603"
     title: "Je suis là pour vous..."
