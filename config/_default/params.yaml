@@ -17,7 +17,7 @@ marketing:
     description: 'Bervelin est Statisticien de formation et Data scientist certifié avec plusieurs années d’expériences dans la recherche quantitative.'
     twitter: 'GetResearchDev'
   analytics:
-    google_analytics: ''
+    google_analytics: 'GTM-5JWSHLQS'
     baidu_tongji: ''
     plausible: ''
     fathom: ''

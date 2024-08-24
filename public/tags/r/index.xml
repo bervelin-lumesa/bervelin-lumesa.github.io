@@ -145,7 +145,7 @@
       <link>http://localhost:4321/project/activity_tracking/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/project/activity_tracking/</guid>
-      <description>&lt;p&gt;Dans le cas des ses activités, une entreprise envoie des agents sur terrain pour l&amp;rsquo;implantation des infrastructures et pour effetuer des réparations en cas de panne.&lt;/p&gt;
+      <description>&lt;p&gt;Dans le cas des ses activités, une entreprise envoie des agents sur terrain pour l&amp;rsquo;implantation des infrastructures et pour effectuer des réparations en cas de panne.&lt;/p&gt;
 &lt;p&gt;Cette application conçue avec Shiny permet de répondre à question :&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Qui a fait quoi, où et quand ?&lt;/p&gt;
