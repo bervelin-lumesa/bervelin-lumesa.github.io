@@ -17,7 +17,64 @@
       <link>http://localhost:4321/post/monitoring-de-la-collecte-de-donn-es-d-une-enqu-te-statistique/</link>
       <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/post/monitoring-de-la-collecte-de-donn-es-d-une-enqu-te-statistique/</guid>
-      <description></description>
+      <description>&lt;p&gt;Mbote !&lt;/p&gt;
+&lt;h2 id=&#34;intro&#34;&gt;Intro&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;Lors de notre &lt;a href=&#34;https://bervelin-lumesa.netlify.app/post/collecte-de-donn-es-mobile-partage-d-exp-rience/&#34;&gt;précédant post&lt;/a&gt;, nous avons parlé de la collecte de données mobile. Il était question des étapes et des conseils pratiques pour partir du questionnaire papier à la création du formulaire électronique. Mais que se passe-t-il lorsque la collecte demarre ? Comment informer les parties prénantes de l&amp;rsquo;évolution des activités ? Comment faire le feedback aux équipes de terrain ? Nous allons essayer de répondre à ces questions à nous mettant à la place du gestionnaire de données ou data manager&lt;/p&gt;
+&lt;h2 id=&#34;importance-du-suivi-de-la-collecte-de-données&#34;&gt;Importance du suivi de la collecte de données&lt;/h2&gt;
+&lt;p&gt;Le suivi des activités de la collecte de données est crucial pour plusieurs raisons, en particulier dans les projets de recherche, d&amp;rsquo;évaluation ou d&amp;rsquo;analyse. Voici quelques raisons qui montrent l&amp;rsquo;importance de ce suivi :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Assurer la qualité des données&lt;/p&gt;
+&lt;p&gt;Le suivi permet de s&amp;rsquo;assurer que les données collectées respectent les normes de qualité prédéfinies (exhaustivité, exactitude, cohérence). Cela garantit que les erreurs et les biais sont minimisés dès le début du processus. Il aide également à identifier rapidement les problèmes de collecte (comme des erreurs de saisie, des données manquantes ou des erreurs d&amp;rsquo;échantillonnage) qui pourraient affecter les résultats finaux.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Surveillance de l&amp;rsquo;avancement&lt;/p&gt;
+&lt;p&gt;Le suivi permet de surveiller l&amp;rsquo;avancement des activités de collecte de données en temps réel. Cela permet de s&amp;rsquo;assurer que les délais sont respectés et que l&amp;rsquo;ensemble des données est collecté dans le temps imparti. Si des retards sont observés, des ajustements peuvent être apportés rapidement pour éviter des impacts négatifs sur les échéances globales du projet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Optimisation des ressources&lt;/p&gt;
+&lt;p&gt;En suivant les activités de collecte, il est possible de mieux gérer les ressources (humaines, financières, matérielles) allouées. Cela garantit que les équipes de terrain travaillent efficacement et que les outils de collecte (questionnaires, outils numériques, etc.) sont bien utilisés. Le suivi aide également à éviter le gaspillage de ressources en détectant les inefficacités et en réajustant les processus.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Détection et résolution des problèmes&lt;/p&gt;
+&lt;p&gt;Pendant la collecte de données, il peut y avoir des problèmes imprévus, comme des erreurs de saisie, ou de choix de réponses ou d&amp;rsquo;autres erreurs humaines. Un bon suivi permet de détecter ces problèmes rapidement et de trouver des solutions appropriées avant qu&amp;rsquo;ils n&amp;rsquo;affectent gravement la qualité ou la quantité des données collectées.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Amélioration de la transparence et de la responsabilité&lt;/p&gt;
+&lt;p&gt;Le suivi régulier des activités de collecte de données améliore la transparence des processus et permet de rendre des comptes aux parties prenantes (bailleurs de fonds, équipes de recherche, etc.). Cela montre que les méthodologies suivies sont rigoureuses et que le projet respecte les normes éthiques et les attentes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vérification de la conformité aux plans de collecte&lt;/p&gt;
+&lt;p&gt;Les projets de collecte de données ont souvent des protocoles rigoureux sur la manière dont les informations doivent être recueillies (échantillonnage, méthodes de collecte, consentement éclairé, etc.). Le suivi permet de s&amp;rsquo;assurer que ces plans sont respectés et que les écarts sont rapidement corrigés.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Faciliter les ajustements en temps réel&lt;/p&gt;
+&lt;p&gt;Le suivi permet d&amp;rsquo;ajuster les stratégies de collecte de données au fur et à mesure. Si des problèmes spécifiques ou des changements contextuels surviennent (par exemple, des difficultés à accéder à certaines régions ou populations), des ajustements peuvent être faits pour maintenir la rigueur de la collecte sans compromettre les résultats.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;outils-de-suivi-de-la-collecte-de-données&#34;&gt;Outils de suivi de la collecte de données&lt;/h2&gt;
+&lt;p&gt;Pour le suivi visuel et la gestion des données collectées, des outils de visualisation et d&amp;rsquo;analyse sont souvent utilisés pour vérifier la qualité et suivre l&amp;rsquo;avancement.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Tableau : Un outil puissant pour visualiser les données collectées en temps réel. Il permet de créer des tableaux de bord interactifs qui montrent l&amp;rsquo;avancement de la collecte de données et identifient les écarts ou problèmes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Power BI : Semblable à Tableau, cet outil de Microsoft permet de créer des visualisations en temps réel à partir des données collectées et de partager ces rapports avec les équipes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;R : Un excellent outil pour le suivi et l&amp;rsquo;analyse des activités de collecte de données, notamment grâce à ses bibliothèques puissantes pour la manipulation de données, la visualisation et l&amp;rsquo;analyse statistique.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;mes-outils&#34;&gt;Mes outils..&lt;/h2&gt;
+&lt;p&gt;Personnellement, j&amp;rsquo;utilise R parce qu&amp;rsquo;il me permet de faire un travail reproductible. Un même script peut ête modifié legèrement pour l&amp;rsquo;adapter à un autre projet. De plus, avec un langage de programmation les possibilités sont infinies.&lt;/p&gt;
+&lt;p&gt;Avant de générer des rapports d&amp;rsquo;avancement, on a souvent besoin de faire un néttoyage rapide de données avant de calculer les indicateurs et R dispose d&amp;rsquo;excellents packages pour ces tâches.&lt;/p&gt;
+&lt;p&gt;Pour la plus part de projets, j&amp;rsquo;utilise R pour le nettoyage continue durant la collecte avec les packages &lt;code&gt;dplyr&lt;/code&gt;, &lt;code&gt;tidyr&lt;/code&gt;et, &lt;code&gt;lubridate&lt;/code&gt;. &lt;code&gt;Rmarkdown&lt;/code&gt;, &lt;code&gt;flexdashboard&lt;/code&gt; et &lt;code&gt;shiny&lt;/code&gt; pour la création des rapports automatiques, des tableaux de bords et applications web&lt;/p&gt;
+&lt;p&gt;Avec tout cela en place, il suffit juste d&amp;rsquo;appuyer sur un bouton pour générer les rapports à envoyer aux parties prénantes (équipes de terrain et coordination) pour des actions.&lt;/p&gt;
+&lt;p&gt;Chaque outil dispose souvent des API capable de se connecter directement au serveur hébergeant les données. Cela permet de construire des tableaux de bords affichant les données à temps réel.&lt;/p&gt;
+&lt;p&gt;Mon flux de travail durant la collecte de données ressemble à peu près à l&amp;rsquo;image ci-après, où SurveyCTO peut être remplacé par d&amp;rsquo;autres outils comme ODK ou KoboToolbox.
+&lt;img src=&#34;soft.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Dans tous les cas, il faut éviter des tâches répétitives telles que le la contruction des tableaux, le calcul des indicateurs ou la mise en forme du rapport. Grâce à un langage de programmation comme R, tout cela peut être automatisé.&lt;/p&gt;
+</description>
     </item>
     
     <item>
