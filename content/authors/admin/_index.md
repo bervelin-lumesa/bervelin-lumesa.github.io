@@ -148,4 +148,4 @@ Bervelin est Statisticien de formation et Data scientist certifié avec plus de 
 
 Fondateur et Coordonateur de [FDTK (From Data To Knowledge)](https://www.fdtk.org/), une Organisation Non Gouvernementale spécialisée dans la fourniture des services en Data Science et  des formations de qualité.
 
-Je travaille actuellement comme Co-Investigateur, Consultant chargé de la gestion et analyse de données dans le Projet [Malaria Behavior Survey](https://malariabehaviorsurvey.org/) en Zambie avec [BreakThrough Action](https://breakthroughactionandresearch.org/) et le [Johns Hopkins Center for Communication Programs](https://ccp.jhu.edu/).
+Je travaille actuellement comme Co-Investigateur, Consultant chargé de la gestion et analyse de données dans le Projet [Malaria Behavior Survey](https://malariabehaviorsurvey.org/) en Zambie avec [BreakThrough ACTION+RESEARCH](https://breakthroughactionandresearch.org/) et le [Johns Hopkins Center for Communication Programs](https://ccp.jhu.edu/).
