@@ -55,6 +55,14 @@ Pour le suivi visuel et la gestion des données collectées, des outils de visua
 
 -   R : Un excellent outil pour le suivi et l'analyse des activités de collecte de données, notamment grâce à ses bibliothèques puissantes pour la manipulation de données, la visualisation et l'analyse statistique.
 
+
+
+## Choix des indicateurs
+
+Le choix des indicateurs ou des métriques à inclure dans le tableau de bord ou le rapport dépend du besoin en information. Qu'a-t-on besoin de mesurer et de suivre ?
+
+Pour ma part je crée toujours deux type de rapports : un rapport d'avancement qui donne une idée sur la progression de la collecte de données (nombre de ménages enquêtés, nombre de réfus, etc.) et un rapport d'erreurs. Celui-ci liste les différentes erreurs commises par les enquêteurs. Il peut s'agir des doublons, des valeurs extrêmes (une personne de plus de 18 ans qui fréquente encore l'école primaire) ou toute autre incohérence dans le données. La création du rapport d'erreurs nécessite d'avoir une connaissance approfondi du(des) questionnaire(s) et des liens qui existent entre différentes unités statistiques.
+
 ## Mes outils..
 
 Personnellement, j'utilise R parce qu'il me permet de faire un travail reproductible. Un même script peut ête modifié legèrement pour s'adapter à un autre projet. De plus, avec un langage de programmation les possibilités sont infinies.
@@ -69,12 +77,6 @@ Mon flux de travail durant la collecte de données ressemble à peu près à l'i
 ![](soft.png)
 
 Dans tous les cas, il faut éviter des tâches répétitives telles que le la contruction des tableaux, le calcul des indicateurs ou la mise en forme du rapport. Grâce à un langage de programmation comme R, tout cela peut être automatisé.
-
-## Choix des indicateurs
-
-Le choix des indicateurs ou des métriques à inclure dans le tableau de bord ou le rapport dépend du besoin en information. Qu'a-t-on besoin de mesurer et de suivre ?
-
-Pour ma part je crée toujours deux type de rapports : un rapport d'avancement qui donne une idée sur la progression de la collecte de données (nombre de ménages enquêtés, nombre de réfus, etc.) et un rapport d'erreurs. Celui-ci liste les différentes erreurs commises par les enquêteurs. Il peut s'agir des doublons, des valeurs extrêmes (une personne de plus de 18 ans qui fréquente encore l'école primaire) ou toute autre incohérence dans le données. La création du rapport d'erreurs nécessite d'avoir une connaissance approfondi du(des) questionnaire(s) et des liens qui existent entre différentes unités statistiques.
 
 
 #### Besoin d'un expert pour appuyer votre projet de collecte de données ? [Contactez-moi! Je suis là pour vous accompagner.](mailto:lumesabervelin@gmail.com)
