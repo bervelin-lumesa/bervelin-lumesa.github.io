@@ -66,14 +66,19 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;mes-outils&#34;&gt;Mes outils..&lt;/h2&gt;
-&lt;p&gt;Personnellement, j&amp;rsquo;utilise R parce qu&amp;rsquo;il me permet de faire un travail reproductible. Un même script peut ête modifié legèrement pour l&amp;rsquo;adapter à un autre projet. De plus, avec un langage de programmation les possibilités sont infinies.&lt;/p&gt;
+&lt;p&gt;Personnellement, j&amp;rsquo;utilise R parce qu&amp;rsquo;il me permet de faire un travail reproductible. Un même script peut ête modifié legèrement pour s&amp;rsquo;adapter à un autre projet. De plus, avec un langage de programmation les possibilités sont infinies.&lt;/p&gt;
 &lt;p&gt;Avant de générer des rapports d&amp;rsquo;avancement, on a souvent besoin de faire un néttoyage rapide de données avant de calculer les indicateurs et R dispose d&amp;rsquo;excellents packages pour ces tâches.&lt;/p&gt;
-&lt;p&gt;Pour la plus part de projets, j&amp;rsquo;utilise R pour le nettoyage continue durant la collecte avec les packages &lt;code&gt;dplyr&lt;/code&gt;, &lt;code&gt;tidyr&lt;/code&gt;et, &lt;code&gt;lubridate&lt;/code&gt;. &lt;code&gt;Rmarkdown&lt;/code&gt;, &lt;code&gt;flexdashboard&lt;/code&gt; et &lt;code&gt;shiny&lt;/code&gt; pour la création des rapports automatiques, des tableaux de bords et applications web&lt;/p&gt;
+&lt;p&gt;Pour la plus part de projets, j&amp;rsquo;utilise R pour le nettoyage continue durant la collecte avec les packages &lt;code&gt;dplyr&lt;/code&gt;, &lt;code&gt;tidyr&lt;/code&gt;et &lt;code&gt;lubridate&lt;/code&gt;. &lt;code&gt;Rmarkdown&lt;/code&gt;, &lt;code&gt;flexdashboard&lt;/code&gt; et &lt;code&gt;shiny&lt;/code&gt; pour la création des rapports automatiques, des tableaux de bords et applications web&lt;/p&gt;
 &lt;p&gt;Avec tout cela en place, il suffit juste d&amp;rsquo;appuyer sur un bouton pour générer les rapports à envoyer aux parties prénantes (équipes de terrain et coordination) pour des actions.&lt;/p&gt;
-&lt;p&gt;Chaque outil dispose souvent des API capable de se connecter directement au serveur hébergeant les données. Cela permet de construire des tableaux de bords affichant les données à temps réel.&lt;/p&gt;
 &lt;p&gt;Mon flux de travail durant la collecte de données ressemble à peu près à l&amp;rsquo;image ci-après, où SurveyCTO peut être remplacé par d&amp;rsquo;autres outils comme ODK ou KoboToolbox.
 &lt;img src=&#34;soft.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Dans tous les cas, il faut éviter des tâches répétitives telles que le la contruction des tableaux, le calcul des indicateurs ou la mise en forme du rapport. Grâce à un langage de programmation comme R, tout cela peut être automatisé.&lt;/p&gt;
+&lt;h2 id=&#34;choix-des-indicateurs&#34;&gt;Choix des indicateurs&lt;/h2&gt;
+&lt;p&gt;Le choix des indicateurs ou des métriques à inclure dans le tableau de bord ou le rapport dépend du besoin en information. Qu&amp;rsquo;a-t-on besoin de mesurer et de suivre ?&lt;/p&gt;
+&lt;p&gt;Pour ma part je crée toujours deux type de rapports : un rapport d&amp;rsquo;avancement qui donne une idée sur la progression de la collecte de données (nombre de ménages enquêtés, nombre de réfus, etc.) et un rapport d&amp;rsquo;erreurs. Celui-ci liste les différentes erreurs commises par les enquêteurs. Il peut s&amp;rsquo;agir des doublons, des valeurs extrêmes (une personne de plus de 18 ans qui fréquente encore l&amp;rsquo;école primaire) ou toute autre incohérence dans le données. La création du rapport d&amp;rsquo;erreurs nécessite d&amp;rsquo;avoir une connaissance approfondi du(des) questionnaire(s) et des liens qui existent entre différentes unités statistiques.&lt;/p&gt;
+&lt;h4 id=&#34;besoin-dun-expert-pour-appuyer-votre-projet-de-collecte-de-données--contactez-moi-je-suis-là-pour-vous-accompagnermailtolumesabervelingmailcom&#34;&gt;Besoin d&amp;rsquo;un expert pour appuyer votre projet de collecte de données ? &lt;a href=&#34;mailto:lumesabervelin@gmail.com&#34;&gt;Contactez-moi! Je suis là pour vous accompagner.&lt;/a&gt;&lt;/h4&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;avez-vous-trouvé-cet-article-utile--pensez-à-le-partager-&#34;&gt;Avez-vous trouvé cet article utile ? Pensez à le partager 🙌&lt;/h2&gt;
 </description>
     </item>
     

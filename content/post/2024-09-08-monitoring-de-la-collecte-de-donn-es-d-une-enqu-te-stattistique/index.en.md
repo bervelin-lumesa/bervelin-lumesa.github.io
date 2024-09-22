@@ -57,17 +57,33 @@ Pour le suivi visuel et la gestion des données collectées, des outils de visua
 
 ## Mes outils..
 
-Personnellement, j'utilise R parce qu'il me permet de faire un travail reproductible. Un même script peut ête modifié legèrement pour l'adapter à un autre projet. De plus, avec un langage de programmation les possibilités sont infinies.
+Personnellement, j'utilise R parce qu'il me permet de faire un travail reproductible. Un même script peut ête modifié legèrement pour s'adapter à un autre projet. De plus, avec un langage de programmation les possibilités sont infinies.
 
 Avant de générer des rapports d'avancement, on a souvent besoin de faire un néttoyage rapide de données avant de calculer les indicateurs et R dispose d'excellents packages pour ces tâches.
 
-Pour la plus part de projets, j'utilise R pour le nettoyage continue durant la collecte avec les packages `dplyr`, `tidyr`et, `lubridate`. `Rmarkdown`, `flexdashboard` et `shiny` pour la création des rapports automatiques, des tableaux de bords et applications web
+Pour la plus part de projets, j'utilise R pour le nettoyage continue durant la collecte avec les packages `dplyr`, `tidyr`et `lubridate`. `Rmarkdown`, `flexdashboard` et `shiny` pour la création des rapports automatiques, des tableaux de bords et applications web
 
 Avec tout cela en place, il suffit juste d'appuyer sur un bouton pour générer les rapports à envoyer aux parties prénantes (équipes de terrain et coordination) pour des actions.
-
-Chaque outil dispose souvent des API capable de se connecter directement au serveur hébergeant les données. Cela permet de construire des tableaux de bords affichant les données à temps réel.
 
 Mon flux de travail durant la collecte de données ressemble à peu près à l'image ci-après, où SurveyCTO peut être remplacé par d'autres outils comme ODK ou KoboToolbox.
 ![](soft.png)
 
 Dans tous les cas, il faut éviter des tâches répétitives telles que le la contruction des tableaux, le calcul des indicateurs ou la mise en forme du rapport. Grâce à un langage de programmation comme R, tout cela peut être automatisé.
+
+## Choix des indicateurs
+
+Le choix des indicateurs ou des métriques à inclure dans le tableau de bord ou le rapport dépend du besoin en information. Qu'a-t-on besoin de mesurer et de suivre ?
+
+Pour ma part je crée toujours deux type de rapports : un rapport d'avancement qui donne une idée sur la progression de la collecte de données (nombre de ménages enquêtés, nombre de réfus, etc.) et un rapport d'erreurs. Celui-ci liste les différentes erreurs commises par les enquêteurs. Il peut s'agir des doublons, des valeurs extrêmes (une personne de plus de 18 ans qui fréquente encore l'école primaire) ou toute autre incohérence dans le données. La création du rapport d'erreurs nécessite d'avoir une connaissance approfondi du(des) questionnaire(s) et des liens qui existent entre différentes unités statistiques.
+
+
+#### Besoin d'un expert pour appuyer votre projet de collecte de données ? [Contactez-moi! Je suis là pour vous accompagner.](mailto:lumesabervelin@gmail.com)
+
+<br>
+
+## Avez-vous trouvé cet article utile ? Pensez à le partager 🙌
+
+
+
+
+
