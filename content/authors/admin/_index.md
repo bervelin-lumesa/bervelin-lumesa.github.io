@@ -1,5 +1,20 @@
 ---
 awards:
+
+- awarder: The Carpentries
+  certificate_url: https://carpentries.org/instructors/
+  date: "2024-10-05"
+  icon: 
+  summary: |
+    La formation d’instructeur The Carpentries poursuit les objectifs suivants :
+    - présenter des pratiques pédagogiques fondées sur des données probantes.
+    - Apprendre à créer un environnement positif pour les apprenants lors de vos ateliers.
+    - Offrir des opportunités de pratiquer et de développer vos compétences pédagogiques.
+    - Aider à intégrer la communauté The Carpentries.
+    - Se Préparer à utiliser ces compétences pédagogiques dans l’enseignement d’ateliers de The Carpentries.
+  title: The Carpentries Certified Instructor
+
+
 - awarder: freecodecamp
   certificate_url: https://www.freecodecamp.org/certification/blumski/data-analysis-with-python-v7
   date: "2024-07-25"
