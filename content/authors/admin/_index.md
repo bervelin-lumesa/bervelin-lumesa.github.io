@@ -2,7 +2,7 @@
 awards:
 
 - awarder: The Carpentries
-  certificate_url: https://carpentries.org/instructors/
+  certificate_url: https://www.linkedin.com/in/bervelin-lumesa/details/certifications/1728403905401/single-media-viewer/?profileId=ACoAACzZPxIBDsL9j_5mZQr8DAG9WMfvIMOhdWs
   date: "2024-10-05"
   icon: 
   summary: |
