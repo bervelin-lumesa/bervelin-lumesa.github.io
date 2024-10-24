@@ -69,7 +69,7 @@ Ces lignes chargent les bibliothèques `plumber` et `randomForest`. `plumber` es
 model <- readRDS("rand_forest.rds")
 ```
 
-Cette ligne charge un modèle Random Forest préalablement entraîné à partir d'un fichier RDS. Le modèle est ensuite stocké dans la variable model. [Vous pouvez téléchager ce fichier à partir d'ici](https://www.github.com/bervelin-lumesa).
+Cette ligne charge un modèle Random Forest préalablement entraîné à partir d'un fichier RDS. Le modèle est ensuite stocké dans la variable model. [Vous pouvez téléchager ce fichier à partir d'ici](https://github.com/bervelin-lumesa/plumber_shiny).
 
 #### 3. Documentation de l'API
 
@@ -213,7 +213,9 @@ La mise en place d'une API permet non seulement de centraliser les accès à un 
 
 Que ce soit pour des déploiements en local ou dans le cloud, l'intégration des modèles machine learning via des API est une étape essentielle pour rendre ces modèles réellement opérationnels en production.
 
-Tous les codes peuvent être trouvés ici dans mon [Github]()  
+Tous les codes peuvent être trouvés ici dans mon [Github](https://github.com/bervelin-lumesa/plumber_shiny)  
+
+## Avez-vous trouvé cet article utile ? Pensez à le partager 🙌
 
 ---
 Voici la suite de cet article : [Déployer son modèle de Machine Learning sous forme d''API plumber dans R :

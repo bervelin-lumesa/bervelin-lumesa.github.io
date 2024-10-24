@@ -803,6 +803,12 @@ Introduction Dans cet article, nous allons explorer comment déployer un modèle
                 class="hb-docs-link"
               >Conclusion</a>
             </li>
+          <li>
+              <a
+                href="#avez-vous-trouv%c3%a9-cet-article-utile--pensez-%c3%a0-le-partager-"
+                class="hb-docs-link"
+              >Avez-vous trouvé cet article utile ? Pensez à le partager 🙌</a>
+            </li>
           </ul>
   
               
@@ -1041,6 +1047,9 @@ Introduction Dans cet article, nous allons explorer comment déployer un modèle
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
         <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#conclusion">Conclusion</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#avez-vous-trouv%c3%a9-cet-article-utile--pensez-%c3%a0-le-partager-">Avez-vous trouvé cet article utile ? Pensez à le partager 🙌</a>
       </li></ul>
 
   
@@ -1166,7 +1175,7 @@ Introduction Dans cet article, nous allons explorer comment déployer un modèle
 <h4 id="2-chargement-du-modèle">2. Chargement du modèle</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1"># Chargement du modèle</span>
 </span></span><span class="line"><span class="cl"><span class="n">model</span> <span class="o">&lt;-</span> <span class="nf">readRDS</span><span class="p">(</span><span class="s">&#34;rand_forest.rds&#34;</span><span class="p">)</span>
-</span></span></code></pre></div><p>Cette ligne charge un modèle Random Forest préalablement entraîné à partir d&rsquo;un fichier RDS. Le modèle est ensuite stocké dans la variable model. <a href="https://www.github.com/bervelin-lumesa" target="_blank" rel="noopener">Vous pouvez téléchager ce fichier à partir d&rsquo;ici</a>.</p>
+</span></span></code></pre></div><p>Cette ligne charge un modèle Random Forest préalablement entraîné à partir d&rsquo;un fichier RDS. Le modèle est ensuite stocké dans la variable model. <a href="https://github.com/bervelin-lumesa/plumber_shiny" target="_blank" rel="noopener">Vous pouvez téléchager ce fichier à partir d&rsquo;ici</a>.</p>
 <h4 id="3-documentation-de-lapi">3. Documentation de l&rsquo;API</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1">#* @apiTitle Species prediction API</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#* @apiDescription This API is based on Iris Data and uses characteristics such as Sepal.Length, Petal.Width to predict Species </span>
@@ -1373,7 +1382,8 @@ Vous pouvez alors lancer votre API, de préférence en arrière-plan, à l&rsquo
 <p>Dans cette première partie, nous avons exploré les bases de la création d&rsquo;une API en utilisant <code>plumber</code> dans R pour exposer un modèle de machine learning. Nous avons vu comment une API permet de rendre un modèle accessible, offrant ainsi une interface simple pour des applications externes. À travers l&rsquo;exemple du modèle de classification Iris, nous avons couvert les étapes clés, depuis la préparation du modèle jusqu&rsquo;à la création et le test de l&rsquo;API en local.</p>
 <p>La mise en place d&rsquo;une API permet non seulement de centraliser les accès à un modèle, mais aussi d&rsquo;améliorer la scalabilité et de faciliter les mises à jour. Dans la prochaine partie, nous nous intéresserons à l&rsquo;intégration de cette API dans une application <code>Rshiny</code>, ce qui permettra de démontrer la synergie entre des modèles prédictifs et des interfaces utilisateurs interactives.</p>
 <p>Que ce soit pour des déploiements en local ou dans le cloud, l&rsquo;intégration des modèles machine learning via des API est une étape essentielle pour rendre ces modèles réellement opérationnels en production.</p>
-<p>Tous les codes peuvent être trouvés ici dans mon <a href="">Github</a></p>
+<p>Tous les codes peuvent être trouvés ici dans mon <a href="https://github.com/bervelin-lumesa/plumber_shiny" target="_blank" rel="noopener">Github</a></p>
+<h2 id="avez-vous-trouvé-cet-article-utile--pensez-à-le-partager-">Avez-vous trouvé cet article utile ? Pensez à le partager 🙌</h2>
 <hr>
 <p>Voici la suite de cet article : <a href="">Déployer son modèle de Machine Learning sous forme d&rsquo;&lsquo;API plumber dans R :
 Part. 2</a></p>
