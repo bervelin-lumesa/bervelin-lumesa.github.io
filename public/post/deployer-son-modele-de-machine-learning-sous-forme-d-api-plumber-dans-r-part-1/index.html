@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: October 23, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: October 24, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
@@ -797,6 +797,12 @@ Introduction Dans cet article, nous allons explorer comment déployer un modèle
                 class="hb-docs-link"
               >Création d&amp;rsquo;une API avec plumber</a>
             </li>
+          <li>
+              <a
+                href="#conclusion"
+                class="hb-docs-link"
+              >Conclusion</a>
+            </li>
           </ul>
   
               
@@ -1032,6 +1038,9 @@ Introduction Dans cet article, nous allons explorer comment déployer un modèle
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
         <a class="pl-12 rtl:pr-12 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#72-dans-le-cloud">7.2. Dans le cloud</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#conclusion">Conclusion</a>
       </li></ul>
 
   
@@ -1070,7 +1079,7 @@ Introduction Dans cet article, nous allons explorer comment déployer un modèle
         
         <span class="mx-1">·</span>
         <span class="mx-1">
-          7 min read
+          9 min read
         </span>
         
         </div>
@@ -1183,12 +1192,13 @@ Introduction Dans cet article, nous allons explorer comment déployer un modèle
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><ul>
 <li>
-<p>Route de l&rsquo;API (@post /species-predict) : Définit une route POST à l&rsquo;URL /species-predict pour la prédiction des espèces. La route POST permet d&rsquo;envoyer une réquête à l&rsquo;API pour effectuer des cacluls.</p>
+<p>Route de l&rsquo;API (@post /species-predict) : Définit une route POST à l&rsquo;URL /species-predict pour la prédiction des espèces. La route POST permet d&rsquo;envoyer les données au serveur (par exemple soumettre un formulaire) et d&rsquo;obtenir une réponse.</p>
 </li>
 <li>
 <p>Fonction de prédiction : La fonction prend les paramètres Sepal_Length, Sepal_Width, Petal_Length et Petal_Width de la requête POST, crée un data.frame avec ces valeurs, puis utilise le modèle pour prédire l&rsquo;espèce de la fleur.</p>
 </li>
 </ul>
+<p>A part la route POST, il en existe d&rsquo;autres comme GET, DETELE etc.</p>
 <p>Le code complet est :</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">plumber</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">randomForest</span><span class="p">)</span>
@@ -1277,7 +1287,7 @@ Introduction Dans cet article, nous allons explorer comment déployer un modèle
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>L&rsquo;image ci-après donne un exemple de remplissage pour chaque paramètre. Après remplissagen cliquez sur &ldquo;Execute&rdquo; pour obtenir la prédiction.</p>
+<p>L&rsquo;image ci-après donne un exemple de remplissage pour chaque paramètre. Après remplissage, cliquez sur &ldquo;Execute&rdquo; pour obtenir la prédiction.</p>
 <p>
 
 
@@ -1338,25 +1348,35 @@ Introduction Dans cet article, nous allons explorer comment déployer un modèle
 <h4 id="7-déploiement-de-lapi">7. Déploiement de l&rsquo;API</h4>
 <p>Dans le cadre de cet article, nous allons nous limiter au déploiement en local et nous fournirons des pistes de solutions pour le déploiement dans le cloud.</p>
 <h5 id="71-en-local">7.1. En local</h5>
-<p>Comme vous l&rsquo;aurez remarquer, l&rsquo;hôte (la partie de l&rsquo;URL juste après http:// et avant :) et le port (les quatre chiffres après :) de l&rsquo;API ne sont pas fixes, mais peuvent se modifier du fil d&rsquo;exécution. R a la solution à cela.</p>
+<p>Comme vous l&rsquo;aurez remarquer, le port (les quatre chiffres après : dans l&rsquo;URL) de l&rsquo;API n&rsquo;est pas fixe, mais peut se modifier du fil d&rsquo;exécution. R a la solution à cela.</p>
 <p>Créez un autre script R et y ajoutez les commandes suivantes :</p>
-<p>Ces lignes permettent d&rsquo;exécuter notre API à partir d&rsquo;un autre script, de fixer l&rsquo;hôte et le port.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">pr</span> <span class="o">&lt;-</span> <span class="n">plumber</span><span class="o">::</span><span class="nf">plumb</span><span class="p">(</span><span class="s">&#34;plumber.R&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">pr</span><span class="o">$</span><span class="nf">run</span><span class="p">(</span><span class="n">host</span> <span class="o">=</span> <span class="s">&#34;127.0.1.1&#34;</span><span class="p">,</span> <span class="n">port</span> <span class="o">=</span> <span class="m">8080</span><span class="p">)</span>
-</span></span></code></pre></div><p>Vous pouvez alors lancer votre, de préférence en arrière-plan, à l&rsquo;aide Background Jobs de Rstudio. Cela permet de faire tourner l&rsquo;API dans paralyser la session en cours. Pour ce faire, cliquez sur &ldquo;Source&rdquo; &gt; &ldquo;Source as Background Jobs&rdquo; au coin supérieur droit de votre script.</p>
+</span></span><span class="line"><span class="cl"><span class="n">pr</span><span class="o">$</span><span class="nf">run</span><span class="p">(</span><span class="n">port</span> <span class="o">=</span> <span class="m">8000</span><span class="p">)</span>
+</span></span></code></pre></div><p>Ces lignes permettent d&rsquo;exécuter notre API à partir d&rsquo;un autre script et de fixer le port.
+Vous pouvez alors lancer votre API, de préférence en arrière-plan, à l&rsquo;aide Background Jobs de Rstudio. Cela permet de faire tourner l&rsquo;API dans paralyser la session en cours. Pour ce faire, cliquez sur &ldquo;Source&rdquo; &gt; &ldquo;Source as Background Jobs&rdquo; au coin supérieur droit de votre script.</p>
 <h5 id="72-dans-le-cloud">7.2. Dans le cloud</h5>
 <p>Il existe plusieurs possibilités pour déployer l&rsquo;API <code>plumber</code> dans le cloud. Ci-après quelques solutions:</p>
 <ul>
-<li>
-<p>Solution 1</p>
-</li>
-<li>
-<p>Solution 2</p>
-</li>
+<li><a href="https://docs.posit.co/connect/how-to/publish-plumber-api/" target="_blank" rel="noopener">Posit Connect</a></li>
 </ul>
+<p>Posit Connect (anciennement connu sous le nom de RStudio Connect) est une plateforme de publication et de gestion développée par Posit (anciennement RStudio) qui permet de déployer, partager et gérer des applications et des documents produits avec des outils R et Python. Elle est conçue pour rendre le processus de déploiement et de collaboration simple et efficace pour les data scientists, analystes et développeurs.</p>
+<ul>
+<li><a href="https://datawookie.dev/blog/2017/06/deploying-a-minimal-plumber-api-on-digitalocean/" target="_blank" rel="noopener">Digital Ocean</a></li>
+</ul>
+<p>DigitalOcean est une plateforme de cloud computing qui fournit des services d&rsquo;hébergement et d&rsquo;infrastructure cloud pour les développeurs, les petites et moyennes entreprises, ainsi que les startups. DigitalOcean est populaire pour son approche simple et conviviale, offrant des solutions accessibles pour les personnes qui veulent créer et gérer des applications sur des serveurs cloud, sans la complexité de certaines plateformes plus massives comme AWS ou Google Cloud Platform.</p>
+<ul>
+<li><a href="https://saturncloud.io/docs/examples/r/production/qs-r-api/" target="_blank" rel="noopener">Saturn cloud</a></li>
+</ul>
+<p>Saturn Cloud est une plateforme cloud qui fournit des environnements pour le développement, le déploiement et la gestion de projets en data science et machine learning à grande échelle. Elle offre des outils et des ressources pour faciliter le travail des data scientists et des ingénieurs machine learning, en leur permettant de construire, entraîner et déployer des modèles efficacement.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p><strong>Conclusion</strong></p>
+<p>Dans cette première partie, nous avons exploré les bases de la création d&rsquo;une API en utilisant <code>plumber</code> dans R pour exposer un modèle de machine learning. Nous avons vu comment une API permet de rendre un modèle accessible, offrant ainsi une interface simple pour des applications externes. À travers l&rsquo;exemple du modèle de classification Iris, nous avons couvert les étapes clés, depuis la préparation du modèle jusqu&rsquo;à la création et le test de l&rsquo;API en local.</p>
+<p>La mise en place d&rsquo;une API permet non seulement de centraliser les accès à un modèle, mais aussi d&rsquo;améliorer la scalabilité et de faciliter les mises à jour. Dans la prochaine partie, nous nous intéresserons à l&rsquo;intégration de cette API dans une application <code>Rshiny</code>, ce qui permettra de démontrer la synergie entre des modèles prédictifs et des interfaces utilisateurs interactives.</p>
+<p>Que ce soit pour des déploiements en local ou dans le cloud, l&rsquo;intégration des modèles machine learning via des API est une étape essentielle pour rendre ces modèles réellement opérationnels en production.</p>
+<p>Tous les codes peuvent être trouvés ici dans mon <a href="">Github</a></p>
+<hr>
 <p>Voici la suite de cet article : <a href="">Déployer son modèle de Machine Learning sous forme d&rsquo;&lsquo;API plumber dans R :
 Part. 2</a></p>
-<p>Tous les codes peuvent être trouvés ici dans mon <a href="">Github</a></p>
 
       </div>
 

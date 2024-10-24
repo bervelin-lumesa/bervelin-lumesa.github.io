@@ -110,9 +110,11 @@ function(Sepal_Length, Sepal_Width, Petal_Length, Petal_Width) {
 }
 ```
 
--   Route de l'API (\@post /species-predict) : Définit une route POST à l'URL /species-predict pour la prédiction des espèces. La route POST permet d'envoyer une réquête à l'API pour effectuer des cacluls.
+-   Route de l'API (\@post /species-predict) : Définit une route POST à l'URL /species-predict pour la prédiction des espèces. La route POST permet d'envoyer les données au serveur (par exemple soumettre un formulaire) et d'obtenir une réponse.
 
 -   Fonction de prédiction : La fonction prend les paramètres Sepal_Length, Sepal_Width, Petal_Length et Petal_Width de la requête POST, crée un data.frame avec ces valeurs, puis utilise le modèle pour prédire l'espèce de la fleur.
+
+A part la route POST, il en existe d'autres comme GET, DETELE etc.
 
 Le code complet est :
 
@@ -157,7 +159,7 @@ Pour accéder à la route POST où se trouve notre modèle, cliquez sur POST. Ce
 
 ![](api_try.png)
 
-L'image ci-après donne un exemple de remplissage pour chaque paramètre. Après remplissagen cliquez sur "Execute" pour obtenir la prédiction.
+L'image ci-après donne un exemple de remplissage pour chaque paramètre. Après remplissage, cliquez sur "Execute" pour obtenir la prédiction.
 
 ![](api_execute.png)
 
@@ -171,28 +173,49 @@ Dans le cadre de cet article, nous allons nous limiter au déploiement en local 
 
 ##### 7.1. En local
 
-Comme vous l'aurez remarquer, l'hôte (la partie de l'URL juste après http:// et avant :) et le port (les quatre chiffres après :) de l'API ne sont pas fixes, mais peuvent se modifier du fil d'exécution. R a la solution à cela.
+Comme vous l'aurez remarquer, le port (les quatre chiffres après : dans l'URL) de l'API n'est pas fixe, mais peut se modifier du fil d'exécution. R a la solution à cela.
 
 Créez un autre script R et y ajoutez les commandes suivantes :
 
-Ces lignes permettent d'exécuter notre API à partir d'un autre script, de fixer l'hôte et le port. 
 ```r
 pr <- plumber::plumb("plumber.R")
-pr$run(host = "127.0.1.1", port = 8080)
+pr$run(port = 8000)
 ```
-
-Vous pouvez alors lancer votre, de préférence en arrière-plan, à l'aide Background Jobs de Rstudio. Cela permet de faire tourner l'API dans paralyser la session en cours. Pour ce faire, cliquez sur "Source" > "Source as Background Jobs" au coin supérieur droit de votre script.
+Ces lignes permettent d'exécuter notre API à partir d'un autre script et de fixer le port. 
+Vous pouvez alors lancer votre API, de préférence en arrière-plan, à l'aide Background Jobs de Rstudio. Cela permet de faire tourner l'API dans paralyser la session en cours. Pour ce faire, cliquez sur "Source" > "Source as Background Jobs" au coin supérieur droit de votre script.
 
 ##### 7.2. Dans le cloud
 
 Il existe plusieurs possibilités pour déployer l'API `plumber` dans le cloud. Ci-après quelques solutions: 
 
-- Solution 1
+- [Posit Connect](https://docs.posit.co/connect/how-to/publish-plumber-api/)
 
-- Solution 2
+Posit Connect (anciennement connu sous le nom de RStudio Connect) est une plateforme de publication et de gestion développée par Posit (anciennement RStudio) qui permet de déployer, partager et gérer des applications et des documents produits avec des outils R et Python. Elle est conçue pour rendre le processus de déploiement et de collaboration simple et efficace pour les data scientists, analystes et développeurs.
 
 
+
+- [Digital Ocean](https://datawookie.dev/blog/2017/06/deploying-a-minimal-plumber-api-on-digitalocean/)
+
+DigitalOcean est une plateforme de cloud computing qui fournit des services d'hébergement et d'infrastructure cloud pour les développeurs, les petites et moyennes entreprises, ainsi que les startups. DigitalOcean est populaire pour son approche simple et conviviale, offrant des solutions accessibles pour les personnes qui veulent créer et gérer des applications sur des serveurs cloud, sans la complexité de certaines plateformes plus massives comme AWS ou Google Cloud Platform.
+
+- [Saturn cloud](https://saturncloud.io/docs/examples/r/production/qs-r-api/)
+
+Saturn Cloud est une plateforme cloud qui fournit des environnements pour le développement, le déploiement et la gestion de projets en data science et machine learning à grande échelle. Elle offre des outils et des ressources pour faciliter le travail des data scientists et des ingénieurs machine learning, en leur permettant de construire, entraîner et déployer des modèles efficacement.
+
+
+## Conclusion
+
+**Conclusion**
+
+Dans cette première partie, nous avons exploré les bases de la création d'une API en utilisant `plumber` dans R pour exposer un modèle de machine learning. Nous avons vu comment une API permet de rendre un modèle accessible, offrant ainsi une interface simple pour des applications externes. À travers l'exemple du modèle de classification Iris, nous avons couvert les étapes clés, depuis la préparation du modèle jusqu'à la création et le test de l'API en local.
+
+La mise en place d'une API permet non seulement de centraliser les accès à un modèle, mais aussi d'améliorer la scalabilité et de faciliter les mises à jour. Dans la prochaine partie, nous nous intéresserons à l'intégration de cette API dans une application `Rshiny`, ce qui permettra de démontrer la synergie entre des modèles prédictifs et des interfaces utilisateurs interactives.
+
+Que ce soit pour des déploiements en local ou dans le cloud, l'intégration des modèles machine learning via des API est une étape essentielle pour rendre ces modèles réellement opérationnels en production.
+
+Tous les codes peuvent être trouvés ici dans mon [Github]()  
+
+---
 Voici la suite de cet article : [Déployer son modèle de Machine Learning sous forme d''API plumber dans R :
   Part. 2]()
   
-Tous les codes peuvent être trouvés ici dans mon [Github]()  
