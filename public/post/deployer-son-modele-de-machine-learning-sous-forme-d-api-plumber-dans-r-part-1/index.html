@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: October 24, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: October 25, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
@@ -1267,7 +1267,7 @@ Introduction Dans cet article, nous allons explorer comment déployer un modèle
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Pour accéder à la route POST où se trouve notre modèle, cliquez sur POST. Cela affiche les différents paramètres d&rsquo;entré du modèle. POur povoir introduire les valeurs de chaque paramètres, il suffit de cliquer sur &ldquo;Try it out&rdquo;.</p>
+<p>Pour accéder à la route POST où se trouve notre modèle, cliquez sur POST. Cela affiche les différents paramètres d&rsquo;entré du modèle. Pour povoir introduire les valeurs de chaque paramètres, il suffit de cliquer sur &ldquo;Try it out&rdquo;.</p>
 <p>
 
 
@@ -1325,7 +1325,7 @@ Introduction Dans cet article, nous allons explorer comment déployer un modèle
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>L&rsquo;image ci-après donne la prédiction du modèle en fonction des valeurs introduites dans l&rsquo;image précéédente. On peut voir de l&rsquo;image que nous avons obtenu le code 200, qui correspond à une réussite de notre réquête et l&rsquo;espèce prédite &ldquo;virginica&rdquo; dans &ldquo;Response body&rdquo;.</p>
+<p>L&rsquo;image ci-après donne la prédiction du modèle en fonction des valeurs introduites dans l&rsquo;image précédente. On peut voir sur l&rsquo;image que nous avons obtenu le code 200, qui correspond à la réussite de notre réquête et l&rsquo;espèce prédite &ldquo;virginica&rdquo; dans &ldquo;Response body&rdquo;.</p>
 <p>
 
 
@@ -1362,7 +1362,7 @@ Introduction Dans cet article, nous allons explorer comment déployer un modèle
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">pr</span> <span class="o">&lt;-</span> <span class="n">plumber</span><span class="o">::</span><span class="nf">plumb</span><span class="p">(</span><span class="s">&#34;plumber.R&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">pr</span><span class="o">$</span><span class="nf">run</span><span class="p">(</span><span class="n">port</span> <span class="o">=</span> <span class="m">8000</span><span class="p">)</span>
 </span></span></code></pre></div><p>Ces lignes permettent d&rsquo;exécuter notre API à partir d&rsquo;un autre script et de fixer le port.
-Vous pouvez alors lancer votre API, de préférence en arrière-plan, à l&rsquo;aide Background Jobs de Rstudio. Cela permet de faire tourner l&rsquo;API dans paralyser la session en cours. Pour ce faire, cliquez sur &ldquo;Source&rdquo; &gt; &ldquo;Source as Background Jobs&rdquo; au coin supérieur droit de votre script.</p>
+Vous pouvez alors lancer votre API, de préférence en arrière-plan, à l&rsquo;aide &ldquo;Background Jobs&rdquo;&quot; de Rstudio. Cela permet de faire tourner l&rsquo;API sans paralyser la session en cours. Pour ce faire, cliquez sur &ldquo;Source&rdquo; puis &ldquo;Source as Background Jobs&rdquo; au coin supérieur droit de votre script. Vous pouvez alors accès à l&rsquo;API via <code>http://127.0.1.1:8000/__docs__/</code></p>
 <h5 id="72-dans-le-cloud">7.2. Dans le cloud</h5>
 <p>Il existe plusieurs possibilités pour déployer l&rsquo;API <code>plumber</code> dans le cloud. Ci-après quelques solutions:</p>
 <ul>

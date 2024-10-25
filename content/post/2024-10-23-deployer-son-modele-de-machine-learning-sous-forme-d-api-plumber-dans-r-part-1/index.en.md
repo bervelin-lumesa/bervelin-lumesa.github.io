@@ -155,7 +155,7 @@ Pour lancer l'application, il suffit de cliquer sur Run API de votre script R. V
 
 ![](api_launch.png)
 
-Pour accéder à la route POST où se trouve notre modèle, cliquez sur POST. Cela affiche les différents paramètres d'entré du modèle. POur povoir introduire les valeurs de chaque paramètres, il suffit de cliquer sur "Try it out".
+Pour accéder à la route POST où se trouve notre modèle, cliquez sur POST. Cela affiche les différents paramètres d'entré du modèle. Pour povoir introduire les valeurs de chaque paramètres, il suffit de cliquer sur "Try it out".
 
 ![](api_try.png)
 
@@ -163,7 +163,7 @@ L'image ci-après donne un exemple de remplissage pour chaque paramètre. Après
 
 ![](api_execute.png)
 
-L'image ci-après donne la prédiction du modèle en fonction des valeurs introduites dans l'image précéédente. On peut voir de l'image que nous avons obtenu le code 200, qui correspond à une réussite de notre réquête et l'espèce prédite "virginica" dans "Response body".
+L'image ci-après donne la prédiction du modèle en fonction des valeurs introduites dans l'image précédente. On peut voir sur l'image que nous avons obtenu le code 200, qui correspond à la réussite de notre réquête et l'espèce prédite "virginica" dans "Response body".
 
 ![](api_result.png)
 
@@ -182,7 +182,7 @@ pr <- plumber::plumb("plumber.R")
 pr$run(port = 8000)
 ```
 Ces lignes permettent d'exécuter notre API à partir d'un autre script et de fixer le port. 
-Vous pouvez alors lancer votre API, de préférence en arrière-plan, à l'aide Background Jobs de Rstudio. Cela permet de faire tourner l'API dans paralyser la session en cours. Pour ce faire, cliquez sur "Source" > "Source as Background Jobs" au coin supérieur droit de votre script.
+Vous pouvez alors lancer votre API, de préférence en arrière-plan, à l'aide "Background Jobs"" de Rstudio. Cela permet de faire tourner l'API sans paralyser la session en cours. Pour ce faire, cliquez sur "Source" puis "Source as Background Jobs" au coin supérieur droit de votre script. Vous pouvez alors accès à l'API via `http://127.0.1.1:8000/__docs__/`
 
 ##### 7.2. Dans le cloud
 
