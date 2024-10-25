@@ -155,7 +155,7 @@ Pour lancer l'application, il suffit de cliquer sur Run API de votre script R. V
 
 ![](api_launch.png)
 
-Pour accéder à la route POST où se trouve notre modèle, cliquez sur POST. Cela affiche les différents paramètres d'entré du modèle. Pour povoir introduire les valeurs de chaque paramètres, il suffit de cliquer sur "Try it out".
+Pour accéder à la route POST où se trouve notre modèle, cliquez sur POST. Cela affiche les différents paramètres d'entré du modèle. Pour pouvoir introduire les valeurs de chaque paramètres, il suffit de cliquer sur "Try it out".
 
 ![](api_try.png)
 

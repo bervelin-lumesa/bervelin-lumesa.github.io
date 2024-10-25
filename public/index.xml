@@ -145,7 +145,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;6-tester-lapi&#34;&gt;6. Tester l&amp;rsquo;API&lt;/h4&gt;
 &lt;p&gt;Pour lancer l&amp;rsquo;application, il suffit de cliquer sur Run API de votre script R. Vous obtiendrez alors l&amp;rsquo;image ci-apris :&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;api_launch.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Pour accéder à la route POST où se trouve notre modèle, cliquez sur POST. Cela affiche les différents paramètres d&amp;rsquo;entré du modèle. Pour povoir introduire les valeurs de chaque paramètres, il suffit de cliquer sur &amp;ldquo;Try it out&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Pour accéder à la route POST où se trouve notre modèle, cliquez sur POST. Cela affiche les différents paramètres d&amp;rsquo;entré du modèle. Pour pouvoir introduire les valeurs de chaque paramètres, il suffit de cliquer sur &amp;ldquo;Try it out&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;api_try.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;L&amp;rsquo;image ci-après donne un exemple de remplissage pour chaque paramètre. Après remplissage, cliquez sur &amp;ldquo;Execute&amp;rdquo; pour obtenir la prédiction.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;api_execute.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
