@@ -1,0 +1,1665 @@
+<!doctype html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: October 26, 2024 --><html lang="en-us" dir="ltr"
+      data-wc-theme-default="system">
+  
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="Hugo Blox Builder 0.2.0" />
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Bervelin Lumesa" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Mbote !
+Introduction Dans le développement d&rsquo;applications interactives, la combinaison de RShiny et Plumber se révèle être une solution puissante. RShiny permet de créer des interfaces utilisateurs dynamiques pour visualiser et manipuler des données, tandis que Plumber facilite l&rsquo;exposition des modèles et des analyses sous forme d&rsquo;API." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://localhost:4321/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/" />
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="/css/themes/emerald.min.css" />
+  
+
+  
+  
+    
+    <link href="/dist/wc.min.css" rel="stylesheet" />
+  
+
+  
+  
+  
+
+  
+
+  <script>
+     
+    window.hbb = {
+       defaultTheme: document.documentElement.dataset.wcThemeDefault,
+       setDarkTheme: () => {
+        document.documentElement.classList.add("dark");
+        document.documentElement.style.colorScheme = "dark";
+      },
+       setLightTheme: () => {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.style.colorScheme = "light";
+      }
+    }
+
+    console.debug(`Default Hugo Blox Builder theme is ${window.hbb.defaultTheme}`);
+
+    if ("wc-color-theme" in localStorage) {
+      localStorage.getItem("wc-color-theme") === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+    } else {
+      window.hbb.defaultTheme === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      if (window.hbb.defaultTheme === "system") {
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      }
+    }
+  </script>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      let checkboxes = document.querySelectorAll('li input[type=\'checkbox\'][disabled]');
+      checkboxes.forEach(e => {
+        e.parentElement.parentElement.classList.add('task-list');
+      });
+
+      
+      const liNodes = document.querySelectorAll('.task-list li');
+      liNodes.forEach(nodes => {
+        let textNodes = Array.from(nodes.childNodes).filter(node => node.nodeType === 3 && node.textContent.trim().length > 1);
+        if (textNodes.length > 0) {
+          const span = document.createElement('label');
+          textNodes[0].after(span);  
+          span.appendChild(nodes.querySelector('input[type=\'checkbox\']'));
+          span.appendChild(textNodes[0]);
+        }
+      });
+    });
+  </script>
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hu11606901464925071373.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu15813221836792757126.png" />
+
+  <link rel="canonical" href="http://localhost:4321/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+    <meta property="twitter:site" content="@GetResearchDev" />
+    <meta property="twitter:creator" content="@GetResearchDev" />
+  
+  <meta property="og:site_name" content="Bervelin Lumesa" />
+  <meta property="og:url" content="http://localhost:4321/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/" />
+  <meta property="og:title" content="Deployer son modele de Machine Learning sous forme d&#39;API plumber dans R :   Part. 2 | Bervelin Lumesa" />
+  <meta property="og:description" content="Mbote !
+Introduction Dans le développement d&rsquo;applications interactives, la combinaison de RShiny et Plumber se révèle être une solution puissante. RShiny permet de créer des interfaces utilisateurs dynamiques pour visualiser et manipuler des données, tandis que Plumber facilite l&rsquo;exposition des modèles et des analyses sous forme d&rsquo;API." /><meta property="og:image" content="http://localhost:4321/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/featured.png" />
+    <meta property="twitter:image" content="http://localhost:4321/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/featured.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2024-10-26T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2024-10-26T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  <title>Deployer son modele de Machine Learning sous forme d&#39;API plumber dans R :   Part. 2 | Bervelin Lumesa</title>
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <style>
+    @font-face {
+      font-family: 'Inter var';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url(/dist/font/Inter.var.woff2) format(woff2);
+    }
+  </style>
+
+  
+
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/dist/pagefind/pagefind-ui.be766eb419317a14ec769d216e9779bfe8f3737c80e780f4ba0dafb57a41a482.css" integrity="sha256-vnZutBkxehTsdp0hbpd5v&#43;jzc3yA54D0ug2vtXpBpII=" />
+
+
+<script src="/dist/pagefind/pagefind-ui.87693d7c6f2b3b347ce359d0ede762c033419f0a32b22ce508c335a81d841f1b.js" integrity="sha256-h2k9fG8rOzR841nQ7ediwDNBnwoysizlCMM1qB2EHxs="></script>
+
+
+<script>window.hbb.pagefind = {"baseUrl":"/"};</script>
+
+<style>
+  html.dark {
+    --pagefind-ui-primary: #eeeeee;
+    --pagefind-ui-text: #eeeeee;
+    --pagefind-ui-background: #152028;
+    --pagefind-ui-border: #152028;
+    --pagefind-ui-tag: #152028;
+  }
+</style>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      baseUrl: window.hbb.pagefind.baseUrl,
+      bundlePath: window.hbb.pagefind.baseUrl + "pagefind/",
+    });
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    let element = document.getElementById('search');
+    let trigger = document.getElementById('search_toggle');
+
+    if (trigger) {
+      trigger.addEventListener('click', () => {
+        element.classList.toggle('hidden');
+        element.querySelector("input").value = ""
+        element.querySelector("input").focus()
+
+        if (!element.classList.contains('hidden')) {
+          let clear_trigger = document.querySelector('.pagefind-ui__search-clear');
+
+          if (clear_trigger && !clear_trigger.hasAttribute('listenerOnClick')) {
+            clear_trigger.setAttribute('listenerOnClick', 'true');
+
+            clear_trigger.addEventListener('click', () => {
+              element.classList.toggle('hidden');
+            });
+          }
+        }
+
+      });
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  <script
+    defer
+    src="/js/hugo-blox-en.min.js"
+    integrity=""
+  ></script>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+  <body class="dark:bg-hb-dark dark:text-white page-wrapper" id="top">
+    <div id="page-bg"></div>
+    <div class="page-header sticky top-0 z-30">
+      
+      
+      
+        
+        
+        
+          <header id="site-header" class="header">
+  <nav class="navbar px-3 flex justify-left">
+    <div class="order-0 h-100">
+      
+      <a class="navbar-brand" href="/" title="Bervelin Lumesa">
+        Bervelin Lumesa
+      </a>
+    </div>
+    
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Open Menu</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Close Menu</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    
+
+    
+    
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-left
+      ">
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/"
+        >Bio</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/#news"
+        >Blog</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/experience/"
+        >Experience</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/projects/"
+        >Projets</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/teaching/"
+        >Formations</a
+        >
+      </li>
+      
+      
+      
+    </ul>
+
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+
+      
+      
+      
+      <button
+        aria-label="search"
+        class="text-black hover:text-primary  inline-block px-3 text-xl dark:text-white"
+        id="search_toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      </button>
+      
+
+      
+      
+      <div class="px-3 text-black hover:text-primary-700 dark:text-white dark:hover:text-primary-300
+            [&.active]:font-bold [&.active]:text-black/90 dark:[&.active]:text-white">
+        <button class="theme-toggle mt-1" accesskey="t" title="appearance">
+          <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class="dark:hidden">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class=" dark:block [&:not(dark)]:hidden">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+      
+
+      
+      
+
+      
+      
+    </div>
+  </nav>
+</header>
+
+
+<div id="search" class="hidden p-3"></div>
+
+
+        
+      
+    </div>
+    <div class="page-body  my-10">
+      
+
+
+
+
+
+<div class="mx-auto flex max-w-screen-xl">
+  
+
+
+
+<aside class="hb-sidebar-container max-lg:[transform:translate3d(0,-100%,0)] lg:hidden xl:block">
+  
+  <div class="px-4 pt-4 lg:hidden">
+    
+    
+  </div>
+  <div class="hb-scrollbar lg:h-[calc(100vh-var(--navbar-height))]">
+    <ul class="flex flex-col gap-1 lg:hidden">
+      
+      
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/event/"
+    
+  >Recent &amp; Upcoming Talks
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/event/example/"
+    
+  >Example Talk
+    </a>
+              
+            </li></ul>
+      </div></li>
+        <li class="open"><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/post/"
+    
+  >Blog
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
+    href="/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/"
+    
+  >Deployer son modele de Machine Learning sous forme d&#39;API plumber dans R :   Part. 2
+    </a>
+  
+    <ul class="hb-sidebar-mobile-toc"><li>
+              <a
+                href="#introduction"
+                class="hb-docs-link"
+              >Introduction</a>
+            </li>
+          <li>
+              <a
+                href="#conception-de-lapplication-web"
+                class="hb-docs-link"
+              >Conception de l&amp;rsquo;application web</a>
+            </li>
+          <li>
+              <a
+                href="#avez-vous-trouv%c3%a9-cet-article-utile--pensez-%c3%a0-le-partager-"
+                class="hb-docs-link"
+              >Avez-vous trouvé cet article utile ? Pensez à le partager 🙌</a>
+            </li>
+          </ul>
+  
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-1/"
+    
+  >Déployer son modèle de Machine Learning sous forme d&#39;API plumber dans R : Part. 1
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/post/monitoring-de-la-collecte-de-donn-es-d-une-enqu-te-statistique/"
+    
+  >Monitoring de la collecte de données d&#39;une enquête statistique
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/post/collecte-de-donn-es-mobile-partage-d-exp-rience/"
+    
+  >Collecte de données mobile : Partage d&#39;Expérience
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/post/10-librairies-les-plus-utilis-es-en-python-pour-la-data-science/"
+    
+  >10 librairies les plus utilisées en Python pour la data Science
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/post/collecte-de-donn-es-mobile/"
+    
+  >Introduction à la collecte de données mobile
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/post/10-packages-les-plus-utilis-s-en-r-pour-la-data-science/"
+    
+  >10 Packages les plus utilisés en R pour la Data Science
+    </a>
+              
+            </li></ul>
+      </div></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/teaching/"
+    
+  >Formations
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/teaching/data_analysis_spss/"
+    
+  >Analyse de données avec SPSS
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/teaching/data_collection_kobo/"
+    
+  >Collecte de données mobile :Application avec ODK Collect et KOBO Collect
+    </a>
+              
+            </li></ul>
+      </div></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/project/"
+    
+  >Projects
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/project/file_convertor/"
+    
+  >Convertisseur des fichiers
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/project/qrcode_generator/"
+    
+  >Générateur des QRcode
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/project/data_collection_monitoring/"
+    
+  >Monitoring de la collecte de données
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/project/activity_tracking/"
+    
+  >Tracking des activités de terrain
+    </a>
+              
+            </li></ul>
+      </div></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/projects/"
+    
+  >Projects
+    </a></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/experience/"
+    
+  >Expérience
+    </a></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/"
+    
+  >Publications
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/preprint/"
+    
+  >An example preprint / working paper
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/journal-article/"
+    
+  >An example journal article
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/conference-paper/"
+    
+  >An example conference paper
+    </a>
+              
+            </li></ul>
+      </div></li>
+    </ul>
+
+    <div class="max-xl:hidden h-0 w-64 shrink-0"></div></div>
+
+</aside>
+  
+
+<nav class="hb-toc order-last hidden w-64 shrink-0 xl:block print:hidden px-4" aria-label="table of contents">
+  
+
+
+
+
+
+
+
+
+
+
+
+  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4"><p class="mb-4 font-semibold tracking-tight">On this page</p><ul>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#introduction">Introduction</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#shiny">Shiny</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#conception-de-lapplication-web">Conception de l’application web</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#avant-douvrir-r--sur-papier-dabord">Avant d’ouvrir R : sur papier d’abord</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#interface-utilisateur">Interface Utilisateur</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#t%c3%a9l%c3%a9chargement-des-packages">Téléchargement des packages</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-8 rtl:pr-8 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#d%c3%a9finir-linterface-utilisateur">Définir l’Interface Utilisateur</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#serveur">Serveur</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#tester-lapplication">Tester l’application</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#conclusion">Conclusion</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#avez-vous-trouv%c3%a9-cet-article-utile--pensez-%c3%a0-le-partager-">Avez-vous trouvé cet article utile ? Pensez à le partager 🙌</a>
+      </li></ul>
+
+  
+  
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  </nav>
+
+
+  <article class="w-full break-words flex min-h-[calc(100vh-var(--navbar-height))] min-w-0 justify-center pb-8 pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+    <main class="w-full min-w-0 max-w-6xl px-6 pt-4 md:px-12">
+
+      
+
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Deployer son modele de Machine Learning sous forme d&#39;API plumber dans R :   Part. 2</h1>
+
+      <div class="mt-4 mb-16">
+      <div class="text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">26 Oct, 2024</span>
+        
+
+        
+        <span class="mx-1">·</span>
+        <span class="mx-1">
+          5 min read
+        </span>
+        
+        </div>
+
+        <div class="mt-3">
+          
+
+
+
+
+
+        </div>
+      </div>
+
+
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="article-header article-container featured-image-wrapper mt-4 mb-16" style="max-width: 720px; max-height: 463px;">
+        <div style="position: relative">
+          <img src="/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/featured_hu14588139770028399185.webp" width="720" height="463" alt="" class="featured-image">
+          
+        </div>
+      </div>
+      
+
+      
+      
+
+      <div class="prose prose-slate lg:prose-xl dark:prose-invert">
+        <p>Mbote !</p>
+<h2 id="introduction">Introduction</h2>
+<p>Dans le développement d&rsquo;applications interactives, la combinaison de RShiny et Plumber se révèle être une solution puissante. RShiny permet de créer des interfaces utilisateurs dynamiques pour visualiser et manipuler des données, tandis que Plumber facilite l&rsquo;exposition des modèles et des analyses sous forme d&rsquo;API. En intégrant une API Plumber dans RShiny, on peut enrichir une application avec des fonctionnalités avancées, notamment le déploiement de modèles de machine learning ou l&rsquo;accès à des services de données externes. Dans cet article, nous verrons comment mettre en place cette intégration pour créer une application flexible.</p>
+<h3 id="shiny">Shiny</h3>
+<p><a href="https://shiny.posit.co/" target="_blank" rel="noopener">Shiny</a> est un package de R (et python) développé par posit qui permet de créer facilement des applications web interactives sans avoir besoin de maîtriser des langages comme HTML, CSS ou JavaScript. Avec Shiny, les utilisateurs peuvent transformer leurs analyses et visualisations en applications web dynamiques, offrant aux utilisateurs finaux une interface intuitive pour explorer les données, tester différents paramètres ou afficher des résultats en temps réel.</p>
+<h2 id="conception-de-lapplication-web">Conception de l&rsquo;application web</h2>
+<h3 id="avant-douvrir-r--sur-papier-dabord">Avant d&rsquo;ouvrir R : sur papier d&rsquo;abord</h3>
+<p>Avant de lancer Rstudio pour commencer le codage de notre application, il est important de reféchir sur son architecture. De même que la construction d&rsquo;une maison commence sur un papier (plan), il est avantageux pour le développeur d&rsquo;avoir une idée claire de son futur produit.</p>
+<p>Pour notre cas, voici les points importants de notre application :</p>
+<ul>
+<li>L&rsquo;application reçoit les inputs de l&rsquo;utilisateur à l&rsquo;aide d&rsquo;un formulaire;</li>
+<li>L&rsquo;utilisateur clique sur un bouton pour demander la prédiction;</li>
+<li>L&rsquo;application se connecte à l&rsquo;API, effectue le calcul avec les inputs de l&rsquo;utilisateur et returne la prédiction;</li>
+<li>L&rsquo;utilisateur peut cliquer sur un autre bouton pour avoir des infos sur l&rsquo;application.</li>
+</ul>
+<p><strong>Commençons maintenant !</strong></p>
+<p>Une application shiny comprend trois parties : l&rsquo;interface utilisateur ou le front-end (ce que l&rsquo;utilisateur voit), le serveur ou le back-end (où s&rsquo;effectue les calculs) et une fonction qui rassemble les deux parties précédentes.</p>
+<h3 id="interface-utilisateur">Interface Utilisateur</h3>
+<p>Dans notre interface utilisateur, nous allons avoir des champs pour introduire les valeurs dont notre API a besoin pour nous renvoyer la prédiction. Nous aurons aussi deux boutons: un pour demander la prédiction et l&rsquo;autre pour afficher les informations sur l&rsquo;application.</p>
+<h4 id="téléchargement-des-packages">Téléchargement des packages</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">shiny</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">bslib</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
+</span></span></code></pre></div><h4 id="définir-linterface-utilisateur">Définir l&rsquo;Interface Utilisateur</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">ui</span> <span class="o">&lt;-</span> <span class="nf">page_sidebar</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="n">theme</span> <span class="o">=</span> <span class="nf">bs_theme</span><span class="p">(</span><span class="n">version</span> <span class="o">=</span> <span class="m">5</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">  <span class="n">title</span> <span class="o">=</span> <span class="n">tags</span><span class="o">$</span><span class="nf">a</span><span class="p">(</span><span class="n">href</span> <span class="o">=</span> <span class="s">&#34;&#34;</span><span class="p">,</span> <span class="n">tags</span><span class="o">$</span><span class="nf">image</span><span class="p">(</span><span class="n">src</span> <span class="o">=</span> <span class="s">&#34;fdtk.png&#34;</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="s">&#34;100px&#34;</span><span class="p">)),</span>
+</span></span><span class="line"><span class="cl">  <span class="n">sidebar</span> <span class="o">=</span> <span class="nf">sidebar</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">title</span> <span class="o">=</span> <span class="s">&#34;Paramètres&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">width</span> <span class="o">=</span> <span class="s">&#34;25%&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1"># les différents paramètres (inputs)</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">numericInput</span><span class="p">(</span><span class="n">inputId</span> <span class="o">=</span> <span class="s">&#34;sl&#34;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s">&#34;Sepal Length&#34;</span><span class="p">,</span> <span class="n">min</span> <span class="o">=</span> <span class="m">0</span><span class="p">,</span> <span class="n">max</span> <span class="o">=</span> <span class="m">10</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="m">2.5</span><span class="p">,</span> <span class="n">step</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">numericInput</span><span class="p">(</span><span class="n">inputId</span> <span class="o">=</span> <span class="s">&#34;sw&#34;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s">&#34;Sepal Width&#34;</span><span class="p">,</span> <span class="n">min</span> <span class="o">=</span> <span class="m">0</span><span class="p">,</span> <span class="n">max</span> <span class="o">=</span> <span class="m">10</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="m">2.5</span><span class="p">,</span> <span class="n">step</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">numericInput</span><span class="p">(</span><span class="n">inputId</span> <span class="o">=</span> <span class="s">&#34;pl&#34;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s">&#34;Petal Length&#34;</span><span class="p">,</span> <span class="n">min</span> <span class="o">=</span> <span class="m">0</span><span class="p">,</span> <span class="n">max</span> <span class="o">=</span> <span class="m">10</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="m">2.5</span><span class="p">,</span> <span class="n">step</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">numericInput</span><span class="p">(</span><span class="n">inputId</span> <span class="o">=</span> <span class="s">&#34;pw&#34;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s">&#34;Petal Width&#34;</span><span class="p">,</span> <span class="n">min</span> <span class="o">=</span> <span class="m">0</span><span class="p">,</span> <span class="n">max</span> <span class="o">=</span> <span class="m">10</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="m">2.5</span><span class="p">,</span> <span class="n">step</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="nf">actionButton</span><span class="p">(</span><span class="n">inputId</span> <span class="o">=</span> <span class="s">&#34;run&#34;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s">&#34;Prédire&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">actionButton</span><span class="p">(</span><span class="n">inputId</span> <span class="o">=</span> <span class="s">&#34;about&#34;</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s">&#34;Apropos de l&#39;appli&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">),</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;Résultats&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">layout_columns</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">row_heights</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">5</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">col_widths</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">12</span><span class="p">,</span><span class="m">12</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">value_box</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="n">title</span> <span class="o">=</span> <span class="s">&#34;Prédiction&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="c1"># afficher la prediction</span>
+</span></span><span class="line"><span class="cl">      <span class="n">value</span> <span class="o">=</span> <span class="nf">textOutput</span><span class="p">(</span><span class="s">&#34;pred&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">      <span class="n">theme</span> <span class="o">=</span> <span class="s">&#34;primary&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">),</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">      <span class="nf">imageOutput</span><span class="p">(</span><span class="s">&#34;img&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div><h3 id="serveur">Serveur</h3>
+<p>Le serveur contient entre autre une fonction permettant d&rsquo;envoyer la requête à l&rsquo;API et de récupérer la prédiction.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">server</span> <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(</span><span class="n">input</span><span class="p">,</span> <span class="n">output</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="nf">observeEvent</span><span class="p">(</span><span class="n">input</span><span class="o">$</span><span class="n">run</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">output</span><span class="o">$</span><span class="n">pred</span> <span class="o">&lt;-</span> <span class="nf">renderText</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">      <span class="c1"># Appel à l&#39;API en local</span>
+</span></span><span class="line"><span class="cl">      <span class="n">base_url</span> <span class="o">&lt;-</span> <span class="s">&#34;http://127.0.1.1:8000/species-predict&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="n">arg</span> <span class="o">&lt;-</span> <span class="nf">list</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Sepal_Length</span> <span class="o">=</span> <span class="nf">isolate</span><span class="p">(</span><span class="n">input</span><span class="o">$</span><span class="n">sl</span><span class="p">),</span> 
+</span></span><span class="line"><span class="cl">        <span class="n">Sepal_Width</span>  <span class="o">=</span> <span class="nf">isolate</span><span class="p">(</span><span class="n">input</span><span class="o">$</span><span class="n">sw</span><span class="p">),</span> 
+</span></span><span class="line"><span class="cl">        <span class="n">Petal_Length</span> <span class="o">=</span> <span class="nf">isolate</span><span class="p">(</span><span class="n">input</span><span class="o">$</span><span class="n">pl</span><span class="p">),</span> 
+</span></span><span class="line"><span class="cl">        <span class="n">Petal_Width</span>  <span class="o">=</span> <span class="nf">isolate</span><span class="p">(</span><span class="n">input</span><span class="o">$</span><span class="n">pw</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">)</span>
+</span></span><span class="line"><span class="cl">      
+</span></span><span class="line"><span class="cl">      <span class="c1"># Envoi de la requête et récupération de la réponse</span>
+</span></span><span class="line"><span class="cl">      <span class="n">query_url</span> <span class="o">&lt;-</span> <span class="nf">modify_url</span><span class="p">(</span><span class="n">url</span> <span class="o">=</span> <span class="n">base_url</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="n">arg</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="n">resp</span> <span class="o">&lt;-</span> <span class="nf">POST</span><span class="p">(</span><span class="n">query_url</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="n">resp_raw</span> <span class="o">&lt;-</span> <span class="nf">content</span><span class="p">(</span><span class="n">resp</span><span class="p">,</span> <span class="n">as</span> <span class="o">=</span> <span class="s">&#34;text&#34;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s">&#34;utf-8&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="n">response</span> <span class="o">&lt;-</span> <span class="nf">fromJSON</span><span class="p">(</span><span class="n">resp_raw</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      
+</span></span><span class="line"><span class="cl">      <span class="kr">return</span><span class="p">(</span><span class="nf">paste0</span><span class="p">(</span><span class="s">&#34;L&#39;espèce prédite est &#34;</span><span class="p">,</span> <span class="n">response</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">})</span>
+</span></span><span class="line"><span class="cl">  <span class="p">})</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="c1"># Afficher la fleur</span>
+</span></span><span class="line"><span class="cl">  <span class="n">output</span><span class="o">$</span><span class="n">img</span> <span class="o">&lt;-</span> <span class="nf">renderImage</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">list</span><span class="p">(</span><span class="n">src</span> <span class="o">=</span> <span class="s">&#34;www/flowers.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">         <span class="n">width</span> <span class="o">=</span> <span class="s">&#34;100%&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">         <span class="n">height</span> <span class="o">=</span> <span class="s">&#34;160%&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">         <span class="n">alt</span> <span class="o">=</span> <span class="s">&#34;Bervelin&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span> <span class="n">deleteFile</span> <span class="o">=</span> <span class="bp">F</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="c1"># Afficher la boite &#34;A propos&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">observeEvent</span><span class="p">(</span><span class="n">input</span><span class="o">$</span><span class="n">about</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">showModal</span><span class="p">(</span><span class="nf">modalDialog</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">      <span class="n">title</span> <span class="o">=</span> <span class="s">&#34;À propos&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="s">&#34;Cette application utilise un modèle de forêts aléatoires déployé avec l&#39;API&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nf">a</span><span class="p">(</span><span class="n">href</span> <span class="o">=</span> <span class="s">&#34;https://rplumber.io&#34;</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="s">&#34;_blank&#34;</span><span class="p">,</span> <span class="s">&#34;plumber&#34;</span><span class="p">),</span> <span class="s">&#34;.&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="s">&#34;À chaque prédiction, l&#39;application envoie une requête à l&#39;API qui retourne une réponse sous forme de chaîne de caractères contenant la classe prédite (setosa, virginica ou versicolor)&#34;</span><span class="p">,</span> <span class="nf">hr</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">      <span class="s">&#34;Bervelin Lumesa&#34;</span><span class="p">,</span> <span class="s">&#34;Statisticien/Data Scientist&#34;</span><span class="p">,</span> <span class="nf">br</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">      <span class="nf">a</span><span class="p">(</span><span class="n">href</span> <span class="o">=</span> <span class="s">&#34;https://www.linkedin.com/in/bervelin-lumesa/&#34;</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="s">&#34;_blank&#34;</span><span class="p">,</span> <span class="s">&#34;Profil Linkedin&#34;</span><span class="p">),</span> <span class="nf">br</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">      <span class="nf">a</span><span class="p">(</span><span class="n">href</span> <span class="o">=</span> <span class="s">&#34;https://bervelin-lumesa.netlify.app&#34;</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="s">&#34;_blank&#34;</span><span class="p">,</span> <span class="s">&#34;Site web&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">))</span>
+</span></span><span class="line"><span class="cl">  <span class="p">})</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Cette fonction permet de mettre ensemble l&rsquo;interface utilisateur et le serveur pour constituer notre application.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="nf">shinyApp</span><span class="p">(</span><span class="n">ui</span><span class="p">,</span> <span class="n">server</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="tester-lapplication">Tester l&rsquo;application</h3>
+<p>Pour tester cette application en local avec l&rsquo;API, il faut lancer cette dernière en arrière-plan avec &ldquo;Backgroud jobs&rdquo;. L&rsquo;application Shiny peut être exécutée en arrière-plan ou pas. Vous obtiendrez les résultats comme sur les images ci-dessous :</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img alt="" srcset="
+               /post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/ui_hu5838192472308430425.webp 400w,
+               /post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/ui_hu17889765558037051122.webp 760w,
+               /post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/ui_hu6586382008633657842.webp 1200w"
+               src="/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/ui_hu5838192472308430425.webp"
+               width="760"
+               height="485"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>En cliquant sur &ldquo;Prédire&rdquo;, l&rsquo;application affiche la prédiction, ici &ldquo;virginica&rdquo;.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img alt="" srcset="
+               /post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/ui_pred_hu10987118817404933643.webp 400w,
+               /post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/ui_pred_hu5844963748146836488.webp 760w,
+               /post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/ui_pred_hu4778813429072128872.webp 1200w"
+               src="/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/ui_pred_hu10987118817404933643.webp"
+               width="760"
+               height="485"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Nous avons vu comment il est possible de faire appel à l&rsquo;API (plumber) au sein d&rsquo;une application shiny, d&rsquo;envoyer une requête et de récupérer une prédiction. Cela dit, peu importe le langage dans lequel votre modèle est développé, shiny peut l&rsquo;utiliser sans problème s&rsquo;il est déployé sous forme d&rsquo;API.</p>
+<p>Tous les codes peuvent être trouvés ici dans mon <a href="https://github.com/bervelin-lumesa/plumber_shiny" target="_blank" rel="noopener">Github</a></p>
+<h2 id="avez-vous-trouvé-cet-article-utile--pensez-à-le-partager-">Avez-vous trouvé cet article utile ? Pensez à le partager 🙌</h2>
+
+      </div>
+
+      
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-10-26T00:00:00.000Z">
+    <span>Last updated on</span>
+    26 Oct, 2024</time>
+
+      <div class="container mx-auto prose prose-slate lg:prose-xl dark:prose-invert mt-5">
+        
+        <div class="max-w-prose print:hidden">
+  
+  
+
+  
+
+
+  
+<section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
+  
+
+  
+  
+  
+  
+  
+  
+  <a
+    target="_blank" rel="noopener"
+    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+    href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A4321%2Fpost%2Fdeployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2%2F&amp;text=Deployer&#43;son&#43;modele&#43;de&#43;Machine&#43;Learning&#43;sous&#43;forme&#43;d%27API&#43;plumber&#43;dans&#43;R&#43;%3A&#43;&#43;&#43;Part.&#43;2"
+    title="X"
+    aria-label="X"
+    id="share-link-x"
+  >
+    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+  </a>
+  
+
+  
+  
+  
+  
+  
+  
+  <a
+    target="_blank" rel="noopener"
+    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+    href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A4321%2Fpost%2Fdeployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2%2F&amp;t=Deployer&#43;son&#43;modele&#43;de&#43;Machine&#43;Learning&#43;sous&#43;forme&#43;d%27API&#43;plumber&#43;dans&#43;R&#43;%3A&#43;&#43;&#43;Part.&#43;2"
+    title="Facebook"
+    aria-label="Facebook"
+    id="share-link-facebook"
+  >
+    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+  </a>
+  
+
+  
+  
+  
+  
+  
+  
+    
+  
+  <a
+    target="_blank" rel="noopener"
+    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+    href="mailto:?subject=Deployer%20son%20modele%20de%20Machine%20Learning%20sous%20forme%20d%27API%20plumber%20dans%20R%20%3A%20%20%20Part.%202&amp;body=http%3A%2F%2Flocalhost%3A4321%2Fpost%2Fdeployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2%2F"
+    title="Email"
+    aria-label="Email"
+    id="share-link-email"
+  >
+    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25"/></svg>
+  </a>
+  
+
+  
+  
+  
+  
+  
+  
+  <a
+    target="_blank" rel="noopener"
+    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+    href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A4321%2Fpost%2Fdeployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2%2F&amp;title=Deployer&#43;son&#43;modele&#43;de&#43;Machine&#43;Learning&#43;sous&#43;forme&#43;d%27API&#43;plumber&#43;dans&#43;R&#43;%3A&#43;&#43;&#43;Part.&#43;2"
+    title="LinkedIn"
+    aria-label="LinkedIn"
+    id="share-link-linkedin"
+  >
+    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+  </a>
+  
+
+  
+  
+  
+  
+  
+  
+  <a
+    target="_blank" rel="noopener"
+    class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+    href="whatsapp://send?text=Deployer&#43;son&#43;modele&#43;de&#43;Machine&#43;Learning&#43;sous&#43;forme&#43;d%27API&#43;plumber&#43;dans&#43;R&#43;%3A&#43;&#43;&#43;Part.&#43;2%20http%3A%2F%2Flocalhost%3A4321%2Fpost%2Fdeployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2%2F"
+    title="WhatsApp"
+    aria-label="WhatsApp"
+    id="share-link-whatsapp"
+  >
+    <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="m187.58 144.84-32-16a8 8 0 0 0-8 .5l-14.69 9.8a40.55 40.55 0 0 1-16-16l9.8-14.69a8 8 0 0 0 .5-8l-16-32A8 8 0 0 0 104 64a40 40 0 0 0-40 40 88.1 88.1 0 0 0 88 88 40 40 0 0 0 40-40 8 8 0 0 0-4.42-7.16ZM152 176a72.08 72.08 0 0 1-72-72 24 24 0 0 1 19.29-23.54l11.48 23L101 118a8 8 0 0 0-.73 7.51 56.47 56.47 0 0 0 30.15 30.15A8 8 0 0 0 138 155l14.61-9.74 23 11.48A24 24 0 0 1 152 176ZM128 24a104 104 0 0 0-91.82 152.88l-11.35 34.05a16 16 0 0 0 20.24 20.24l34.05-11.35A104 104 0 1 0 128 24Zm0 192a87.87 87.87 0 0 1-44.06-11.81 8 8 0 0 0-6.54-.67L40 216l12.47-37.4a8 8 0 0 0-.66-6.54A88 88 0 1 1 128 216Z"/></svg>
+  </a>
+  
+</section>
+
+
+  
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+
+<div class="flex pt-12 pb-4">
+  
+  
+  <img
+    class="mr-4 h-24 w-24 rounded-full"
+    width="96"
+    height="96"
+    alt="Bervelin Lumesa"
+  src="/author/bervelin-lumesa/avatar_hu2872262108765497407.jpg"
+  loading="lazy"
+  />
+  
+  <div class="place-self-center">
+    <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+      Authors
+    </div>
+    <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+      <a href="http://localhost:4321/" class="no-underline">
+      Bervelin Lumesa
+      </a>
+    </div>
+
+    
+    <div class="text-sm font-bold text-neutral-700 dark:text-neutral-300">
+    Statistician/Data Scientist
+    </div>
+    
+
+
+    
+
+    <div class="text-2xl sm:text-lg pt-1">
+
+      
+<div class="flex flex-wrap text-neutral-500 dark:text-neutral-300">
+  
+    
+    
+    
+    
+    <a
+      class="pr-2 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+      style="will-change:transform;"
+      href="mailto:lumesabervelin@gmail.com"
+      
+      aria-label="At-Symbol"
+    ><svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25"/></svg></a>
+  
+    
+    
+    
+    
+      
+    
+    <a
+      class="pr-2 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+      style="will-change:transform;"
+      href="https://github.com/bervelin-lumesa"
+      target="_blank" rel="noopener" rel="me noopener noreferrer"
+      aria-label="Brands/Github"
+    ><svg style="height: 1em;" fill="currentColor" viewBox="3 3 18 18"><path d="M12 3C7.0275 3 3 7.12937 3 12.2276C3 16.3109 5.57625 19.7597 9.15374 20.9824C9.60374 21.0631 9.77249 20.7863 9.77249 20.5441C9.77249 20.3249 9.76125 19.5982 9.76125 18.8254C7.5 19.2522 6.915 18.2602 6.735 17.7412C6.63375 17.4759 6.19499 16.6569 5.8125 16.4378C5.4975 16.2647 5.0475 15.838 5.80124 15.8264C6.51 15.8149 7.01625 16.4954 7.18499 16.7723C7.99499 18.1679 9.28875 17.7758 9.80625 17.5335C9.885 16.9337 10.1212 16.53 10.38 16.2993C8.3775 16.0687 6.285 15.2728 6.285 11.7432C6.285 10.7397 6.63375 9.9092 7.20749 9.26326C7.1175 9.03257 6.8025 8.08674 7.2975 6.81794C7.2975 6.81794 8.05125 6.57571 9.77249 7.76377C10.4925 7.55615 11.2575 7.45234 12.0225 7.45234C12.7875 7.45234 13.5525 7.55615 14.2725 7.76377C15.9937 6.56418 16.7475 6.81794 16.7475 6.81794C17.2424 8.08674 16.9275 9.03257 16.8375 9.26326C17.4113 9.9092 17.76 10.7281 17.76 11.7432C17.76 15.2843 15.6563 16.0687 13.6537 16.2993C13.98 16.5877 14.2613 17.1414 14.2613 18.0065C14.2613 19.2407 14.25 20.2326 14.25 20.5441C14.25 20.7863 14.4188 21.0746 14.8688 20.9824C16.6554 20.364 18.2079 19.1866 19.3078 17.6162C20.4077 16.0457 20.9995 14.1611 21 12.2276C21 7.12937 16.9725 3 12 3Z"></path></svg></a>
+  
+    
+    
+    
+    
+      
+    
+    <a
+      class="pr-2 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+      style="will-change:transform;"
+      href="https://www.linkedin.com/lumesabervelin"
+      target="_blank" rel="noopener" rel="me noopener noreferrer"
+      aria-label="Brands/Linkedin"
+    ><svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+  
+</div>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+  
+  
+    
+    
+    
+      
+      
+    
+<div class="pt-1 no-prose w-full">
+  <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+  <div class="flex flex-col md:flex-row flex-nowrap justify-between gap-5 pt-2">
+    <div class="">
+      
+    </div>
+    <div class="">
+      
+        <a class="group flex text-right no-underline" href="/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-1/">
+          <span class="flex flex-col">
+            <span
+              class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+            >Déployer son modèle de Machine Learning sous forme d&#39;API plumber dans R : Part. 1</span
+            >
+            <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+              
+                23 Oct, 2024
+              
+            </span>
+          </span>
+          <span
+            class="mt-[-0.3rem] ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+          ><span class="ltr:inline">&rarr;</span></span>
+        </a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+  
+
+
+  
+
+
+
+</div>
+
+      </div>
+
+    </main>
+  </article>
+</div>
+
+    </div>
+    <div class="page-footer">
+      <footer class="container mx-auto flex flex-col justify-items-center text-sm leading-6 mt-24 mb-4 text-slate-700 dark:text-slate-200">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by text-center">
+    © 2024 Bervelin Lumesa.
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by text-center">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+
+</footer>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
