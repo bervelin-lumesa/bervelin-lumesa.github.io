@@ -52,7 +52,7 @@ Pour commencer, créez un script R et nommez-le plumber (vous pourrez choisir un
 
 #### 1. Chargement des bibliothèques
 
-Commencez par charger les packages. S'ils ne sont pas encore installés, faites `intall.packages("nom_du_package")` pour installer.
+Commencez par charger les packages. S'ils ne sont pas encore installés, faites `install.packages("nom_du_package")` pour installer.
 
 ``` r
 # Chargement des packages
