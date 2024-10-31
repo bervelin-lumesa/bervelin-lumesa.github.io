@@ -159,15 +159,7 @@
       <link>http://localhost:4321/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-1/</link>
       <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-1/</guid>
-      <description>&lt;!-- Google tag (gtag.js) --&gt;
-&lt;script async src=&#34;https://www.googletagmanager.com/gtag/js?id=G-38ZNMSEW51&#34;&gt;&lt;/script&gt;
-&lt;script&gt;
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag(&#39;js&#39;, new Date());
-  gtag(&#39;config&#39;, &#39;G-38ZNMSEW51&#39;);
-&lt;/script&gt;
-&lt;p&gt;Mbote!&lt;/p&gt;
+      <description>&lt;p&gt;Mbote!&lt;/p&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Dans cet article, nous allons explorer comment déployer un modèle de machine learning sous forme d&amp;rsquo;API à l&amp;rsquo;aide de plumber, un package R simple et puissant. De plus en plus de projets de machine learning passent de simples expérimentations en laboratoire à des solutions robustes et prêtes pour la production. Cela nécessite une intégration fluide entre les modèles et les systèmes existants, souvent via une interface de programmation d&amp;rsquo;application (API). Cette première partie vous guidera à dans la conception de l&amp;rsquo;API. Dans la seconde partie, nous verrons comment faire appel à l&amp;rsquo;API au sein d&amp;rsquo;une application Rshiny.&lt;/p&gt;
 &lt;h2 id=&#34;cest-quoi-une-api&#34;&gt;C&amp;rsquo;est quoi une API&lt;/h2&gt;
