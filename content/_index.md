@@ -5,9 +5,6 @@ design:
 sections:
 - block: resume-biography-3
   content:
-    button:
-      text: Télécharger mon CV
-      url: bervelin-lumesa-resume.pdf
     text: ""
     username: admin
   design:
