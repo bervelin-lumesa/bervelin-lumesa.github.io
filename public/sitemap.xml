@@ -18,6 +18,14 @@
     <lastmod>2024-11-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>http://localhost:4321/tags/leaflet/</loc>
+    <lastmod>2024-11-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4321/tags/</loc>
+    <lastmod>2024-11-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>http://localhost:4321/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/</loc>
     <lastmod>2024-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -35,10 +43,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:4321/tags/data-collection/</loc>
-    <lastmod>2024-08-20T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:4321/tags/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>

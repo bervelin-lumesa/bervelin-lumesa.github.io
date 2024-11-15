@@ -4,7 +4,7 @@ author: 'Bervelin Lumesa'
 date: '2024-11-14'
 slug: cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r
 categories: []
-tags: []
+tags: [leaflet]
 ---
 
 <link href="{{< blogdown/postref >}}index.en_files/htmltools-fill/fill.css" rel="stylesheet" />
@@ -28,7 +28,7 @@ tags: []
 <link href="{{< blogdown/postref >}}index.en_files/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
 <script src="{{< blogdown/postref >}}index.en_files/leaflet-binding/leaflet.js"></script>
 
-Mbote !
+Mbote 👋
 
 ## Introduction
 
@@ -36,7 +36,7 @@ Dans le domaine de la data science et de l’analyse géospatiale, la capacité 
 
 En combinant Leaflet avec le langage de programmation R, les chercheurs et analystes peuvent non seulement cartographier des données géographiques, mais aussi intégrer des éléments multimédia tels que des photos. Cette intégration permet de contextualiser les données et de fournir des insights plus riches et plus précis.
 
-Cet article explorera comment utiliser le package leaflet en R pour afficher des photos sur une carte interactive, en prenant l’exemple d’une enquête ménage (données simulées). Nous détaillerons chaque étape du processus, de la préparation des données à la création de la carte, en passant par l’intégration des photos, pour permettre aux utilisateurs de visualiser les conditions de vie des ménages directement sur une carte interactive.
+Cet article explorera comment utiliser le package leaflet en R pour afficher des photos sur une carte interactive, en prenant l’exemple d’une enquête ménage (données simulées). Nous détaillerons chaque étape du processus, de l’a préparation’importation des données à la création de la carte, en passant par l’intégration des photos, pour permettre aux utilisateurs de visualiser les conditions de vie des ménages directement sur une carte interactive.
 
 ## Création de la carte avec `leaflet`
 
@@ -133,6 +133,6 @@ L’utilisation de Leaflet pour afficher des photos sur une carte interactive re
 
 En appliquant les techniques présentées dans cet article, vous serez en mesure de créer des cartes interactives intégrant des photos, offrant ainsi une perspective visuelle précieuse pour vos analyses et présentations de données. Cette méthodologie peut être étendue à d’autres types d’enquêtes et de projets, démontrant ainsi la polyvalence et la puissance des outils de visualisation géospatiale combinés avec R.
 
-Tous les codes peuvent être trouvés ici dans mon [Github](https://github.com/bervelin-lumesa/)
+Tous les codes peuvent être trouvés ici dans mon [Github](https://github.com/bervelin-lumesa/r-blog-articles/tree/main/carte_leaflet_avec_photo)
 
 ## Avez-vous trouvé cet article utile ? Pensez à le partager 🙌

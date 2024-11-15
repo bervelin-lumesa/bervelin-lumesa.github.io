@@ -4,10 +4,10 @@ author: 'Bervelin Lumesa'
 date: '2024-11-14'
 slug: cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r
 categories: []
-tags: []
+tags: [leaflet]
 ---
 
-Mbote !
+Mbote 👋 
 
 ## Introduction
 
@@ -104,7 +104,7 @@ L'utilisation de Leaflet pour afficher des photos sur une carte interactive rend
 
 En appliquant les techniques présentées dans cet article, vous serez en mesure de créer des cartes interactives intégrant des photos, offrant ainsi une perspective visuelle précieuse pour vos analyses et présentations de données. Cette méthodologie peut être étendue à d'autres types d'enquêtes et de projets, démontrant ainsi la polyvalence et la puissance des outils de visualisation géospatiale combinés avec R.
 
-Tous les codes peuvent être trouvés ici dans mon [Github](https://github.com/bervelin-lumesa/)  
+Tous les codes peuvent être trouvés ici dans mon [Github](https://github.com/bervelin-lumesa/r-blog-articles/tree/main/carte_leaflet_avec_photo)  
 
 
 ## Avez-vous trouvé cet article utile ? Pensez à le partager 🙌
