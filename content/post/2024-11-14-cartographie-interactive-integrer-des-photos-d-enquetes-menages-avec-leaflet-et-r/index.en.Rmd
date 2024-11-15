@@ -1,0 +1,110 @@
+---
+title: 'Cartographie Interactive : Intégrer des Photos d''Enquêtes Ménages avec Leaflet et R'
+author: 'Bervelin Lumesa'
+date: '2024-11-14'
+slug: cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r
+categories: []
+tags: []
+---
+
+Mbote !
+
+## Introduction
+
+Dans le domaine de la data science et de l'analyse géospatiale, la capacité à visualiser des données de manière claire et intuitive est primordiale. Avec l'augmentation des enquêtes ménages et autres études basées sur des données géographiques, il devient essentiel de présenter les résultats de manière engageante et informative. C'est là qu'intervient Leaflet, une bibliothèque JavaScript puissante et flexible pour les cartes interactives.
+
+En combinant Leaflet avec le langage de programmation R, les chercheurs et analystes peuvent non seulement cartographier des données géographiques, mais aussi intégrer des éléments multimédia tels que des photos. Cette intégration permet de contextualiser les données et de fournir des insights plus riches et plus précis.
+
+Cet article explorera comment utiliser le package leaflet en R pour afficher des photos sur une carte interactive, en prenant l'exemple d'une enquête ménage (données simulées). Nous détaillerons chaque étape du processus, de la préparation des données à la création de la carte, en passant par l'intégration des photos, pour permettre aux utilisateurs de visualiser les conditions de vie des ménages directement sur une carte interactive.
+
+
+## Création de la carte avec `leaflet`
+
+### Chargement des librairies
+
+Nous commençons par charger les packages nécessaires :
+
+```{r, warning=FALSE, message=FALSE}
+library(leaflet)
+library(base64enc)
+library(dplyr)
+```
+
+
+### Importation de données
+
+Nous importons notre dataframe avec des coordonnées GPS et des noms de photos
+
+```{r}
+df <- read.csv("df.csv")
+head(df)
+```
+
+
+Nous indiquons le nom du dossier qui contient nos photos et stockons cela dans un objet.
+
+```{r}
+dossier_images = 'images'
+```
+
+
+### Création d'une colonne pour les images encodées en base64
+
+Pour afficher les images en locales sur la carte, nous devons les encoder en base 64. C'est ce que fait le code suivant :
+
+```{r}
+df <- df |> 
+  rowwise() |>
+  mutate(photo_encoded = dataURI(file = file.path(dossier_images, photo_mild), mime = "image/png"))
+```
+
+### Première carte 
+
+Le code suivant permet de produire une carte vide. Nous allons voir comment y ajouter des points et afficher des photos.
+
+```{r}
+(m <- leaflet(df) %>%
+      addTiles())
+```
+
+
+### Ajout des points et affichage des photos
+
+Pour ajouter les points et afficher les photos des moustiquaires de chaque ménage sur la carte précédente, nous utilisons une boucle `for()`. Grâce aux arguments lng, lat et popup, nous précisons la longitude, la latitude et la photo de la moustiquaire. Noter que nous nous sommes servis des tags HTML pour formater l'affichage. 
+
+NB: Pour des cartes comportant plusieurs photos, le processus de génération de la carte peut être longue.
+
+```{r}
+# Ajouter les marqueurs avec les photos dans les pop-ups.
+for (i in 1:nrow(df)) {
+  m <- m %>%
+    addMarkers(
+      lng = df$longitude[i],
+      lat = df$latitude[i],
+      popup = paste0("<table>",
+                         "<tr>",
+                         "<td>Nom du chef de ménage</td>",
+                         paste("<td>:", df$nom_chef[i], "</td>"),
+                         "</tr>",
+                     "</table>",
+                     "<img src='", df$photo_encoded[i], "' width='200' height='150'>")
+    )
+}
+m
+```
+
+Voila! Le résultat est une carte intéractive avec les points représantant les coordonnées de chaque ménage. En cliquant sur chaque point, nous affichons la photo de la moustique que l'enquêteur a photographié lors de la collecte de données sur terrain.
+
+
+## Conclusion
+
+L'intégration des données photos sur des cartes interactives à l'aide de Leaflet et R offre un puissant outil de visualisation et d'analyse, particulièrement utile dans le cadre des enquêtes ménages. Cette approche permet non seulement de cartographier des données géographiques, mais également de contextualiser les résultats avec des éléments visuels, enrichissant ainsi l'interprétation des données et facilitant la communication des résultats aux parties prenantes.
+
+L'utilisation de Leaflet pour afficher des photos sur une carte interactive rend les données plus accessibles et engageantes. Cela permet aux chercheurs, aux décideurs et au grand public de mieux comprendre les conditions de vie des ménages enquêtés et de prendre des décisions informées basées sur une visualisation géospatiale enrichie.
+
+En appliquant les techniques présentées dans cet article, vous serez en mesure de créer des cartes interactives intégrant des photos, offrant ainsi une perspective visuelle précieuse pour vos analyses et présentations de données. Cette méthodologie peut être étendue à d'autres types d'enquêtes et de projets, démontrant ainsi la polyvalence et la puissance des outils de visualisation géospatiale combinés avec R.
+
+Tous les codes peuvent être trouvés ici dans mon [Github](https://github.com/bervelin-lumesa/)  
+
+
+## Avez-vous trouvé cet article utile ? Pensez à le partager 🙌
