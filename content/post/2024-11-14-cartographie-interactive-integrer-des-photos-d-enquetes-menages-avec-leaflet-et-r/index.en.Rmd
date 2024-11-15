@@ -93,7 +93,7 @@ for (i in 1:nrow(df)) {
 m
 ```
 
-Voila! Le résultat est une carte intéractive avec les points représantant les coordonnées de chaque ménage. En cliquant sur chaque point, nous affichons la photo de la moustique que l'enquêteur a photographié lors de la collecte de données sur terrain.
+Voila! Le résultat est une carte intéractive avec les points représantant les coordonnées de chaque ménage. En cliquant sur chaque point, la photo de la moustiquaire prise par l'enquêteur lors de la collecte de données sur le terrain s'affiche..
 
 
 ## Conclusion
