@@ -205,8 +205,6 @@ Saturn Cloud est une plateforme cloud qui fournit des environnements pour le dé
 
 ## Conclusion
 
-**Conclusion**
-
 Dans cette première partie, nous avons exploré les bases de la création d'une API en utilisant `plumber` dans R pour exposer un modèle de machine learning. Nous avons vu comment une API permet de rendre un modèle accessible, offrant ainsi une interface simple pour des applications externes. À travers l'exemple du modèle de classification Iris, nous avons couvert les étapes clés, depuis la préparation du modèle jusqu'à la création et le test de l'API en local.
 
 La mise en place d'une API permet non seulement de centraliser les accès à un modèle, mais aussi d'améliorer la scalabilité et de faciliter les mises à jour. Dans la prochaine partie, nous nous intéresserons à l'intégration de cette API dans une application `Rshiny`, ce qui permettra de démontrer la synergie entre des modèles prédictifs et des interfaces utilisateurs interactives.
