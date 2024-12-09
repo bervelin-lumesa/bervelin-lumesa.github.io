@@ -14,6 +14,9 @@ Mbote !
 
 Dans le développement d'applications interactives, la combinaison de RShiny et Plumber se révèle être une solution puissante. RShiny permet de créer des interfaces utilisateurs dynamiques pour visualiser et manipuler des données, tandis que Plumber facilite l'exposition des modèles et des analyses sous forme d'API. En intégrant une API Plumber dans RShiny, on peut enrichir une application avec des fonctionnalités avancées, notamment le déploiement de modèles de machine learning ou l'accès à des services de données externes. Dans cet article, nous verrons comment mettre en place cette intégration pour créer une application flexible.
 
+Retrouvez la première partie de cet article : [Déployer son modèle de Machine Learning sous forme d''API plumber dans R :
+  Part. 1](https://bervelin-lumesa.netlify.app/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-1/)
+  
 ### Shiny
 
 [Shiny](https://shiny.posit.co/) est un package de R (et python) développé par posit qui permet de créer facilement des applications web interactives sans avoir besoin de maîtriser des langages comme HTML, CSS ou JavaScript. Avec Shiny, les utilisateurs peuvent transformer leurs analyses et visualisations en applications web dynamiques, offrant aux utilisateurs finaux une interface intuitive pour explorer les données, tester différents paramètres ou afficher des résultats en temps réel.

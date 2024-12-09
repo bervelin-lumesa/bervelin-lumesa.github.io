@@ -219,5 +219,5 @@ Tous les codes peuvent être trouvés ici dans mon [Github](https://github.com/b
 
 ---
 Voici la suite de cet article : [Déployer son modèle de Machine Learning sous forme d''API plumber dans R :
-  Part. 2]()
+  Part. 2](https://bervelin-lumesa.netlify.app/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/)
   

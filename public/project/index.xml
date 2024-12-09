@@ -5,12 +5,37 @@
     <link>http://localhost:4321/project/</link>
       <atom:link href="http://localhost:4321/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 17 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:4321/media/icon_hu7642407756413848610.png</url>
       <title>Projects</title>
       <link>http://localhost:4321/project/</link>
     </image>
+    
+    <item>
+      <title>Prédiction du nombre  de locations de vélos</title>
+      <link>http://localhost:4321/project/pr-diction-du-nombre-de-v-los/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/project/pr-diction-du-nombre-de-v-los/</guid>
+      <description>&lt;h3 id=&#34;introduction-du-projet&#34;&gt;Introduction du Projet&lt;/h3&gt;
+&lt;p&gt;Le projet &lt;strong&gt;&amp;ldquo;Prédiction du Nombre de Locations de Vélos&amp;rdquo;&lt;/strong&gt; vise à développer un modèle de machine learning capable de prédire le nombre de vélos loués en fonction de divers facteurs environnementaux et contextuels. Inspiré par les besoins des systèmes de partage de vélos urbains, ce projet utilise des données historiques pour analyser et comprendre les tendances et les facteurs influençant l&amp;rsquo;utilisation des vélos.&lt;/p&gt;
+&lt;h3 id=&#34;contexte&#34;&gt;Contexte&lt;/h3&gt;
+&lt;p&gt;Les systèmes de partage de vélos sont devenus un élément clé de la mobilité urbaine, offrant une alternative écologique et pratique aux moyens de transport traditionnels. Cependant, la gestion efficace de ces systèmes nécessite une bonne compréhension des schémas de location de vélos, afin de prévoir la demande et de planifier les opérations en conséquence.&lt;/p&gt;
+&lt;h3 id=&#34;objectif&#34;&gt;Objectif&lt;/h3&gt;
+&lt;p&gt;L&amp;rsquo;objectif principal de ce projet est de prédire le nombre de locations de vélos en utilisant des techniques de machine learning. En tenant compte de variables telles que la saison, l&amp;rsquo;heure de la journée, les conditions météorologiques, et d&amp;rsquo;autres facteurs, le modèle développé pourra aider les gestionnaires de systèmes de partage de vélos à anticiper les besoins et optimiser la disponibilité des vélos.&lt;/p&gt;
+&lt;h3 id=&#34;méthodologie&#34;&gt;Méthodologie&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Collecte et Préparation des Données&lt;/strong&gt; : Les données utilisées proviennent d&amp;rsquo;un système de partage de vélos et peuvent être téléchargées à partir du site de UC Irvine Machine Learning Repository (&lt;a href=&#34;https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset)&#34;&gt;https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset)&lt;/a&gt;. Elles incluent des informations sur les conditions météorologiques, les jours de la semaine, les heures, et d&amp;rsquo;autres facteurs contextuels.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prétraitement des Données&lt;/strong&gt; : Les étapes de prétraitement incluent, la standardisation des variables numériques et l&amp;rsquo;encodage des variables catégorielles.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Développement du Modèle&lt;/strong&gt; : Des modèles de régression  linéaire et Random Forest ont été testés pour ce projet.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Évaluation et Optimisation&lt;/strong&gt; : Le modèle de Random Forest a été retenu en utilisant le RMSE comme métrique. Il a ensuite été [optimisé pour améliorer la précision des prédictions].&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Déploiement&lt;/strong&gt; : Une application web interactive a été développée en utilisant Python Shiny. Cette application permet aux utilisateurs d&amp;rsquo;entrer des données spécifiques et de recevoir une prédiction du nombre de vélos loués en temps réel. L&amp;rsquo;interface utilisateur intuitive facilite l&amp;rsquo;utilisation et l&amp;rsquo;accès aux prédictions, ce qui en fait un outil pratique pour les gestionnaires de systèmes de partage de vélos.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;résultats-et-implications&#34;&gt;Résultats et Implications&lt;/h3&gt;
+&lt;p&gt;Les résultats montrent que le modèle est capable de prédire avec précision le nombre de locations de vélos, ce qui peut aider à améliorer la gestion des flottes de vélos et à répondre de manière proactive aux fluctuations de la demande. Ce projet démontre également l&amp;rsquo;importance de l&amp;rsquo;analyse prédictive et de la science des données dans l&amp;rsquo;amélioration des services urbains.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;Vous pouvez tester l&amp;rsquo;application en cliquant sur ce lien.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Convertisseur des fichiers</title>
