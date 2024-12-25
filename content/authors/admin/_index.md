@@ -117,10 +117,36 @@ status:
 superuser: true
 title: Bervelin Lumesa
 work:
+
+- company_logo: ""
+  company_name: MSO International
+  company_url: ""
+  date_end: ""
+  date_start: "2024-12-01"
+  position: Membership Management Assistant
+  summary: |-
+    Tâches:
+    - Examiner et traiter les nouvelles demandes reçues via email, portail, ou téléphone, y compris
+    - Enregistrer ou mettre à jour des profils des membres.
+    -	Ajouter ou supprimer de personnes à charge.
+    - Traiter les listes de demandes de membres avant leur importation dans le système.
+    - Suivre des intégrations de membres en attente
+    - Contacter les clients, assureurs et courtiers pour obtenir des informations manquantes ou incomplètes.
+    - Collaborer avec les employeurs, les assureurs et les agents pour obtenir les clarifications nécessaires.
+    -	Compiler et produire un rapport détaillé des mouvements de membres dans le système.
+    -	Partager les besoins de mises à jour pertinentes pour améliorer la gestion des membres dans le système.
+    -	Produire des analyses pertinentes des données du système.
+    - Assurer la précision, la cohérence et la complétude des informations des membres dans le système en procédant à des vérifications régulières.
+    -	Effectuer des audits réguliers du système pour détecter les incohérences.
+    - Envoyer des rappels aux clients, courtiers et assureurs concernant la soumission de documents manquants.
+    -	Répondre aux demandes de renseignements des membres ou des employeurs concernant leurs dossiers.
+    - Collaborer avec l’équipe de claims pour la vérification, l’ajout des membres introuvables pour le traitement de claims.
+    - S’assurer de l’exécution des sauvegardes automatiques du système.
+
 - company_logo: ""
   company_name: BreakThroughAction - Enquête comportementale liée au paludisme (MBS) en Zambie
   company_url: ""
-  date_end: ""
+  date_end: "2024-10-01"
   date_start: "2024-03-01"
   position: Co-Investigator (Data Management and Analysis Consultant)
   summary: |-
@@ -144,7 +170,7 @@ work:
 - company_logo: ""
   company_name: Begis
   company_url: ""
-  date_end: ""
+  date_end: "2024-12-01"
   date_start: "2018-03-01"
   position: Statisticien/Data scientist
   summary: |
@@ -159,9 +185,16 @@ work:
 
 ## A propos
 
-Bervelin est Statisticien de formation et Data scientist certifié avec plus de 6 ans d'expériences dans la recherche quantitative. Mon domaine de compétence inclut l'implémentation des études statistiques, la mise en place de système de collecte de données mobile, le suivi des opérations en temps réel par des dashboards, le netoyage, l'analyse de données, la création des rapports reproductibles et l'intégration de l'inteligence actificielle dans des applications. Instructeur Certifié, je donne des formations sur l'usage des outils comme R, Python, SPSS, Stata, QGIS, CSPro et XLSForm (ODK, KOBO, SurveyCTO).   
+Bervelin est Statisticien de formation et Data scientist certifié avec plus de 6 ans 
+d'expériences dans la recherche quantitative. Mon domaine de compétence inclut 
+l'implémentation des études statistiques, la mise en place de système de collecte de 
+données mobile, le suivi des opérations en temps réel par des dashboards, le 
+netoyage, l'analyse de données, la création des rapports reproductibles et 
+l'intégration de l'inteligence actificielle dans des applications. Instructeur Certifié par
+The Carpentries, je donne des formations sur l'usage des outils comme R, Python, 
+SPSS, Stata, QGIS, CSPro et XLSForm (ODK, KOBO, SurveyCTO).   
 
 Fondateur et Coordonateur de [FDTK (From Data To Knowledge)](https://www.fdtk.org/), une Organisation Non Gouvernementale spécialisée dans la fourniture des services en Data Science et  des formations de qualité.
 
-Je travaille actuellement comme Statisticien/Data Scientist chez [BEGIS](https://begis-congo.net/) où je suis en charge du développement des outils de la collecte mobile, des applications de suivi et de traitement de données, l'analyse et la mise en valeur des données pour le besoin des différents clients.
-
+Je travaille actuellement comme Membership Management Assistant chez [MSO](https://msointernational.com/) où je
+suis en charge de la  gestion de la base de données des clients.
