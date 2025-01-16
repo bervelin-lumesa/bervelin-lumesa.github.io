@@ -1,6 +1,17 @@
 ---
 awards:
 
+- awarder: freecodecamp
+  certificate_url: https://www.freecodecamp.org/certification/blumski/relational-database-v8
+  date: "2025-01-10"
+  icon: 
+  summary: |
+    Dans ce programme, j'ai utilisé des outils et logiciels de développement comme VS Code, PostgreSQL et des commandes Linux, pour réaliser des projets.
+    En utilisant le terminal, j'ai appris les bases, de la navigation et de la manipulation d'un système de fichiers, à l'écriture de scripts dans Bash, jusqu'à une utilisation avancée. 
+    Ensuite, j'ai appris à créer et à utiliser une base de données relationnelle avec PostgreSQL, un système de gestion de bases de données, et SQL, le langage de ces bases de données.
+    Enfin, j'ai appris Git, le système de contrôle de version, un outil essentiel de tout développeur.
+  title: Relational Database Certification
+
 - awarder: The Carpentries
   certificate_url: https://www.linkedin.com/in/bervelin-lumesa/details/certifications/1728403905401/single-media-viewer/?profileId=ACoAACzZPxIBDsL9j_5mZQr8DAG9WMfvIMOhdWs
   date: "2024-10-05"
