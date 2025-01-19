@@ -2,6 +2,17 @@
 awards:
 
 - awarder: freecodecamp
+  certificate_url: https://www.freecodecamp.org/certification/blumski/machine-learning-with-python-v7
+  date: "2025-01-18"
+  icon: 
+  summary: |
+    Dans ce programme, j'ai utilisé les librairies Tensorflow et keras pour résoudre des problèmes réels de classification, de regression, de vision par ordinateur et du traitement du langage humain (NLP).
+    Les projets sur lesquels j'ai travaillé incluent la classification d'images des chiens/chats, la construction d'un système de recommandation basé sur le KNN, la prédiction du coût de soin de santé et 
+    la classification des messages (span/non spam) en utilisant les réseaux de nerones.
+  title: Machine Learning with Python Certification
+
+
+- awarder: freecodecamp
   certificate_url: https://www.freecodecamp.org/certification/blumski/relational-database-v8
   date: "2025-01-10"
   icon: 
