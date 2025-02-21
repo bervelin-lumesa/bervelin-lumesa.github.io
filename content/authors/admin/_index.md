@@ -1,6 +1,25 @@
 ---
 awards:
 
+- awarder: Hugging Face
+  certificate_url: https://courses.opencv.org/certificates/a3918468e4a74a149cb29b8ffb051c65
+  date: "2025-02-12"
+  icon: 
+  summary: |
+    Dans ce programme, j'ai appris les bases d'agent AI, comment créer un agent AI capable d'exécuter des tâches et d'inteéragir avec son environnement.
+    J'ai utilisé des librairies python et hugging face pour créer un agent AI.
+  title: AI Agents
+
+- awarder: OpenCV University
+  certificate_url: https://courses.opencv.org/certificates/a3918468e4a74a149cb29b8ffb051c65
+  date: "2025-02-12"
+  icon: 
+  summary: |
+    Dans ce programme, j'ai utilisé les librairies Tensorflow et keras pour résoudre des problèmes réels avec les réseaux de nerones.
+    Les projets sur lesquels j'ai travaillé incluent la régression, la classification d'images, et la detection d'images.
+  title: TensorFlow Keras Bootcomp
+
+
 - awarder: freecodecamp
   certificate_url: https://www.freecodecamp.org/certification/blumski/machine-learning-with-python-v7
   date: "2025-01-18"
@@ -144,7 +163,7 @@ work:
   company_name: MSO International
   company_url: ""
   date_end: ""
-  date_start: "2024-12-01"
+  date_start: "2024-12-16"
   position: Membership Management Assistant
   summary: |-
     Tâches:
