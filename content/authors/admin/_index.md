@@ -11,7 +11,7 @@ awards:
   title: AI Agents
 
 - awarder: OpenCV University
-  certificate_url: https://courses.opencv.org/certificates/a3918468e4a74a149cb29b8ffb051c65
+  certificate_url: https://courses.opencv.org/certificates/fa796060a70e45fa981a1da58af2341f
   date: "2025-02-12"
   icon: 
   summary: |
