@@ -2,171 +2,171 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:4321/event/example/</loc>
+    <loc>http://localhost:5898/event/example/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/event/</loc>
+    <loc>http://localhost:5898/event/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/project/book-recommendation-engine-using-knn/</loc>
+    <loc>http://localhost:5898/project/book-recommendation-engine-using-knn/</loc>
     <lastmod>2025-01-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/project/cat-and-dog-image-classifier/</loc>
+    <loc>http://localhost:5898/project/cat-and-dog-image-classifier/</loc>
     <lastmod>2025-01-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/project/linear-regression-health-costs-calculator/</loc>
+    <loc>http://localhost:5898/project/linear-regression-health-costs-calculator/</loc>
     <lastmod>2025-01-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/project/</loc>
+    <loc>http://localhost:5898/project/</loc>
     <lastmod>2025-01-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/project/pr-diction-du-nombre-de-v-los/</loc>
+    <loc>http://localhost:5898/project/pr-diction-du-nombre-de-v-los/</loc>
     <lastmod>2024-12-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/post/</loc>
+    <loc>http://localhost:5898/post/</loc>
     <lastmod>2024-11-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/</loc>
+    <loc>http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/</loc>
     <lastmod>2024-11-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/tags/leaflet/</loc>
+    <loc>http://localhost:5898/tags/leaflet/</loc>
     <lastmod>2024-11-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/tags/</loc>
+    <loc>http://localhost:5898/tags/</loc>
     <lastmod>2024-11-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/</loc>
+    <loc>http://localhost:5898/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/</loc>
     <lastmod>2024-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-1/</loc>
+    <loc>http://localhost:5898/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-1/</loc>
     <lastmod>2024-10-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/post/monitoring-de-la-collecte-de-donn-es-d-une-enqu-te-statistique/</loc>
+    <loc>http://localhost:5898/post/monitoring-de-la-collecte-de-donn-es-d-une-enqu-te-statistique/</loc>
     <lastmod>2024-09-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/post/collecte-de-donn-es-mobile-partage-d-exp-rience/</loc>
+    <loc>http://localhost:5898/post/collecte-de-donn-es-mobile-partage-d-exp-rience/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/tags/data-collection/</loc>
+    <loc>http://localhost:5898/tags/data-collection/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/post/10-librairies-les-plus-utilis-es-en-python-pour-la-data-science/</loc>
+    <loc>http://localhost:5898/post/10-librairies-les-plus-utilis-es-en-python-pour-la-data-science/</loc>
     <lastmod>2024-08-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/post/collecte-de-donn-es-mobile/</loc>
+    <loc>http://localhost:5898/post/collecte-de-donn-es-mobile/</loc>
     <lastmod>2024-08-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/tags/python/</loc>
+    <loc>http://localhost:5898/tags/python/</loc>
     <lastmod>2024-08-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/teaching/data_analysis_spss/</loc>
+    <loc>http://localhost:5898/teaching/data_analysis_spss/</loc>
     <lastmod>2024-08-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/teaching/data_collection_kobo/</loc>
+    <loc>http://localhost:5898/teaching/data_collection_kobo/</loc>
     <lastmod>2024-08-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/tags/data-analysis/</loc>
+    <loc>http://localhost:5898/tags/data-analysis/</loc>
     <lastmod>2024-08-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/teaching/</loc>
+    <loc>http://localhost:5898/teaching/</loc>
     <lastmod>2024-08-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/post/10-packages-les-plus-utilis-s-en-r-pour-la-data-science/</loc>
+    <loc>http://localhost:5898/post/10-packages-les-plus-utilis-s-en-r-pour-la-data-science/</loc>
     <lastmod>2024-08-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/project/file_convertor/</loc>
+    <loc>http://localhost:5898/project/file_convertor/</loc>
     <lastmod>2024-08-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/project/qrcode_generator/</loc>
+    <loc>http://localhost:5898/project/qrcode_generator/</loc>
     <lastmod>2024-08-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/tags/r/</loc>
+    <loc>http://localhost:5898/tags/r/</loc>
     <lastmod>2024-08-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/projects/</loc>
+    <loc>http://localhost:5898/projects/</loc>
     <lastmod>2024-05-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/project/data_collection_monitoring/</loc>
+    <loc>http://localhost:5898/project/data_collection_monitoring/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/project/activity_tracking/</loc>
+    <loc>http://localhost:5898/project/activity_tracking/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/experience/</loc>
+    <loc>http://localhost:5898/experience/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/</loc>
+    <loc>http://localhost:5898/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/publication/preprint/</loc>
+    <loc>http://localhost:5898/publication/preprint/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/publication_types/article/</loc>
+    <loc>http://localhost:5898/publication_types/article/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/tags/large-language-models/</loc>
+    <loc>http://localhost:5898/tags/large-language-models/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/publication_types/</loc>
+    <loc>http://localhost:5898/publication_types/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/publication/</loc>
+    <loc>http://localhost:5898/publication/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/publication/journal-article/</loc>
+    <loc>http://localhost:5898/publication/journal-article/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/publication_types/article-journal/</loc>
+    <loc>http://localhost:5898/publication_types/article-journal/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/tags/source-themes/</loc>
+    <loc>http://localhost:5898/tags/source-themes/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/publication/conference-paper/</loc>
+    <loc>http://localhost:5898/publication/conference-paper/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:4321/publication_types/paper-conference/</loc>
+    <loc>http://localhost:5898/publication_types/paper-conference/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>

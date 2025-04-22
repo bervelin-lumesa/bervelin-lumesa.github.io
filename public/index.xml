@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bervelin Lumesa</title>
-    <link>http://localhost:4321/</link>
-      <atom:link href="http://localhost:4321/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:5898/</link>
+      <atom:link href="http://localhost:5898/index.xml" rel="self" type="application/rss+xml" />
     <description>Bervelin Lumesa</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:4321/media/icon_hu7642407756413848610.png</url>
+      <url>http://localhost:5898/media/icon_hu7642407756413848610.png</url>
       <title>Bervelin Lumesa</title>
-      <link>http://localhost:4321/</link>
+      <link>http://localhost:5898/</link>
     </image>
     
     <item>
       <title>Example Talk</title>
-      <link>http://localhost:4321/event/example/</link>
+      <link>http://localhost:5898/event/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/event/example/</guid>
+      <guid>http://localhost:5898/event/example/</guid>
       <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
 &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
   &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
@@ -35,33 +35,33 @@
     
     <item>
       <title>Book Recommendation Engine using KNN</title>
-      <link>http://localhost:4321/project/book-recommendation-engine-using-knn/</link>
+      <link>http://localhost:5898/project/book-recommendation-engine-using-knn/</link>
       <pubDate>Sun, 19 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/book-recommendation-engine-using-knn/</guid>
+      <guid>http://localhost:5898/project/book-recommendation-engine-using-knn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cat and Dog Image Classifier</title>
-      <link>http://localhost:4321/project/cat-and-dog-image-classifier/</link>
+      <link>http://localhost:5898/project/cat-and-dog-image-classifier/</link>
       <pubDate>Sun, 19 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/cat-and-dog-image-classifier/</guid>
+      <guid>http://localhost:5898/project/cat-and-dog-image-classifier/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linear Regression Health Costs Calculator</title>
-      <link>http://localhost:4321/project/linear-regression-health-costs-calculator/</link>
+      <link>http://localhost:5898/project/linear-regression-health-costs-calculator/</link>
       <pubDate>Sun, 19 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/linear-regression-health-costs-calculator/</guid>
+      <guid>http://localhost:5898/project/linear-regression-health-costs-calculator/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Prédiction du nombre  de locations de vélos</title>
-      <link>http://localhost:4321/project/pr-diction-du-nombre-de-v-los/</link>
+      <link>http://localhost:5898/project/pr-diction-du-nombre-de-v-los/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/pr-diction-du-nombre-de-v-los/</guid>
+      <guid>http://localhost:5898/project/pr-diction-du-nombre-de-v-los/</guid>
       <description>&lt;h3 id=&#34;introduction-du-projet&#34;&gt;Introduction du Projet&lt;/h3&gt;
 &lt;p&gt;Le projet &lt;strong&gt;&amp;ldquo;Prédiction du Nombre de Locations de Vélos&amp;rdquo;&lt;/strong&gt; vise à développer un modèle de machine learning capable de prédire le nombre de vélos loués en fonction de divers facteurs environnementaux et contextuels. Inspiré par les besoins des systèmes de partage de vélos urbains, ce projet utilise des données historiques pour analyser et comprendre les tendances et les facteurs influençant l&amp;rsquo;utilisation des vélos.&lt;/p&gt;
 &lt;h3 id=&#34;contexte&#34;&gt;Contexte&lt;/h3&gt;
@@ -84,29 +84,29 @@
     
     <item>
       <title>Cartographie Interactive : Intégrer des Photos d&#39;Enquêtes Ménages avec Leaflet et R</title>
-      <link>http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/</link>
+      <link>http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/</link>
       <pubDate>Thu, 14 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/</guid>
-      <description>&lt;link href=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/htmltools-fill/fill.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/jquery/jquery-3.6.0.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/leaflet/leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/leaflet/leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/leafletfix/leafletfix.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/proj4/proj4.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/Proj4Leaflet/proj4leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/rstudio_leaflet/rstudio_leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/leaflet-binding/leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/htmltools-fill/fill.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/jquery/jquery-3.6.0.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/leaflet/leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/leaflet/leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/leafletfix/leafletfix.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/proj4/proj4.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/Proj4Leaflet/proj4leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/rstudio_leaflet/rstudio_leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;http://localhost:4321/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/leaflet-binding/leaflet.js&#34;&gt;&lt;/script&gt;
+      <guid>http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/</guid>
+      <description>&lt;link href=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/htmltools-fill/fill.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/jquery/jquery-3.6.0.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/leaflet/leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/leaflet/leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/leafletfix/leafletfix.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/proj4/proj4.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/Proj4Leaflet/proj4leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/rstudio_leaflet/rstudio_leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/leaflet-binding/leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/htmltools-fill/fill.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/jquery/jquery-3.6.0.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/leaflet/leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/leaflet/leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/leafletfix/leafletfix.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/proj4/proj4.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/Proj4Leaflet/proj4leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/rstudio_leaflet/rstudio_leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;http://localhost:5898/post/cartographie-interactive-integrer-des-photos-d-enquetes-menages-avec-leaflet-et-r/index.en_files/leaflet-binding/leaflet.js&#34;&gt;&lt;/script&gt;
 &lt;p&gt;Mbote 👋&lt;/p&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Dans le domaine de la data science et de l’analyse géospatiale, la capacité à visualiser des données de manière claire et intuitive est primordiale. Avec l’augmentation des enquêtes ménages et autres études basées sur des données géographiques, il devient essentiel de présenter les résultats de manière engageante et informative. C’est là qu’intervient Leaflet, une bibliothèque JavaScript puissante et flexible pour les cartes interactives.&lt;/p&gt;
@@ -176,9 +176,9 @@
     
     <item>
       <title>Deployer son modele de Machine Learning sous forme d&#39;API plumber dans R :   Part. 2</title>
-      <link>http://localhost:4321/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/</link>
+      <link>http://localhost:5898/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/</link>
       <pubDate>Sat, 26 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/</guid>
+      <guid>http://localhost:5898/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-2/</guid>
       <description>&lt;p&gt;Mbote !&lt;/p&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Dans le développement d&amp;rsquo;applications interactives, la combinaison de RShiny et Plumber se révèle être une solution puissante. RShiny permet de créer des interfaces utilisateurs dynamiques pour visualiser et manipuler des données, tandis que Plumber facilite l&amp;rsquo;exposition des modèles et des analyses sous forme d&amp;rsquo;API. En intégrant une API Plumber dans RShiny, on peut enrichir une application avec des fonctionnalités avancées, notamment le déploiement de modèles de machine learning ou l&amp;rsquo;accès à des services de données externes. Dans cet article, nous verrons comment mettre en place cette intégration pour créer une application flexible.&lt;/p&gt;
@@ -299,9 +299,9 @@ Part. 1&lt;/a&gt;&lt;/p&gt;
     
     <item>
       <title>Déployer son modèle de Machine Learning sous forme d&#39;API plumber dans R : Part. 1</title>
-      <link>http://localhost:4321/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-1/</link>
+      <link>http://localhost:5898/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-1/</link>
       <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-1/</guid>
+      <guid>http://localhost:5898/post/deployer-son-modele-de-machine-learning-sous-forme-d-api-plumber-dans-r-part-1/</guid>
       <description>&lt;p&gt;Mbote!&lt;/p&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Dans cet article, nous allons explorer comment déployer un modèle de machine learning sous forme d&amp;rsquo;API à l&amp;rsquo;aide de plumber, un package R simple et puissant. De plus en plus de projets de machine learning passent de simples expérimentations en laboratoire à des solutions robustes et prêtes pour la production. Cela nécessite une intégration fluide entre les modèles et les systèmes existants, souvent via une interface de programmation d&amp;rsquo;application (API). Cette première partie vous guidera à dans la conception de l&amp;rsquo;API. Dans la seconde partie, nous verrons comment faire appel à l&amp;rsquo;API au sein d&amp;rsquo;une application Rshiny.&lt;/p&gt;
@@ -452,9 +452,9 @@ Part. 2&lt;/a&gt;&lt;/p&gt;
     
     <item>
       <title>Monitoring de la collecte de données d&#39;une enquête statistique</title>
-      <link>http://localhost:4321/post/monitoring-de-la-collecte-de-donn-es-d-une-enqu-te-statistique/</link>
+      <link>http://localhost:5898/post/monitoring-de-la-collecte-de-donn-es-d-une-enqu-te-statistique/</link>
       <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/monitoring-de-la-collecte-de-donn-es-d-une-enqu-te-statistique/</guid>
+      <guid>http://localhost:5898/post/monitoring-de-la-collecte-de-donn-es-d-une-enqu-te-statistique/</guid>
       <description>&lt;p&gt;Mbote !&lt;/p&gt;
 &lt;h2 id=&#34;intro&#34;&gt;Intro&amp;hellip;&lt;/h2&gt;
 &lt;p&gt;Lors de notre &lt;a href=&#34;https://bervelin-lumesa.netlify.app/post/collecte-de-donn-es-mobile-partage-d-exp-rience/&#34;&gt;précédant post&lt;/a&gt;, nous avons parlé de la collecte de données mobile. Il était question des étapes et des conseils pratiques pour partir du questionnaire papier à la création du formulaire électronique. Mais que se passe-t-il lorsque la collecte demarre ? Comment informer les parties prénantes de l&amp;rsquo;évolution des activités ? Comment faire le feedback aux équipes de terrain ? Nous allons essayer de répondre à ces questions à nous mettant à la place du gestionnaire de données ou data manager&lt;/p&gt;
@@ -522,9 +522,9 @@ Part. 2&lt;/a&gt;&lt;/p&gt;
     
     <item>
       <title>Collecte de données mobile : Partage d&#39;Expérience</title>
-      <link>http://localhost:4321/post/collecte-de-donn-es-mobile-partage-d-exp-rience/</link>
+      <link>http://localhost:5898/post/collecte-de-donn-es-mobile-partage-d-exp-rience/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/collecte-de-donn-es-mobile-partage-d-exp-rience/</guid>
+      <guid>http://localhost:5898/post/collecte-de-donn-es-mobile-partage-d-exp-rience/</guid>
       <description>&lt;p&gt;Mbote!&lt;/p&gt;
 &lt;h2 id=&#34;intro&#34;&gt;Intro&amp;hellip;&lt;/h2&gt;
 &lt;p&gt;Depuis plusieurs années déjà, la collecte de données au moyen des tablettes ou smartphones est devenue monnaie courante, que ça soit pour des petites enquêtes ou pour des opérations de grandes envergures.&lt;/p&gt;
@@ -619,9 +619,9 @@ Part. 2&lt;/a&gt;&lt;/p&gt;
     
     <item>
       <title>10 librairies les plus utilisées en Python pour la data Science</title>
-      <link>http://localhost:4321/post/10-librairies-les-plus-utilis-es-en-python-pour-la-data-science/</link>
+      <link>http://localhost:5898/post/10-librairies-les-plus-utilis-es-en-python-pour-la-data-science/</link>
       <pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/10-librairies-les-plus-utilis-es-en-python-pour-la-data-science/</guid>
+      <guid>http://localhost:5898/post/10-librairies-les-plus-utilis-es-en-python-pour-la-data-science/</guid>
       <description>&lt;p&gt;Mbote !&lt;/p&gt;
 &lt;h2 id=&#34;intro&#34;&gt;Intro..&lt;/h2&gt;
 &lt;p&gt;Python est l&amp;rsquo;un des langages les plus populaires pour la Data Science, offrant une multitude de bibliothèques puissantes. Voici une liste des 10 librairies les plus utilisées en Python pour la Data Science, avec leurs fonctionnalités principales et les liens vers leurs sites officiels.&lt;/p&gt;
@@ -723,9 +723,9 @@ Part. 2&lt;/a&gt;&lt;/p&gt;
     
     <item>
       <title>Introduction à la collecte de données mobile</title>
-      <link>http://localhost:4321/post/collecte-de-donn-es-mobile/</link>
+      <link>http://localhost:5898/post/collecte-de-donn-es-mobile/</link>
       <pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/collecte-de-donn-es-mobile/</guid>
+      <guid>http://localhost:5898/post/collecte-de-donn-es-mobile/</guid>
       <description>&lt;p&gt;Mbote!&lt;/p&gt;
 &lt;h2 id=&#34;intro&#34;&gt;Intro&amp;hellip;&lt;/h2&gt;
 &lt;p&gt;La collecte de données est une étape cruciale dans la réalisation d&amp;rsquo;une enquête statistique. Avec l&amp;rsquo;évolution de la technologie, la collecte de données via des appareils mobiles est devenue une méthode populaire et efficace. Cet article explore les avantages, les défis, et les meilleures pratiques pour utiliser des appareils mobiles dans la collecte de données d&amp;rsquo;enquêtes statistiques.&lt;/p&gt;
@@ -770,9 +770,9 @@ Part. 2&lt;/a&gt;&lt;/p&gt;
     
     <item>
       <title>Analyse de données avec SPSS</title>
-      <link>http://localhost:4321/teaching/data_analysis_spss/</link>
+      <link>http://localhost:5898/teaching/data_analysis_spss/</link>
       <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/teaching/data_analysis_spss/</guid>
+      <guid>http://localhost:5898/teaching/data_analysis_spss/</guid>
       <description>&lt;p&gt;Maîtriser SPSS pour la manipulation et l&amp;rsquo;analyse de données présente plusieurs avantages. Tout d&amp;rsquo;abord, SPSS est un logiciel largement utilisé dans la recherche scientifique et par de nombreuses entreprises, ce qui signifie que la maîtrise de ce logiciel peut être un atout sur le marché du travail.&lt;/p&gt;
 &lt;p&gt;En utilisant SPSS, vous pouvez facilement importer, nettoyer et manipuler les données, ce qui vous permet d&amp;rsquo;économiser du temps et des efforts. De plus, SPSS offre une large gamme de fonctions statistiques et d&amp;rsquo;outils d&amp;rsquo;analyse, tels que les tests de corrélation, les régressions, les analyses de variance et bien d&amp;rsquo;autres encore. Cela vous permet d&amp;rsquo;explorer efficacement vos données, de détecter les tendances et les relations, et de prendre des décisions basées sur des preuves solides.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.fdtk.org/pp-analyse-de-donnees-spss&#34;&gt;COMMENCEZ MAINTENANT&lt;/a&gt;&lt;/p&gt;
@@ -823,9 +823,9 @@ Part. 2&lt;/a&gt;&lt;/p&gt;
     
     <item>
       <title>Collecte de données mobile :Application avec ODK Collect et KOBO Collect</title>
-      <link>http://localhost:4321/teaching/data_collection_kobo/</link>
+      <link>http://localhost:5898/teaching/data_collection_kobo/</link>
       <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/teaching/data_collection_kobo/</guid>
+      <guid>http://localhost:5898/teaching/data_collection_kobo/</guid>
       <description>&lt;h2 id=&#34;créer-des-formulaires-sans-connaissances-en-programmation&#34;&gt;CRÉER DES FORMULAIRES SANS CONNAISSANCES EN PROGRAMMATION&lt;/h2&gt;
 &lt;p&gt;Vous cherchez une solution simple et efficace pour collecter des données sur le terrain tout en ayant accès à des outils d&amp;rsquo;analyse et de visualisation de données en temps réel ? Cette formation est faite pour vous !&lt;/p&gt;
 &lt;p&gt;Cette formation complète sur la collecte de données mobile avec ODK Collect et KOBO Collect vous guidera étape par étape dans l&amp;rsquo;utilisation et la mise en place de cette solution. Vous apprendrez comment créer des formulaires numériques, comment les déployer sur des appareils mobiles, comment collecter des données, les synchroniser avec un serveur et surtout, comment visualiser les données collectées.&lt;/p&gt;
@@ -864,9 +864,9 @@ Part. 2&lt;/a&gt;&lt;/p&gt;
     
     <item>
       <title>10 Packages les plus utilisés en R pour la Data Science</title>
-      <link>http://localhost:4321/post/10-packages-les-plus-utilis-s-en-r-pour-la-data-science/</link>
+      <link>http://localhost:5898/post/10-packages-les-plus-utilis-s-en-r-pour-la-data-science/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/post/10-packages-les-plus-utilis-s-en-r-pour-la-data-science/</guid>
+      <guid>http://localhost:5898/post/10-packages-les-plus-utilis-s-en-r-pour-la-data-science/</guid>
       <description>&lt;p&gt;Mbote !&lt;/p&gt;
 &lt;h2 id=&#34;intro&#34;&gt;Intro..&lt;/h2&gt;
 &lt;p&gt;La Data Science est une discipline clé dans de nombreux domaines, et R est l&amp;rsquo;un des langages les plus populaires pour l&amp;rsquo;analyse de données. Voici une liste des 10 packages R les plus utilisés pour la Data Science, avec leurs fonctionnalités principales et les liens vers leurs sites officiels.&lt;/p&gt;
@@ -967,42 +967,42 @@ Part. 2&lt;/a&gt;&lt;/p&gt;
     
     <item>
       <title>Convertisseur des fichiers</title>
-      <link>http://localhost:4321/project/file_convertor/</link>
+      <link>http://localhost:5898/project/file_convertor/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/file_convertor/</guid>
+      <guid>http://localhost:5898/project/file_convertor/</guid>
       <description>&lt;p&gt;Cette application conçue avec Shiny te permet de convertir un fichier de données, d&amp;rsquo;un format à un autre.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://bervelin.shinyapps.io/file_convertor/&#34;&gt;Clique sur ce lien&lt;/a&gt; pour la tester en live&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Générateur des QRcode</title>
-      <link>http://localhost:4321/project/qrcode_generator/</link>
+      <link>http://localhost:5898/project/qrcode_generator/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/qrcode_generator/</guid>
+      <guid>http://localhost:5898/project/qrcode_generator/</guid>
       <description>&lt;p&gt;En cours&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>http://localhost:4321/projects/</link>
+      <link>http://localhost:5898/projects/</link>
       <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/projects/</guid>
+      <guid>http://localhost:5898/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Monitoring de la collecte de données</title>
-      <link>http://localhost:4321/project/data_collection_monitoring/</link>
+      <link>http://localhost:5898/project/data_collection_monitoring/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/data_collection_monitoring/</guid>
+      <guid>http://localhost:5898/project/data_collection_monitoring/</guid>
       <description>&lt;p&gt;En cours&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tracking des activités de terrain</title>
-      <link>http://localhost:4321/project/activity_tracking/</link>
+      <link>http://localhost:5898/project/activity_tracking/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/activity_tracking/</guid>
+      <guid>http://localhost:5898/project/activity_tracking/</guid>
       <description>&lt;p&gt;Dans le cas des ses activités, une entreprise envoie des agents sur terrain pour l&amp;rsquo;implantation des infrastructures et pour effectuer des réparations en cas de panne.&lt;/p&gt;
 &lt;p&gt;Cette application conçue avec Shiny permet de répondre à question :&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1014,18 +1014,18 @@ Part. 2&lt;/a&gt;&lt;/p&gt;
     
     <item>
       <title>Expérience</title>
-      <link>http://localhost:4321/experience/</link>
+      <link>http://localhost:5898/experience/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/experience/</guid>
+      <guid>http://localhost:5898/experience/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An example preprint / working paper</title>
-      <link>http://localhost:4321/publication/preprint/</link>
+      <link>http://localhost:5898/publication/preprint/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/publication/preprint/</guid>
-      <description>&lt;p&gt;This work is driven by the results in my &lt;a href=&#34;http://localhost:4321/publication/conference-paper/&#34;&gt;previous paper&lt;/a&gt; on LLMs.&lt;/p&gt;
+      <guid>http://localhost:5898/publication/preprint/</guid>
+      <description>&lt;p&gt;This work is driven by the results in my &lt;a href=&#34;http://localhost:5898/publication/conference-paper/&#34;&gt;previous paper&lt;/a&gt; on LLMs.&lt;/p&gt;
 &lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
 &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
   &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
@@ -1038,9 +1038,9 @@ Part. 2&lt;/a&gt;&lt;/p&gt;
     
     <item>
       <title>An example journal article</title>
-      <link>http://localhost:4321/publication/journal-article/</link>
+      <link>http://localhost:5898/publication/journal-article/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/publication/journal-article/</guid>
+      <guid>http://localhost:5898/publication/journal-article/</guid>
       <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
 &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
   &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
@@ -1059,9 +1059,9 @@ Part. 2&lt;/a&gt;&lt;/p&gt;
     
     <item>
       <title>An example conference paper</title>
-      <link>http://localhost:4321/publication/conference-paper/</link>
+      <link>http://localhost:5898/publication/conference-paper/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/publication/conference-paper/</guid>
+      <guid>http://localhost:5898/publication/conference-paper/</guid>
       <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
 &lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
   &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;

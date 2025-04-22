@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects | Bervelin Lumesa</title>
-    <link>http://localhost:4321/project/</link>
-      <atom:link href="http://localhost:4321/project/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:5898/project/</link>
+      <atom:link href="http://localhost:5898/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 19 Jan 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:4321/media/icon_hu7642407756413848610.png</url>
+      <url>http://localhost:5898/media/icon_hu7642407756413848610.png</url>
       <title>Projects</title>
-      <link>http://localhost:4321/project/</link>
+      <link>http://localhost:5898/project/</link>
     </image>
     
     <item>
       <title>Book Recommendation Engine using KNN</title>
-      <link>http://localhost:4321/project/book-recommendation-engine-using-knn/</link>
+      <link>http://localhost:5898/project/book-recommendation-engine-using-knn/</link>
       <pubDate>Sun, 19 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/book-recommendation-engine-using-knn/</guid>
+      <guid>http://localhost:5898/project/book-recommendation-engine-using-knn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cat and Dog Image Classifier</title>
-      <link>http://localhost:4321/project/cat-and-dog-image-classifier/</link>
+      <link>http://localhost:5898/project/cat-and-dog-image-classifier/</link>
       <pubDate>Sun, 19 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/cat-and-dog-image-classifier/</guid>
+      <guid>http://localhost:5898/project/cat-and-dog-image-classifier/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linear Regression Health Costs Calculator</title>
-      <link>http://localhost:4321/project/linear-regression-health-costs-calculator/</link>
+      <link>http://localhost:5898/project/linear-regression-health-costs-calculator/</link>
       <pubDate>Sun, 19 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/linear-regression-health-costs-calculator/</guid>
+      <guid>http://localhost:5898/project/linear-regression-health-costs-calculator/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Prédiction du nombre  de locations de vélos</title>
-      <link>http://localhost:4321/project/pr-diction-du-nombre-de-v-los/</link>
+      <link>http://localhost:5898/project/pr-diction-du-nombre-de-v-los/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/pr-diction-du-nombre-de-v-los/</guid>
+      <guid>http://localhost:5898/project/pr-diction-du-nombre-de-v-los/</guid>
       <description>&lt;h3 id=&#34;introduction-du-projet&#34;&gt;Introduction du Projet&lt;/h3&gt;
 &lt;p&gt;Le projet &lt;strong&gt;&amp;ldquo;Prédiction du Nombre de Locations de Vélos&amp;rdquo;&lt;/strong&gt; vise à développer un modèle de machine learning capable de prédire le nombre de vélos loués en fonction de divers facteurs environnementaux et contextuels. Inspiré par les besoins des systèmes de partage de vélos urbains, ce projet utilise des données historiques pour analyser et comprendre les tendances et les facteurs influençant l&amp;rsquo;utilisation des vélos.&lt;/p&gt;
 &lt;h3 id=&#34;contexte&#34;&gt;Contexte&lt;/h3&gt;
@@ -63,34 +63,34 @@
     
     <item>
       <title>Convertisseur des fichiers</title>
-      <link>http://localhost:4321/project/file_convertor/</link>
+      <link>http://localhost:5898/project/file_convertor/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/file_convertor/</guid>
+      <guid>http://localhost:5898/project/file_convertor/</guid>
       <description>&lt;p&gt;Cette application conçue avec Shiny te permet de convertir un fichier de données, d&amp;rsquo;un format à un autre.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://bervelin.shinyapps.io/file_convertor/&#34;&gt;Clique sur ce lien&lt;/a&gt; pour la tester en live&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Générateur des QRcode</title>
-      <link>http://localhost:4321/project/qrcode_generator/</link>
+      <link>http://localhost:5898/project/qrcode_generator/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/qrcode_generator/</guid>
+      <guid>http://localhost:5898/project/qrcode_generator/</guid>
       <description>&lt;p&gt;En cours&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Monitoring de la collecte de données</title>
-      <link>http://localhost:4321/project/data_collection_monitoring/</link>
+      <link>http://localhost:5898/project/data_collection_monitoring/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/data_collection_monitoring/</guid>
+      <guid>http://localhost:5898/project/data_collection_monitoring/</guid>
       <description>&lt;p&gt;En cours&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tracking des activités de terrain</title>
-      <link>http://localhost:4321/project/activity_tracking/</link>
+      <link>http://localhost:5898/project/activity_tracking/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/activity_tracking/</guid>
+      <guid>http://localhost:5898/project/activity_tracking/</guid>
       <description>&lt;p&gt;Dans le cas des ses activités, une entreprise envoie des agents sur terrain pour l&amp;rsquo;implantation des infrastructures et pour effectuer des réparations en cas de panne.&lt;/p&gt;
 &lt;p&gt;Cette application conçue avec Shiny permet de répondre à question :&lt;/p&gt;
 &lt;blockquote&gt;
